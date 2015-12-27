@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Boolean">
+	<lead>
+		<p>Boolean — The Boolean object is an object wrapper for a boolean value.</p>
+	</lead>
+	<description>
+		<p>new Boolean(bool <i>bool</i>)</p>
+	</description>
+	<parameters>
+		<parameter name="bool" type="bool" optional="false"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>boolean example</heading>
+			<p>When creating a boolean object, you have to check the value of the object. The object itself will always return true.</p>
+			<code>
+				var b = new Boolean(true); // Create a new boolean object.
+				if (b.valueOf()) {
+					// Your code.
+				}
+			</code>
+			<p>This however does not apply when working with boolean primitives.</p>
+			<code>
+				var b = true; // Create a new boolean primitive.
+				if (b) {
+					// Your code.
+				}
+			</code>
+		</example>
+		<example>
+			<heading>boolean example</heading>
+			<p>Convert a non-boolean value to a boolean value.</p>
+			<code>
+				var b = Boolean(expression); // Used to convert a non-boolean to a boolean primitive.
+			</code>
+		</example>
+		<links>
+			<see-also href="Primitives">Primitives</see-also>
+		</links>
+	</examples>
+</object>
