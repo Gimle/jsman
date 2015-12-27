@@ -329,13 +329,13 @@ textarea {
 }
 
 body {
-    background: #fff url('http://tux-t450s/jsman_old/gfx/default/bg_side.png') repeat-y left top;
+    background: #fff url('../gfx/bg_side.png') repeat-y left top;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #main-header {
     height: 101px;
-    background: url('http://tux-t450s/jsman_old/gfx/default/bg_header.png') repeat-x left top;
+    background: url('../gfx/bg_header.png') repeat-x left top;
 }
 
 #main-header,
@@ -444,7 +444,7 @@ body {
     padding: 0;
     height: 38px;
     width: 40px;
-    background: url('http://tux-t450s/jsman_old/gfx/default/icons.png') no-repeat left top;
+    background: url('../gfx/icons.png') no-repeat left top;
     border: 0;
     -moz-box-shadow: 0 1px 2px #63913e;
     -webkit-box-shadow: 0 1px 2px #63913e;
