@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toString" parent="Boolean">
+	<lead>
+		<p>toString — Returns a string representation of the specified Boolean object.</p>
+	</lead>
+	<description>
+		<p>Boolean.toString()</p>
+	</description>
+	<examples>
+		<example>
+			<heading>toString example</heading>
+			<code>
+				var b = new Boolean(true);
+				console.log(typeof b.toString()); // Will return "string".
+				console.log(b.toString); // Will be the actial string "true".
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString">Boolean.toString method</mdn>
+	</external>
+
+</method>

@@ -38,5 +38,8 @@
 		<links>
 			<see-also href="Primitives">Primitives</see-also>
 		</links>
+		<external>
+			<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean object</mdn>
+		</external>
 	</examples>
 </object>
