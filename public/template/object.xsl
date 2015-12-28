@@ -83,7 +83,6 @@
 	<xsl:template match="example/heading">
 	</xsl:template>
 
-
 	<xsl:template match="links">
 		<h3>Links</h3>
 		<xsl:apply-templates/>
