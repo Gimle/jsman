@@ -10,6 +10,10 @@
 		<html>
 			<head>
 				<title><xsl:value-of select="/object/@name"/> | Javascript manual</title>
+
+				<link rel="stylesheet" href="{$BASE_PATH}highlight/styles/default.css"/>
+				<script src="{$BASE_PATH}highlight/highlight.pack.js"></script>
+
 				<link rel="stylesheet" href="{$BASE_PATH}template/default.css" type="text/css"/>
 			</head>
 			<body>
@@ -37,18 +41,24 @@
 					var pre = document.getElementsByTagName('pre');
 
 					for (var i = 0; i &lt; pre.length; i++) {
-						var text = pre[i].innerHTML;
-						var len = text.search(/\S|$/); // Find the number of first leading tabs.
+						var text = pre[i].getElementsByTagName('div')[0].innerHTML;
+						var len = text.search(/\S|$/) - 1; // Find the number of first leading tabs.
 
 						var re1 = new RegExp("\t{" + len + "}"); // Regex to remove them from first line.
-						var re2 = new RegExp("\n\t{" + len + "}","mg"); // Regext to remove them from all other lines.
+						var re2 = new RegExp("\n\t{" + len + "}", "mg"); // Regext to remove them from all other lines.
 
 						text = text.replace(re1, "");
 						text = text.replace(re2, "\n");
 						text = text.trim();
 
-						pre[i].innerHTML = text;
+						pre[i].getElementsByTagName('code')[0].innerHTML = text;
+
+						pre[i].getElementsByTagName('button')[0].addEventListener('click', function () {
+							eval(this.parentElement.getElementsByTagName('div')[0].innerHTML);
+						});
 					}
+
+					hljs.initHighlighting();
 				</script>
 			</body>
 		</html>

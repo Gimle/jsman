@@ -76,16 +76,41 @@
 
 	<xsl:template match="code">
 		<pre style="white-space: pre;">
-			<xsl:apply-templates/>
+			<button class="run" style="float: right;" title="Open your console to see console output.">Run</button>
+			<div style="display: none;">
+				<xsl:apply-templates/>
+			</div>
+			<code class="javascript">
+			</code>
 		</pre>
 	</xsl:template>
 
 	<xsl:template match="example/heading">
 	</xsl:template>
 
-	<xsl:template match="links">
-		<h3>Links</h3>
-		<xsl:apply-templates/>
+	<xsl:template match="see-also">
+		<h3>See also</h3>
+		<ul>
+			<xsl:apply-templates/>
+		</ul>
+	</xsl:template>
+
+	<xsl:template match="xref">
+		<li><a href="{@href}"><xsl:apply-templates/></a></li>
+	</xsl:template>
+
+	<xsl:template match="external">
+		<h3>External references</h3>
+		<ul>
+			<xsl:apply-templates/>
+		</ul>
+	</xsl:template>
+
+	<xsl:template match="mdn">
+		<li><a href="{@href}">Mozilla: <xsl:apply-templates/></a></li>
+	</xsl:template>
+	<xsl:template match="msdn">
+		<li><a href="{@href}">Microsoft: <xsl:apply-templates/></a></li>
 	</xsl:template>
 
 </xsl:stylesheet>
