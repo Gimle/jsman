@@ -17,29 +17,34 @@
 			<code>
 				var b = new Boolean(true); // Create a new boolean object.
 				if (b.valueOf()) {
-					// Your code.
+					console.log('The value of b is true.');
 				}
 			</code>
 			<p>This however does not apply when working with boolean primitives.</p>
 			<code>
 				var b = true; // Create a new boolean primitive.
 				if (b) {
-					// Your code.
+					console.log('The value of b is true.');
 				}
 			</code>
 		</example>
 		<example>
 			<heading>boolean example</heading>
-			<p>Convert a non-boolean value to a boolean value.</p>
+			<p>Convert a non-boolean value to a boolean primitive.</p>
 			<code>
-				var b = Boolean(expression); // Used to convert a non-boolean to a boolean primitive.
+				bool = Boolean('false');
+				console.log(bool); // Will return true.
+
+				bool = Boolean(0);
+				console.log(bool); // Will return false.
 			</code>
 		</example>
-		<links>
-			<see-also href="Primitives">Primitives</see-also>
-		</links>
+		<see-also>
+			<xref href="Primitives.xml">Primitives</xref>
+		</see-also>
 		<external>
 			<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean object</mdn>
+			<msdn href="https://msdn.microsoft.com/library/skaay966(v=vs.100).aspx">Boolean object</msdn>
 		</external>
 	</examples>
 </object>

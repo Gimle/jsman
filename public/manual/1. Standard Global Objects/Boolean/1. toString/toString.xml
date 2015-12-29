@@ -13,7 +13,7 @@
 			<code>
 				var b = new Boolean(true);
 				console.log(typeof b.toString()); // Will return "string".
-				console.log(b.toString); // Will be the actial string "true".
+				console.log(b.toString()); // Will be the actial string "true".
 			</code>
 		</example>
 	</examples>
