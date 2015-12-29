@@ -26,7 +26,7 @@
 		</example>
 	</examples>
 	<external>
-		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/valueOf">Boolean.valueOf method</mdn>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean/valueOf">Boolean.valueOf method</mdn>
 	</external>
 
 </method>

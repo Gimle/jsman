@@ -18,7 +18,7 @@
 		</example>
 	</examples>
 	<external>
-		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString">Boolean.toString method</mdn>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean/toString">Boolean.toString method</mdn>
 	</external>
 
 </method>

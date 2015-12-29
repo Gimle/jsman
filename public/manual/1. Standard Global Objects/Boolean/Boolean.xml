@@ -43,7 +43,7 @@
 			<xref href="Primitives.xml">Primitives</xref>
 		</see-also>
 		<external>
-			<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean object</mdn>
+			<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean object</mdn>
 			<msdn href="https://msdn.microsoft.com/library/skaay966(v=vs.100).aspx">Boolean object</msdn>
 		</external>
 	</examples>
