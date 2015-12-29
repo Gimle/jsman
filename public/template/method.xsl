@@ -44,9 +44,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				<xsl:apply-templates/>
+				<xsl:apply-templates select="parameter"/>
 			</tbody>
 		</table>
+		<xsl:apply-templates select="node()[name() != 'parameter']"/>
 	</xsl:template>
 
 	<xsl:template match="parameter">
