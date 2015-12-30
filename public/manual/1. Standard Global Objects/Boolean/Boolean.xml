@@ -8,7 +8,7 @@
 		<p>new Boolean(<params/>)</p>
 	</description>
 	<parameters>
-		<parameter name="bool" type="bool" optional="false"/>
+		<parameter name="bool" type="mixed" optional="false"/>
 	</parameters>
 	<examples>
 		<example>
