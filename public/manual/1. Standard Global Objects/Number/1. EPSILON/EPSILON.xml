@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="EPSILON" parent="Number">
+	<lead>
+		<p>EPSILON — Returns the smallest positive value which when added to 1, gives a result that can still be distinguished from 1.</p>
+	</lead>
+	<description>
+		<p>Number.EPSILON</p>
+	</description>
+	<examples>
+		<example>
+			<heading>EPSILON example</heading>
+			<code>
+				console.log(Number.EPSILON);      // 2.220446049250313e-16
+				console.log(Number(Number.EPSILON).toFixed(20));  // 0.00000000000000022204
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON">Number.EPSILON property</mdn>
+	</external>
+
+</property>

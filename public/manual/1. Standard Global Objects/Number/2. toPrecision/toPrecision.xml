@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toPrecision" parent="Number">
+	<lead>
+		<p>toPrecision — Returns a string representation of the specified Number object.</p>
+	</lead>
+	<description>
+		<p>Number.toPrecision(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="precision" type="number" optional="true">A numeric value between 1 and 21 specifying the number of significant digits.</parameter>
+	</parameters>
+	<examples>
+		<p>The returned value will be of the primitive string type.</p>
+		<example>
+			<heading>toPrecision example</heading>
+			<code>
+				var n = new Number(1.12345678901234567890);
+				console.log(n.toPrecision());   // 1.1234567890123457
+				console.log(n.toPrecision(1));  // 1
+				console.log(n.toPrecision(3));  // 1.12
+				console.log(n.toPrecision(5));  // 1.1235
+				console.log(n.toPrecision(8));  // 1.1234568
+			</code>
+		</example>
+			<example>
+			<heading>toPrecision example</heading>
+			<code>
+				var n = new Number(4242);
+				console.log(n.toPrecision());   // 4242
+				console.log(n.toPrecision(1));  // 4e+3
+				console.log(n.toPrecision(3));  // 4.24e+3
+				console.log(n.toPrecision(5));  // 4242.0
+				console.log(n.toPrecision(8));  // 4242.0000
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision">Number.toPrecision method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toString" parent="Number">
+	<lead>
+		<p>toString — Returns a string representation of the specified Number object.</p>
+	</lead>
+	<description>
+		<p>Number.toString(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter default="10" name="radix" type="number" optional="true">A numeric value between 2 and 36 specifying the representation.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>toString example</heading>
+			<code>
+				var n = new Number(4242);
+				console.log(typeof n.toString());  // Will return "string".
+				console.log(n.toString());         // Will be the primitive string "4242".
+			</code>
+		</example>
+
+		<example>
+			<heading>toString example</heading>
+			<code>
+				var n = new Number(100);
+				console.log(n.toString(2));    // 1100100 (Binary representation)
+				console.log(n.toString(8));    // 144 (Octal representation)
+				console.log(n.toString(16));   // 64 (Hexadecimal representation)
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toString">Number.toString method</mdn>
+	</external>
+
+</method>

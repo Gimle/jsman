@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="POSITIVE_INFINITY" parent="Number">
+	<lead>
+		<p>POSITIVE_INFINITY — Returns positive Infinity.</p>
+	</lead>
+	<description>
+		<p>Number.POSITIVE_INFINITY</p>
+	</description>
+	<examples>
+		<example>
+			<heading>POSITIVE_INFINITY example</heading>
+			<code>
+				console.log(Number.POSITIVE_INFINITY);  // Infinity
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY">Number.POSITIVE_INFINITY property</mdn>
+	</external>
+
+</property>

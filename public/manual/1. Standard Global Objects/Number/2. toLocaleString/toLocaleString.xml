@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toLocaleString" parent="Number">
+	<lead>
+		<p>toLocaleString — Returns a string representation of the specified Number object.</p>
+	</lead>
+	<description>
+		<p>Number.toLocaleString(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="locales" type="mixed" optional="true">A string or array containing strings for the preferred locale format.</parameter>
+		<parameter name="options" type="object" optional="true">See options below.</parameter>
+		<section>
+			<header>Options parameter</header>
+			<p>The options parameter may contain one or more of the following data items.</p>
+			<dl>
+				<dt>localeMatcher</dt>
+				<dd>
+					Possible values are: "best fit" (default) or "lookup".
+				</dd>
+
+				<dt>style</dt>
+				<dd>
+					Possible values are: "decimal" (default), "currency" or "percent". The currency parameter is also required if this value is set to the value "currency".
+				</dd>
+
+				<dt>currency</dt>
+				<dd>
+					Possible values are the ISO 4217 currency codes. External references: <a href="http://www.currency-iso.org/dam/downloads/lists/list_one.xml">currency-iso.org XML file of codes. See "Ccy" element value</a> and <a href="http://www.currency-iso.org/en/home/tables/table-a1.html">currency-iso.org Current currency &amp; funds code list page</a>.
+				</dd>
+
+				<dt>currencyDisplay</dt>
+				<dd>
+					Possible values are: "symbol" (default) or "name".
+				</dd>
+
+				<dt>useGrouping</dt>
+				<dd>
+					Possible values are: true (default) or false.
+				</dd>
+
+				<dt>minimumIntegerDigits</dt>
+				<dd>
+					Possible values are from 1 (default) to 21.
+				</dd>
+
+				<dt>minimumFractionDigits</dt>
+				<dd>
+					<p>Possible values are from 0 to 20.</p>
+					<p>
+						Default values:
+						<ul>
+							<li>Decimal: 0.</li>
+							<li>
+								Currency: The default follows the selected currency rules.
+								If none is supplied by the currency it will fall back to 2.
+							</li>
+							<li>Percent: 0.</li>
+						</ul>
+					</p>
+				</dd>
+
+				<dt>maximumFractionDigits</dt>
+				<dd>
+					<p>Possible values are from 0 to 20.</p>
+					<p>
+						Default values (If minimumFractionDigits is larger than the default value below then it will be used instead):
+						<ul>
+							<li>Decimal: 3.</li>
+							<li>
+								Currency: The default follows the selected currency rules.
+								If none is supplied by the currency it will fall back to 2.
+							</li>
+							<li>Percent: 0.</li>
+						</ul>
+					</p>
+				</dd>
+
+				<dt>minimumSignificantDigits</dt>
+				<dd>
+					<p>Possible values are from 1 (default) to 21.</p>
+					<p>If this value is specified, minimumIntegerDigits, minimumFractionDigits and maximumFractionDigits is ignored.</p>
+				</dd>
+
+				<dt>maximumSignificantDigits</dt>
+				<dd>
+					<p>Possible values are from 1 to 21.</p>
+					<p>The default value is minimumSignificantDigits.</p>
+					<p>If this value is specified, minimumIntegerDigits, minimumFractionDigits and maximumFractionDigits is ignored.</p>
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p>A string representation of the number formatted to the parameters given.</p>
+	</return>
+	<changelog>
+		<change version="ES 5.1">
+			When arguments is provided a rangeError exception is now required for result out of bounds.
+		</change>
+	</changelog>
+	<examples>
+		<p>The returned value will be of the primitive string type.</p>
+		<example>
+			<heading>toLocalString example</heading>
+			<code>
+				var n = new Number(1234567.123);
+				console.log(n.toLocaleString());         // Detects the locale automatically.
+				console.log(n.toLocaleString('en-US'));  // 1,234,567.123
+				console.log(n.toLocaleString('nb-NO'));  // 1 234 567,123
+				console.log(n.toLocaleString('ar-EG'));  // ١٬٢٣٤٬٥٦٧٫١٢٣
+				console.log(n.toLocaleString('de-DE'));  // 1.234.567,123
+			</code>
+		</example>
+		<example>
+			<heading>Format a number as currency</heading>
+			<code>
+				var n = new Number(42.50);
+				console.log(n.toLocaleString('en-US', {style: 'currency', currency: 'USD'}));   // $42.50
+				console.log(n.toLocaleString('en-US', {style: 'currency', currency: 'CAD'}));   // CA$42.50
+				console.log(n.toLocaleString('en-CA', {style: 'currency', currency: 'CAD'}));   // $42.50
+				console.log(n.toLocaleString('en-GB', {style: 'currency', currency: 'NOK'}));   // NOK42.50
+				console.log(n.toLocaleString('nb-NO', {style: 'currency', currency: 'NOK'}));   // kr 42,50
+				console.log(n.toLocaleString('en-GB', {style: 'currency', currency: 'GBP'}));   // £42.50
+				console.log(n.toLocaleString('en-GB', {style: 'currency', currency: 'GBP', currencyDisplay: 'name'}));  // 42.50 British pounds sterling
+			</code>
+		</example>
+		<example>
+			<heading>Format a number as percent</heading>
+			<code>
+				console.log(Number(0.37).toLocaleString('en-US', {style: 'percent'}));  // 37%
+				console.log(Number(0.37).toLocaleString('nb-NO', {style: 'percent'}));  // 37 %
+				console.log(Number(0.37).toLocaleString('ar-AR', {style: 'percent'}));  // ٣٧٪
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString">Number.toLocaleString method</mdn>
+	</external>
+
+</method>

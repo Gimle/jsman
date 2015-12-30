@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toExponential" parent="Number">
+	<lead>
+		<p>toExponential — Returns a string representation of the specified Number object.</p>
+	</lead>
+	<description>
+		<p>Number.toExponential(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter default="" name="decimals" type="number" optional="true">A number between 0 and 20 representing number of digits.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>toFixed example</heading>
+			<code>
+				var n = new Number(42.12345);
+				console.log(n.toExponential());   // Will be the primitive string "4.212345e+1".
+				console.log(n.toExponential(2));  // Will be the primitive string "4.21e+1".
+				console.log(n.toExponential(4));  // Will be the primitive string "4.2123e+1".
+				console.log(n.toExponential(8));  // Will be the primitive string "4.21234500e+1".
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">Number.toExponential method</mdn>
+	</external>
+
+</method>

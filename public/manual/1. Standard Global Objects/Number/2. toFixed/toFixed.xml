@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toFixed" parent="Number">
+	<lead>
+		<p>toFixed — Returns a string representation of the specified Number object.</p>
+	</lead>
+	<description>
+		<p>Number.toFixed(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter default="0" name="decimals" type="number" optional="true">A number between 0 and 20 representing number of digits.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>toFixed example</heading>
+			<code>
+				var n = new Number(42.12345);
+				console.log(n.toFixed());   // Will be the primitive string "42".
+				console.log(n.toFixed(2));  // Will be the primitive string "42.12".
+				console.log(n.toFixed(4));  // Will be the primitive string "42.1235".
+				console.log(n.toFixed(6));  // Will be the primitive string "42.123450".
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">Number.toFixed method</mdn>
+	</external>
+
+</method>

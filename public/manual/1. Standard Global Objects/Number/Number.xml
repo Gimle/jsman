@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Number">
+	<lead>
+		<p>Number – Creates a wrapper object to allow you to work with numerical values.</p>
+	</lead>
+	<description>
+		<p>new Number(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="true"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>number example</heading>
+			<p>Three ways of creating a new number.</p>
+			<code>
+				var num = new Number(1000); // Creates a new number object.
+				console.log(num); // The Number object.
+			</code>
+			<code>
+				var num = 1000; // Create a new number primitive.
+				console.log(num); // The number 1000.
+			</code>
+			<code>
+				var expression = new Date("January 1, 2011");
+				var num = Number(expression); // Used to convert a non-number to a number primitive.
+				console.log(num); // The timestamp in milliseconds 1293836400000.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<xref href="Primitives">Primitives</xref>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/dwab3ed2(v=vs.94).aspx">Number object</msdn>
+	</external>
+</object>

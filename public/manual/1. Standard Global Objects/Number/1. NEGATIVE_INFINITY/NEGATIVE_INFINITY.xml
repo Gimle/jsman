@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="NEGATIVE_INFINITY" parent="Number">
+	<lead>
+		<p>NEGATIVE_INFINITY — Returns negative Infinity.</p>
+	</lead>
+	<description>
+		<p>Number.NEGATIVE_INFINITY</p>
+	</description>
+	<examples>
+		<example>
+			<heading>NEGATIVE_INFINITY example</heading>
+			<code>
+				console.log(Number.NEGATIVE_INFINITY);  // -Infinity
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY">Number.NEGATIVE_INFINITY property</mdn>
+	</external>
+
+</property>

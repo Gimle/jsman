@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="MAX_SAFE_INTEGER" parent="Number">
+	<lead>
+		<p>MAX_SAFE_INTEGER — Returns the maximum safe integer.</p>
+	</lead>
+	<description>
+		<p>Number.MAX_SAFE_INTEGER</p>
+	</description>
+	<examples>
+		<example>
+			<heading>MAX_SAFE_INTEGER example</heading>
+			<code>
+				console.log(Number.MAX_SAFE_INTEGER);  // 9007199254740991
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER">Number.MAX_SAFE_INTEGER property</mdn>
+	</external>
+
+</property>

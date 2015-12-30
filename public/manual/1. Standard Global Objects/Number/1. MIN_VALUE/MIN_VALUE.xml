@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="MIN_VALUE" parent="Number">
+	<lead>
+		<p>MIN_VALUE — Returns smallest positive value which, when added to zero, gives a result that can still be distinguished from zero.</p>
+	</lead>
+	<description>
+		<p>Number.MIN_VALUE</p>
+	</description>
+	<examples>
+		<example>
+			<heading>MIN_VALUE example</heading>
+			<code>
+				console.log(Number.MIN_VALUE);  // 5e-324
+				console.log(Number(Number.MIN_VALUE).toFixed(20));  // 0.00000000000000000000
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE">Number.MIN_VALUE property</mdn>
+	</external>
+
+</property>

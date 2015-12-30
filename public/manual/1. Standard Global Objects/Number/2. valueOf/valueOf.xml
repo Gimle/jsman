@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="valueOf" parent="Number">
+	<lead>
+		<p>valueOf — Returns the primitive value of a Number object.</p>
+	</lead>
+	<description>
+		<p>Number.valueOf(<params/>)</p>
+	</description>
+	<examples>
+		<example>
+			<heading>valueOf example</heading>
+			<code>
+				var n = new Number(4242);
+				console.log(typeof n.valueOf()); // Will return "number".
+				console.log(n.valueOf()); // Will be the numeric value: 4242
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/valueOf">Number.valueOf method</mdn>
+	</external>
+
+</method>
