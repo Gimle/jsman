@@ -5,7 +5,7 @@
 		<p>Boolean — The Boolean object is an object wrapper for a boolean value.</p>
 	</lead>
 	<description>
-		<p>new Boolean(bool <i>bool</i>)</p>
+		<p>new Boolean(<params/>)</p>
 	</description>
 	<parameters>
 		<parameter name="bool" type="bool" optional="false"/>

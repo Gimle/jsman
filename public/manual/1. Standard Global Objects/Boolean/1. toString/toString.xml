@@ -5,7 +5,7 @@
 		<p>toString — Returns a string representation of the specified Boolean object.</p>
 	</lead>
 	<description>
-		<p>Boolean.toString()</p>
+		<p>Boolean.toString(<params/>)</p>
 	</description>
 	<examples>
 		<example>

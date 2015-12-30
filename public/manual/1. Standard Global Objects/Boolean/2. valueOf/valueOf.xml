@@ -5,7 +5,7 @@
 		<p>valueOf — Returns the primitive value of a Boolean object.</p>
 	</lead>
 	<description>
-		<p>Boolean.valueOf()</p>
+		<p>Boolean.valueOf(<params/>)</p>
 	</description>
 	<examples>
 		<example>
