@@ -80,13 +80,40 @@
 		</tr>
 	</xsl:template>
 
+	<xsl:template match="return">
+		<h3>Return values</h3>
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="changelog">
+		<h3>Changelog</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Version</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<xsl:apply-templates select="change"/>
+			</tbody>
+		</table>
+	</xsl:template>
+
+	<xsl:template match="change">
+		<tr>
+			<td><xsl:value-of select="@version"/></td>
+			<td><xsl:apply-templates/></td>
+		</tr>
+	</xsl:template>
+
 	<xsl:template match="examples">
 		<h3>Examples</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="example">
-		<h6>Example #<xsl:value-of select="position()"/><xsl:value-of select="' – '"/><xsl:value-of select="./heading"/></h6>
+		<h6>Example #<xsl:value-of select="count(preceding-sibling::example) + 1"/><xsl:value-of select="' – '"/><xsl:value-of select="./heading"/></h6>
 		<xsl:apply-templates/>
 	</xsl:template>
 
