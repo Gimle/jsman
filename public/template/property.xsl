@@ -15,21 +15,6 @@
 		</h6>
 	</xsl:template>
 
-	<xsl:template match="params">
-		<xsl:for-each select="/*/parameters/parameter">
-			<xsl:if test="@optional = 'true'">
-				<xsl:value-of select="'['"/>
-			</xsl:if>
-			<xsl:value-of select="@type"/><xsl:value-of select="' '"/><i><xsl:value-of select="@name"/></i>
-			<xsl:if test="position() != last()">
-				<xsl:value-of select="', '"/>
-			</xsl:if>
-		</xsl:for-each>
-		<xsl:for-each select="/*/parameters/parameter[@optional='true']">
-			<xsl:value-of select="']'"/>
-		</xsl:for-each>
-	</xsl:template>
-
 	<xsl:template match="property">
 		<article>
 			<h1><xsl:value-of select="@parent"/>.<xsl:value-of select="@name"/></h1>

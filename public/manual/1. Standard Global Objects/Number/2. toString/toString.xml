@@ -8,7 +8,7 @@
 		<p>Number.toString(<params/>)</p>
 	</description>
 	<parameters>
-		<parameter default="10" name="radix" type="number" optional="true">A numeric value between 2 and 36 specifying the representation.</parameter>
+		<parameter default="10" name="radix" type="integer" optional="true">A numeric value between 2 and 36 specifying the representation.</parameter>
 	</parameters>
 	<examples>
 		<example>

@@ -8,7 +8,7 @@
 		<p>Number.toPrecision(<params/>)</p>
 	</description>
 	<parameters>
-		<parameter name="precision" type="number" optional="true">A numeric value between 1 and 21 specifying the number of significant digits.</parameter>
+		<parameter name="precision" type="integer" optional="true">A numeric value between 1 and 21 specifying the number of significant digits.</parameter>
 	</parameters>
 	<examples>
 		<p>The returned value will be of the primitive string type.</p>

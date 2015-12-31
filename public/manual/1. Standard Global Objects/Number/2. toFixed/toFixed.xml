@@ -8,7 +8,7 @@
 		<p>Number.toFixed(<params/>)</p>
 	</description>
 	<parameters>
-		<parameter default="0" name="decimals" type="number" optional="true">A number between 0 and 20 representing number of digits.</parameter>
+		<parameter default="0" name="decimals" type="integer" optional="true">A number between 0 and 20 representing number of digits.</parameter>
 	</parameters>
 	<examples>
 		<example>
