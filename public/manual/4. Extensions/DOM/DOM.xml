@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/pageWrapper.xsl"?>
+<page name="DOM">
+	<header>Document Object Model</header>
+	<p>The DOM extension is used for representing and interacting with objects in HTML, XHTML and XML documents.</p>
+</page>

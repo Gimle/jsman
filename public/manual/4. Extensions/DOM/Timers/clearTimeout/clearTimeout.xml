@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
+<method name="clearTimeout" parent="window">
+	<lead>
+		<p>clearTimeout — Clears a previously setTimeout.</p>
+	</lead>
+	<description>
+		<p>clearTimeout(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="id" type="timeout" optional="false">The id of the setTimeout.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>clearTimeout example</heading>
+			<code>
+				var timeout = setTimeout(function () {
+					console.log('Will never be executed.');
+				}, 100);
+				clearTimeout(timeout);
+			</code>
+		</example>
+		<example>
+			<heading>clearTimeout example</heading>
+			<code>
+				var timeout;
+				var loop = function () {
+					timeout = setTimeout(function () {
+						console.log('Recursivle executes until cleared.');
+						loop();
+					}, 200);
+				};
+				setTimeout(function () {
+					console.log('Clearing recursive timeout.');
+					clearTimeout(timeout);
+				}, 1500);
+				loop();
+			</code>
+		</example>
+		<see-also>
+			<xref href="setTimeout">setTimeout</xref>
+		</see-also>
+		<external>
+			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/clearTimeout">clearTimeout</mdn>
+		</external>
+	</examples>
+</method>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
+<method name="setTimeout" parent="window">
+	<lead>
+		<p>setTimeout — Executes a code snippet or a callable after specified delay.</p>
+	</lead>
+	<description>
+		<p>setTimeout(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="executable" type="mixed" optional="false">Callable name or code snippet.</parameter>
+		<parameter name="delay" type="integer" optional="true">Minimum time in milliseconds before execution.</parameter>
+		<parameter name="param, …" type="mixed" optional="true">All following parameters will be passed to the callable.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>setTimeout example</heading>
+			<p>Logs out: First then Third then Second.</p>
+			<code>
+				console.log('First');
+				setTimeout(function (param) {
+					console.log('Second');
+				}, 200);
+				console.log('Third');
+			</code>
+		</example>
+		<example>
+			<heading>Passing parameters</heading>
+			<p>Passing one or more parameters to the function.</p>
+			<code>
+				setTimeout(function (param1, param2) {
+					console.log(param1, param2);
+				}, 100, 'hello', 'world');
+			</code>
+		</example>
+		<example>
+			<heading>Recursive</heading>
+			<p>Recursivly executes 2 seconds after last execution.</p>
+			<code>
+				var timeout = function () {
+					console.log('Executed.');
+					setTimeout(function () {
+						timeout();
+					}, 2000);
+				}
+				timeout();
+			</code>
+			<p>Same as above but output is moved to the end of the wait time.</p>
+			<code>
+				var timeout = function () {
+					setTimeout(function () {
+						console.log('Executed.');
+						timeout();
+					}, 2000);
+				}
+				timeout();
+			</code>
+		</example>
+		<see-also>
+			<xref href="clearTimeout">clearTimeout</xref>
+		</see-also>
+		<external>
+			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout">setTimeout</mdn>
+		</external>
+	</examples>
+</method>
