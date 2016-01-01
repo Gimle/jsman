@@ -36,6 +36,11 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
+	<xsl:template match="notes">
+		<h3>Notes</h3>
+		<xsl:apply-templates/>
+	</xsl:template>
+
 	<xsl:template match="changelog">
 		<h3>Changelog</h3>
 		<table>
@@ -84,13 +89,11 @@
 
 	<xsl:template match="see-also">
 		<h3>See also</h3>
-		<ul>
-			<xsl:apply-templates/>
-		</ul>
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="xref">
-		<li><a href="{@href}"><xsl:apply-templates/></a></li>
+		<a href="{@href}"><xsl:apply-templates/></a>
 	</xsl:template>
 
 	<xsl:template match="external">
