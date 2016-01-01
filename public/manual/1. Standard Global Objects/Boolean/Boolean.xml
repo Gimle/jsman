@@ -40,7 +40,9 @@
 			</code>
 		</example>
 		<see-also>
-			<xref href="Primitives.xml">Primitives</xref>
+			<ul>
+				<li><xref href="Primitives.xml">Primitives</xref></li>
+			</ul>
 		</see-also>
 		<external>
 			<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean object</mdn>

@@ -17,7 +17,9 @@
 
 	</examples>
 	<see-also>
-		<xref href="NaN">NaN</xref>
+		<ul>
+			<li><xref href="NaN">NaN</xref></li>
+		</ul>
 	</see-also>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/NaN">Number.NaN property</mdn>
