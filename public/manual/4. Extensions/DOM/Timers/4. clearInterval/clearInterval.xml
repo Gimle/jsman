@@ -8,7 +8,7 @@
 		<p>clearInterval(<params/>)</p>
 	</description>
 	<parameters>
-		<parameter name="id" type="timeout" optional="false">The id of the clearInterval.</parameter>
+		<parameter name="id" type="timeout" optional="false">The id of the setInterval.</parameter>
 	</parameters>
 	<examples>
 		<example>
