@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
 <method name="clearInterval" parent="window">
 	<lead>
-		<p>clearInterval — Clears a previously setTimeout.</p>
+		<p>clearInterval — Clears a previously setInterval.</p>
 	</lead>
 	<description>
 		<p>clearInterval(<params/>)</p>
