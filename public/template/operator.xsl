@@ -15,6 +15,21 @@
 		</h6>
 	</xsl:template>
 
+	<xsl:template match="params">
+		<xsl:for-each select="/*/parameters/parameter">
+			<xsl:if test="@optional = 'true'">
+				<xsl:value-of select="'['"/>
+			</xsl:if>
+			<xsl:value-of select="@type"/><xsl:value-of select="' '"/><i><xsl:value-of select="@name"/></i>
+			<xsl:if test="position() != last()">
+				<xsl:value-of select="', '"/>
+			</xsl:if>
+		</xsl:for-each>
+		<xsl:for-each select="/*/parameters/parameter[@optional='true']">
+			<xsl:value-of select="']'"/>
+		</xsl:for-each>
+	</xsl:template>
+
 	<xsl:template match="operator">
 		<article>
 			<h1><xsl:value-of select="@name"/></h1>
@@ -29,6 +44,40 @@
 	<xsl:template match="description">
 		<h3>Description</h3>
 		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match="parameters">
+		<h3>Parameters</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Optional</th>
+				</tr>
+			</thead>
+			<tbody>
+				<xsl:apply-templates select="parameter"/>
+			</tbody>
+		</table>
+		<xsl:apply-templates select="node()[name() != 'parameter']"/>
+	</xsl:template>
+
+	<xsl:template match="parameter">
+		<tr>
+			<td><xsl:value-of select="@name"/></td>
+			<td><xsl:apply-templates/></td>
+			<td><xsl:value-of select="@type"/></td>
+			<td><xsl:value-of select="@default"/></td>
+			<td>
+				<xsl:choose>
+					<xsl:when test="@optional = 'false'">No</xsl:when>
+					<xsl:when test="@optional = 'true'">Yes</xsl:when>
+				</xsl:choose>
+			</td>
+		</tr>
 	</xsl:template>
 
 	<xsl:template match="return">
