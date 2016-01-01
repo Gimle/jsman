@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
+<method name="setInterval" parent="window">
+	<lead>
+		<p>setTimeout — Executes a code snippet or a callable repeatedly, with a fixed time delay between each call.</p>
+	</lead>
+	<description>
+		<p>setInterval(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="executable" type="mixed" optional="false">Callable name or code snippet.</parameter>
+		<parameter name="delay" type="integer" optional="true">Number of milliseconds to wait between execution.</parameter>
+		<parameter name="param, …" type="mixed" optional="true">All following parameters will be passed to the callable.</parameter>
+	</parameters>
+	<return>
+		<p>Returns the id of the current interval.</p>
+		<p>This id can later be used with: <xref>clearInterval</xref>.</p>
+	</return>
+	<notes>
+		<p>setInterval can run into trouble if delay is too short. See <xref>setInterval</xref> for a workaround in these cases.</p>
+	</notes>
+	<examples>
+		<example>
+			<heading>setInterval example</heading>
+			<code>
+				setInterval(function (param) {
+					console.log('Logged every one second.'); // First call is executed after the specified time.
+				}, 1000);
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="clearTimeout">setTimeout</xref></li>
+			<li><xref href="clearInterval">clearInterval</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval">setInterval</mdn>
+	</external>
+</method>

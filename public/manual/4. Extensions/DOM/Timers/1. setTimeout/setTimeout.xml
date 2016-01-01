@@ -12,6 +12,10 @@
 		<parameter name="delay" type="integer" optional="true">Minimum time in milliseconds before execution.</parameter>
 		<parameter name="param, …" type="mixed" optional="true">All following parameters will be passed to the callable.</parameter>
 	</parameters>
+	<return>
+		<p>Returns the id of the current interval.</p>
+		<p>This id can later be used with: <xref>clearTimeout</xref>.</p>
+	</return>
 	<examples>
 		<example>
 			<heading>setTimeout example</heading>
@@ -56,11 +60,13 @@
 				timeout();
 			</code>
 		</example>
-		<see-also>
-			<xref href="clearTimeout">clearTimeout</xref>
-		</see-also>
-		<external>
-			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout">setTimeout</mdn>
-		</external>
 	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="clearTimeout">clearTimeout</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout">setTimeout</mdn>
+	</external>
 </method>

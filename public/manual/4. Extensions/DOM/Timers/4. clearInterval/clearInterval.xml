@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
+<method name="clearInterval" parent="window">
+	<lead>
+		<p>clearInterval — Clears a previously setTimeout.</p>
+	</lead>
+	<description>
+		<p>clearInterval(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="id" type="timeout" optional="false">The id of the clearInterval.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>clearInterval example</heading>
+			<code>
+				var timeout = setInterval(function () {
+					console.log('Recursivle executes until cleared.');
+				}, 200);
+
+				setTimeout(function () {
+					console.log('Clearing recursive timeout.');
+					clearInterval(timeout);
+				}, 1500);
+			</code>
+		</example>
+		<see-also>
+			<ul>
+				<li><xref href="setInterval">setInterval</xref></li>
+			</ul>
+		</see-also>
+		<external>
+			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/clearInterval">clearInterval</mdn>
+		</external>
+	</examples>
+</method>

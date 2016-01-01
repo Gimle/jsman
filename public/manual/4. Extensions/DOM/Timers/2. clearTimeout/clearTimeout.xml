@@ -38,7 +38,9 @@
 			</code>
 		</example>
 		<see-also>
-			<xref href="setTimeout">setTimeout</xref>
+			<ul>
+				<li><xref href="setTimeout">setTimeout</xref></li>
+			</ul>
 		</see-also>
 		<external>
 			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/clearTimeout">clearTimeout</mdn>
