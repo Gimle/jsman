@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="const">
+	<lead>
+		<p>const</p>
+	</lead>
+	<description>
+		<p>const <params/></p>
+	</description>
+	<parameters>
+		<parameter name="variable, …" type="mixed" optional="false">One or more constant values to be set.</parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>const example</heading>
+			<code>
+				const FOO = 'bar';
+				console.log(FOO);
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/const">const statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/dn251545(v=vs.94).aspx">const statement</msdn>
+	</external>
+</operator>

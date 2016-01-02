@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="break">
+	<lead>
+		<p>break – Terminates the current loop, switch, or label statement.</p>
+	</lead>
+	<description>
+		<p>break <params/></p>
+	</description>
+	<parameters>
+		<parameter name="label" type="label" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>break example</heading>
+			<p>Breaking out of a loop.</p>
+			<code>
+				var i = 1;
+				while (i &lt;= 10) {
+					console.log('Running loop # ' + i);
+					if (i === 5) {
+						console.log('Breaking out.');
+						break;
+					}
+					i++;
+				}
+			</code>
+		</example>
+		<example>
+			<heading>break example</heading>
+			<p>Breaking out of a label.</p>
+			<code>
+				console.log('Before section label');
+				section: {
+					break section;
+					console.log('Never executed');
+				}
+				console.log('After section label');
+			</code>
+		</example>
+		<example>
+			<heading>break example</heading>
+			<p>Breaking out of nested labels.</p>
+			<code>
+				section: {
+					console.log('In section');
+					subSection: {
+						console.log('In sub section');
+						break section;
+						console.log('Never executed');
+					}
+					console.log('Never executed');
+				}
+				console.log('It can even be nested!');
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break">break statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/3fhdxafb(v=vs.94).aspx">break statement</msdn>
+	</external>
+</operator>

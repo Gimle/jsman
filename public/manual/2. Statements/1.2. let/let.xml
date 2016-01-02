@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="let">
+	<lead>
+		<p>let – Declares one or more block scope variables, and optionally sets a value to them.</p>
+	</lead>
+	<description>
+		<p>let <params/></p>
+	</description>
+	<parameters>
+		<parameter name="variable, …" type="mixed" optional="false">One or more variable values to be set.</parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>let example</heading>
+			<code>
+				"use strict";
+				function doit () {
+					let x = 'y'; // Sets "y" an the value for the variable named x.
+					console.log(x);
+				}
+				doit();
+			</code>
+			<heading>let example</heading>
+			<code>
+				"use strict";
+				function doit () {
+					let a = 'b', x = 'y';
+					console.log(a);
+					console.log(x);
+				}
+				doit();
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/let">let statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/dn263046(v=vs.94).aspx">let statement</msdn>
+	</external>
+</operator>

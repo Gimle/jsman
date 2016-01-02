@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="switch">
+	<lead>
+		<p>switch</p>
+	</lead>
+	<description>
+		<p>switch (<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="expression" type="mixed" optional="false">The expression to check.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>switch example</heading>
+			<code>
+				var expr = "Hello";
+				switch (expr) {
+					case "Hello":
+						console.log('expr was set to "Hello"');
+						break;
+					case "World":
+						console.log('expr was set to "Wrold"');
+						break;
+					case "foo":
+					case "bar":
+						console.log('expr was set to "foo" or "bar"');
+						break;
+					default:
+						console.log('The value of expr was not matched.');
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch">switch statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/hzc6t81t(v=vs.94).aspx">switch statement</msdn>
+	</external>
+</operator>

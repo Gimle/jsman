@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="for">
+	<lead>
+		<p>for</p>
+	</lead>
+	<description>
+		<p>for (<params separator=";"/>)</p>
+	</description>
+	<parameters>
+		<parameter name="init" type="mixed" optional="false"></parameter>
+		<parameter name="condition" type="mixed" optional="false"></parameter>
+		<parameter name="final" type="mixed" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>for example</heading>
+			<p>Iteration between two values.</p>
+			<code>
+				for (var i = 1; i &lt;= 5; i++) {
+					console.log(i);
+				}
+			</code>
+			<p>Increment the value inside the loop.</p>
+			<code>
+				for (var i = 1; i &lt;= 5;) {
+					console.log(i++);
+				}
+			</code>
+		</example>
+		<example>
+			<heading>for example</heading>
+			<p>Iterate over an array.</p>
+			<code>
+				var a = ['Foo', 'Bar'];
+				for (var i = 0; i &lt; a.length; i++) {
+					console.log(a[i]);
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for">for statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/s1cyybdf(v=vs.94).aspx">for statement</msdn>
+	</external>
+</operator>

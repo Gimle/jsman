@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="if … else">
+	<lead>
+		<p>if … else</p>
+	</lead>
+	<description>
+		<p>if (<params/>) … else</p>
+	</description>
+	<parameters>
+		<parameter name="expression" type="mixed" optional="false">The expression to evaluate.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>if … else example</heading>
+			<code>
+				var x = 2;
+
+				if (x === 1) {
+					console.log('x is 1');
+					// Do something.
+				}
+				else if (x === 2) {
+					console.log('x is 2');
+					// Do something.
+				}
+				else {
+					console.log('x is not 1 or 2');
+					// Do something else.
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/if...else">if … else statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/85yyde5c(v=vs.94).aspx">if … else statement</msdn>
+	</external>
+</operator>

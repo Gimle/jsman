@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="try … catch … finally">
+	<lead>
+		<p>try … catch … finally</p>
+	</lead>
+	<description>
+		<p>try { <params/> } … catch … finally</p>
+	</description>
+	<parameters>
+		<parameter name="code" type="mixed" optional="false"></parameter>
+		<parameter name="catch" type="mixed" optional="null">catch, finally or both needs to is reqired.</parameter>
+		<parameter name="finally" type="mixed" optional="null">catch, finally or both needs to is reqired.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>if … else example</heading>
+			<code>
+				try {
+					console.log(abc);
+				}
+				catch (e) {
+					console.log(e);  // ReferenceError: abc is not defined(…)
+				}
+			</code>
+			<heading>if … else example</heading>
+			<code>
+				try {
+					console.log(abc);
+				}
+				catch (e) {
+					console.log(e);  // ReferenceError: abc is not defined(…)
+				}
+				finally {
+					console.log('Finally.');  // Finally will be run regardless of errors caught.
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch">try … catch … finally statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/4yahc5d8(v=vs.94).aspx">try … catch … finally statement</msdn>
+	</external>
+</operator>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="Labeled statement">
+	<lead>
+		<p>label – Set a label in the code which can be used as point to go to.</p>
+	</lead>
+	<description>
+		<p>label:</p>
+	</description>
+	<examples>
+		<example>
+			<heading>break example</heading>
+			<p>Breaking out of a label.</p>
+			<code>
+				console.log('Before section label');
+				section: {
+					break section;
+					console.log('Never executed');
+				}
+				console.log('After section label');
+			</code>
+		</example>
+		<example>
+			<heading>break example</heading>
+			<p>Breaking out of nested labels.</p>
+			<code>
+				section: {
+					console.log('In section');
+					subSection: {
+						console.log('In sub section');
+						break section;
+						console.log('Never executed');
+					}
+					console.log('Never executed');
+				}
+				console.log('It can even be nested!');
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label">label statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/d3666y5k(v=vs.94).aspx">label statement</msdn>
+	</external>
+</operator>

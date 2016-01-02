@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="for … of">
+	<lead>
+		<p>for … of</p>
+	</lead>
+	<description>
+		<p>for (<params separator=" of"/>)</p>
+	</description>
+	<parameters>
+		<parameter name="variable" type="mixed" optional="false"></parameter>
+		<parameter name="object" type="object" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>for … in example</heading>
+			<p>Iteration between two values.</p>
+			<code>
+				var obj = {foo: 'Foo', bar: 'Bar'};
+
+				for (var prop in obj) {
+					console.log(prop, obj[prop]);
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of">for … of statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/dn858238(v=vs.94).aspx">for … of statement</msdn>
+	</external>
+</operator>

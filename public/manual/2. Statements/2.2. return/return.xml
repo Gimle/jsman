@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="return">
+	<lead>
+		<p>return – Specifies the value to be returned by a function.</p>
+	</lead>
+	<description>
+		<p>return <params/></p>
+	</description>
+	<parameters>
+		<parameter name="variable" type="mixed" optional="true">The value to be returned.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>return example</heading>
+			<p>Return a value</p>
+			<code>
+				function f (a, b) {
+					return a + b;
+				}
+
+				var result = f(1, 2);
+				console.log(result);  // 3
+			</code>
+		</example>
+		<example>
+			<heading>return example</heading>
+			<p>If no parameter is passed to return, the result will be equal to undefined.</p>
+			<code>
+				function f () {
+					return;
+				}
+
+				var result = f();
+				console.log(result);  // undefined
+			</code>
+		</example>
+		<example>
+			<heading>return example</heading>
+			<p>Return canbe used to exit a function at any point, and the rest of the code will not be executed.</p>
+			<code>
+				var val = 'initial value';
+
+				function f (a) {
+					if (a === undefined) {
+						return;
+					}
+					val = a;
+				}
+
+				console.log(val);  // initial value
+
+				f();
+				console.log(val);  // initial value
+
+				f('changed value');
+				console.log(val);  // changed value
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return">return statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/22a685h9(v=vs.94).aspx">return statement</msdn>
+	</external>
+</operator>

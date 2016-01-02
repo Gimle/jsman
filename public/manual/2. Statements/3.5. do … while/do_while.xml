@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="do … while">
+	<lead>
+		<p>do … while</p>
+	</lead>
+	<description>
+		<p>do … while (<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="condition" type="mixed" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>do … while example</heading>
+			<code>
+				var i = 1;
+				do {
+					console.log('Iteration round: ' + i++);
+				} while (i &lt;= 5);
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/do...while">do … while statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/5c1h7h0k(v=vs.94).aspx">do … while statement</msdn>
+	</external>
+</operator>

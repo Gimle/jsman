@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="function">
+	<lead>
+		<p>function – Declares a function with the specified parameters.</p>
+	</lead>
+	<description>
+		<p>function (<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="param, …" type="mixed" optional="true">Variables to pass into the function.</parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Ability to set default values in function declaration.
+		</change>
+		<change version="ES 6">
+			Agregating parameter overflow.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>function example</heading>
+			<p>Basic syntax for creating a function.</p>
+			<code>
+				function f (a, b) {
+					return a + b;
+				}
+				console.log(f(1, 2));  // 3
+			</code>
+			<p>We can also declare a function by assigning a variable to an unnamed function.</p>
+			<code>
+				var f = function (a, b) {
+					return a + b;
+				}
+				console.log(f(1, 2));  // 3
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Create a self executing function.</p>
+			<code>
+				(function () {
+					console.log('Executed.');  // Executed.
+				})();
+			</code>
+			<p>Passing variables into a self executing function.</p>
+			<code>
+				(function (a, b) {
+					console.log(a, b);  // Hello world
+				})('Hello', 'world');
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>
+				In javascript you do not need to pass any of the functions parameters.
+				So if you wish to create parameters with default values,
+				you can use something like the example below where the b parameter will be set to a default value if it is not passed when calling the function.
+			</p>
+			<code>
+				function f (a, b) {
+					if (b === undefined) {
+						// Second parameter not passed
+						b = 2;
+					}
+					return a * b;
+				}
+
+				var r = f(2);
+				console.log(r);  // 4
+
+				console.log(f(2, 4));  // 8
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Accessing arguments passed to the function.</p>
+			<code>
+				function f (params) {
+					console.log(arguments);
+				}
+				f('foo', 'bar');
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Setting default values. Available from ES 6.</p>
+			<code>
+				function f (a = 1, b = 2) {
+					return a + b;
+				}
+				console.log(f());
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Agregating parameter overflow. Available from ES 6.</p>
+			<code>
+				function f (...params) {
+					console.log(params);
+					console.log(params[0]);
+					console.log(params[1]);
+				}
+				f('foo', 'bar');
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Spreading variable in function call. Available from ES 6.</p>
+			<code>
+				function f (foo, bar) {
+					console.log(foo, bar);
+				}
+
+				var params = ['Hello', 'world'];
+				f(...params);
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="return">return statement</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/4t2k5yhw(v=vs.94).aspx">function statement</msdn>
+	</external>
+</operator>
