@@ -16,10 +16,10 @@
 			<heading>for … in example</heading>
 			<p>Iteration between two values.</p>
 			<code>
-				var obj = {foo: 'Foo', bar: 'Bar'};
+				var obj = ['Foo', 'Bar'];
 
-				for (var prop in obj) {
-					console.log(prop, obj[prop]);
+				for (var prop of obj) {
+					console.log(prop);
 				}
 			</code>
 		</example>
