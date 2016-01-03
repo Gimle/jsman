@@ -72,6 +72,18 @@
 
 				console.log(f(2, 4));  // 8
 			</code>
+			<p>A shorthand version.</p>
+			<code>
+				function f (a, b) {
+					b = b || 2;
+					return a * b;
+				}
+
+				var r = f(2);
+				console.log(r);  // 4
+
+				console.log(f(2, 4));  // 8
+			</code>
 		</example>
 		<example>
 			<heading>function example</heading>
@@ -115,6 +127,20 @@
 
 				var params = ['Hello', 'world'];
 				f(...params);
+			</code>
+		</example>
+		<example>
+			<heading>function example</heading>
+			<p>Spreading variable in function call. Available from ES 6.</p>
+			<code>
+				"use strict";
+				function f (foo, bar) {
+					return {foo: foo, bar: bar};
+				}
+
+				var params = ['Hello', 'world'];
+				var {foo, bar} = f(...params);
+				console.log(foo);
 			</code>
 		</example>
 	</examples>
