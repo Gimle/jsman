@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="search" parent="String">
+	<lead>
+		<p>search — Searches a string with a string or regular expression.</p>
+	</lead>
+	<description>
+		<p>String.search(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="comparison" type="mixed" optional="false">String or regexp</parameter>
+		<parameter name="with" type="string" optional="false">String to replace with</parameter>
+	</parameters>
+	<return>
+		<p>number primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>search example</heading>
+			<p>There a multiple ways to pass in the expression.</p>
+			<code>
+				console.log('Hello World'.search(RegExp('l')));      // 2
+				console.log('Hello World'.search(new RegExp('l')));  // 2
+				console.log('Hello World'.search(/l/));              // 2
+				console.log('Hello World'.search('l'));              // 2
+			</code>
+		</example>
+		<example>
+			<heading>search example</heading>
+			<p>No match.</p>
+			<code>
+				console.log('Hello World'.search(/a/));  // -1
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/search">String.search method</mdn>
+	</external>
+
+</method>

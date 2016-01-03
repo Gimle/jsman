@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="concat" parent="String">
+	<lead>
+		<p>concat — Combine a string with one or more strings into a new one.</p>
+	</lead>
+	<description>
+		<p>String.concat(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+		<parameter name="string, …" type="string" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>concat example</heading>
+			<p>Combine two or more strings into a new one.</p>
+			<code>
+				var text1 = 'Hello ';
+				var text2 = 'World';
+				var text3 = text1.concat(text2);
+				console.log(text3);  // Will return Hello World.
+			</code>
+			<p>You can also combine strings with the + operator.</p>
+			<code>
+				var text1 = 'Hello ';
+				var text2 = 'World';
+				var text3 = text1 + text2;
+				console.log(text3);  // Will return Hello World.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/concat">String.concat method</mdn>
+	</external>
+
+</method>

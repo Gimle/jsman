@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="replace" parent="String">
+	<lead>
+		<p>replace — Replaces a string with a string based on a string or regular expression.</p>
+	</lead>
+	<description>
+		<p>String.replace(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="comparison" type="mixed" optional="false">String or regexp</parameter>
+		<parameter name="with" type="string" optional="false">String to replace with</parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>replace example</heading>
+			<code>
+				console.log('Hello World'.replace('Hello', 'Foo'));   // Foo World
+				console.log('Hello World'.replace('o', 'a'));         // Hella World
+				console.log('Hello World'.replace(/o/g, 'a'));        // Hella Warld
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/replace">String.replace method</mdn>
+	</external>
+
+</method>

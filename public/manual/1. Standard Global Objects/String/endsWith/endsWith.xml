@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="endsWith" parent="String">
+	<lead>
+		<p>endsWith — Check if the string ends with this string.</p>
+	</lead>
+	<description>
+		<p>String.endsWith(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>boolean primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>endsWith example</heading>
+			<code>
+				console.log('Hello World'.endsWith('World'));   // true
+				console.log('Hello World'.endsWith('Hello'));   // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith">String.endsWith method</mdn>
+	</external>
+
+</method>

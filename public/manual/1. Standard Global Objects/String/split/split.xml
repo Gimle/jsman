@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="split" parent="String">
+	<lead>
+		<p>split — Splits a string.</p>
+	</lead>
+	<description>
+		<p>String.split(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="separator" type="string" optional="true"></parameter>
+		<parameter name="limit" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>array.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>split example</heading>
+			<code>
+				console.log('Hello World'.split());                 // ["Hello World"]
+				console.log('Hello World'.split(' '));              // ["Hello", "World"]
+				console.log('Foo, Bar, Baz, Qux'.split(', '));      // ["Foo", "Bar", "Baz", "Qux"]
+				console.log('Foo, Bar, Baz, Qux'.split(','));       // ["Foo", " Bar", " Baz", " Qux"]
+				console.log('Foo, Bar, Baz, Qux'.split(', ', 2));   // ["Foo", "Bar"]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/split">String.split method</mdn>
+	</external>
+
+</method>

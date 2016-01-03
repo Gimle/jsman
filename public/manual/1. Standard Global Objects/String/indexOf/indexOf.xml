@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="indexOf" parent="String">
+	<lead>
+		<p>indexOf — Finds the position of the first occurrence of a string within a string.</p>
+	</lead>
+	<description>
+		<p>String.indexOf(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+		<parameter name="offset" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>number primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>indexOf example</heading>
+			<code>
+				var txt = 'Hello World';
+				console.log(txt.indexOf('o'));  // Will return 4.
+				console.log(txt.indexOf('o', 5));  // Will return 7.
+				console.log(txt.indexOf('a'));  // Will return -1.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf">String.indexOf method</mdn>
+	</external>
+
+</method>

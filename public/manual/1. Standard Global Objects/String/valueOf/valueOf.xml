@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="valueOf" parent="String">
+	<lead>
+		<p>valueOf</p>
+	</lead>
+	<description>
+		<p>String.valueOf(<params/>)</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>valueOf example</heading>
+			<code>
+				console.log('Hello World'.valueOf());  // Hello World
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf">String.valueOf method</mdn>
+	</external>
+
+</method>

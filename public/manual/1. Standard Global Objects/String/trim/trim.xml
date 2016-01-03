@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="trim" parent="String">
+	<lead>
+		<p>trim – Trim away space, tab, new-line, no-break space, etc from beginning and end of string.</p>
+	</lead>
+	<description>
+		<p>String.trim(<params/>)</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>trim example</heading>
+			<code>
+				console.log('Hello World'.trim());      // Hello World
+				console.log('  Hello World  '.trim());  // Hello World
+			</code>
+			<code>
+				console.log(`
+					Hello World
+					`.trim());      // Hello World
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/trim">String.trim method</mdn>
+	</external>
+
+</method>

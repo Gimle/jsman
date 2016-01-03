@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="String">
+	<lead>
+		<p>String – Creates a wrapper object to allow you to work with strings.</p>
+	</lead>
+	<description>
+		<p>new String(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="true"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>string example</heading>
+			<p>Three ways of creating a new string.</p>
+			<code>
+				var txt = new String('string');  // Created a new string object.
+				console.log(txt);
+			</code>
+			<code>
+				var txt = 'string';  // Create a new string primitive.
+				console.log(txt);    // string
+			</code>
+			<code>
+				var expression = new Number(1000);
+				var txt = String(expression);   // Used to convert a non-string to a string primitive.
+				console.log(txt);    // Logs 1000 as a string primitive.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="Primitives">Primitives</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/ecczf11c(v=vs.94).aspx">String object</msdn>
+	</external>
+</object>

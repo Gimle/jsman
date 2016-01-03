@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="repeat" parent="String">
+	<lead>
+		<p>repeat — Repeats the string x number of times.</p>
+	</lead>
+	<description>
+		<p>String.repeat(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="count" type="integer" optional="false">Number of times to repeat</parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>replace example</heading>
+			<code>
+				console.log('Hello World'.repeat(2));   // Hello WorldHello World
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/repeat">String.repeat method</mdn>
+	</external>
+
+</method>

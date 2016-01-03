@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="charAt" parent="String">
+	<lead>
+		<p>charAt — Returns the specified character from a string primitive.</p>
+	</lead>
+	<description>
+		<p>String.charAt(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="index" type="integer" optional="false">From 0 to string lenght - 1</parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>charAt example</heading>
+			<code>
+				var str = new String('Foo Bar');
+				console.log(str.charAt(4)); // Will return "B".
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">String.charAt method</mdn>
+	</external>
+
+</method>

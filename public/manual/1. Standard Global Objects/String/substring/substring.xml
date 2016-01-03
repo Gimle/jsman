@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="substring" parent="String">
+	<lead>
+		<p>substring — Extracts the chars in a string between two specified indexes.</p>
+	</lead>
+	<description>
+		<p>String.substring(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="start" type="integer" optional="false"></parameter>
+		<parameter name="stop" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>substring example</heading>
+			<code>
+				console.log('Hello World'.substring(1));       // ello World
+				console.log('Hello World'.substring(10));      // d
+				console.log('Hello World'.substring(1, 10));   // ello Worl
+				console.log('Hello World'.substring(7, 10));   // orl
+				console.log('Hello World'.substring(0, 1));    // H
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/substring">String.substring method</mdn>
+	</external>
+
+</method>

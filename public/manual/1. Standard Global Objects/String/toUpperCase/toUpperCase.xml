@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toUpperCase" parent="String">
+	<lead>
+		<p>toUpperCase</p>
+	</lead>
+	<description>
+		<p>String.toUpperCase(<params/>)</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toUpperCase example</heading>
+			<code>
+				console.log('Hello World'.toUpperCase());  // HELLO WORLD
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">String.toUpperCase method</mdn>
+	</external>
+
+</method>

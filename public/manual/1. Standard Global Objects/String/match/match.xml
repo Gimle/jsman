@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="match" parent="String">
+	<lead>
+		<p>match — Matches a string with a string or regular expression.</p>
+	</lead>
+	<description>
+		<p>String.match(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="comparison" type="mixed" optional="false">String or regexp</parameter>
+	</parameters>
+	<return>
+		<p>mixed: array or null if not matched.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>match example</heading>
+			<p>There a multiple ways to pass in the expression.</p>
+			<code>
+				console.log('Hello World'.match(RegExp('l')));      // ["l", index: 2, input: "Hello World"]
+				console.log('Hello World'.match(new RegExp('l')));  // ["l", index: 2, input: "Hello World"]
+				console.log('Hello World'.match(/l/));              // ["l", index: 2, input: "Hello World"]
+				console.log('Hello World'.match('l'));              // ["l", index: 2, input: "Hello World"]
+			</code>
+		</example>
+		<example>
+			<heading>match example</heading>
+			<p>No match.</p>
+			<code>
+				console.log('Hello World'.match(/a/));  // null
+			</code>
+		</example>
+		<example>
+			<heading>match example</heading>
+			<p>Matching groups.</p>
+			<code>
+				var str = 'See page 10.';
+				var regexp = /page (\d+)/;
+
+				console.log(str.match(regexp));  // ["page 10", "10", index: 4, input: "See page 10."]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/match">String.match method</mdn>
+	</external>
+
+</method>

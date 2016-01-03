@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="lastIndexOf" parent="String">
+	<lead>
+		<p>lastIndexOf — Finds the position of the last occurrence of a string within a string.</p>
+	</lead>
+	<description>
+		<p>String.lastIndexOf(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+		<parameter name="offset" type="integer" optional="true">Counting from beginning of string.</parameter>
+	</parameters>
+	<return>
+		<p>number primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>lastIndexOf example</heading>
+			<code>
+				var txt = 'Javascript is awesome!';
+				console.log(txt.lastIndexOf('a'));  // Will return 14.
+				console.log(txt.lastIndexOf('b'));  // Will return -1.
+			</code>
+			<p>When passing the secions parameter, it will start searching at the given position (counting from the beginning). This example illustrates this with a string that is cut to the same length.</p>
+			<code>
+				var txt = 'Javascript is awesome!';
+				console.log(txt.lastIndexOf('a', 9));        // Will return 3.
+				console.log('Javascript'.lastIndexOf('a'));  // Will return 3.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf">String.lastIndexOf method</mdn>
+	</external>
+
+</method>

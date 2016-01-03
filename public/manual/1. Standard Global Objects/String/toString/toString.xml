@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toString" parent="String">
+	<lead>
+		<p>toString</p>
+	</lead>
+	<description>
+		<p>String.toString(<params/>)</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toString example</heading>
+			<code>
+				console.log('Hello World'.toString());  // Hello World
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/toString">String.toString method</mdn>
+	</external>
+
+</method>

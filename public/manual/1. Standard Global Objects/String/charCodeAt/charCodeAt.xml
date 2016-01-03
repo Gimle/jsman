@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="charCodeAt" parent="String">
+	<lead>
+		<p>charCodeAt — Returns the numeric Unicode value of the character at the given index.</p>
+	</lead>
+	<description>
+		<p>String.charCodeAt(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="index" type="integer" optional="false">From 0 to string lenght - 1</parameter>
+	</parameters>
+	<return>
+		<p>number primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>charCodeAt example</heading>
+			<code>
+				var str = new String('Foo Bar');
+				console.log(str.charCodeAt(4));         // Will return 66.
+				console.log(typeof str.charCodeAt(4));  // Will return number.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt">String.charCodeAt method</mdn>
+	</external>
+
+</method>

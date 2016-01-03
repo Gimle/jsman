@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="substr" parent="String">
+	<lead>
+		<p>substr — Extracts a specified number of characters in a string, from a start index.</p>
+	</lead>
+	<description>
+		<p>String.substr(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="begin" type="integer" optional="false">Positive values count from beginning of string, whele negative count from the end.</parameter>
+		<parameter name="length" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>substr example</heading>
+			<code>
+				console.log('Hello World'.substr(1));       // ello World
+				console.log('Hello World'.substr(-1));      // d
+				console.log('Hello World'.substr(1, 9));    // ello Worl
+				console.log('Hello World'.substr(-4, 3));   // orl
+				console.log('Hello World'.substr(0, 1));    // H
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/substr">String.substr method</mdn>
+	</external>
+
+</method>

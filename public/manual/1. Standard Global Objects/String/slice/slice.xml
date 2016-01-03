@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="slice" parent="String">
+	<lead>
+		<p>slice — Slices out a part of a string and returns it.</p>
+	</lead>
+	<description>
+		<p>String.slice(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="begin" type="integer" optional="false"></parameter>
+		<parameter name="end" type="integer" optional="true"></parameter>
+		<p>Positive values count from beginning of string, whele negative count from the end.</p>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>slice example</heading>
+			<code>
+				console.log('Hello World'.slice(1));       // ello World
+				console.log('Hello World'.slice(-1));      // d
+				console.log('Hello World'.slice(1, -1));   // ello Worl
+				console.log('Hello World'.slice(-4, -1));  // orl
+				console.log('Hello World'.slice(0, 1));    // H
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/slice">String.slice method</mdn>
+	</external>
+
+</method>

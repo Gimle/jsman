@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="localeCompare" parent="String">
+	<lead>
+		<p>localeCompare — Compare two stings based on locale rules.</p>
+	</lead>
+	<description>
+		<p>String.localeCompare(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+		<parameter name="locales" type="string" optional="true"></parameter>
+		<parameter name="options" type="object" optional="true">See options below.</parameter>
+		<section>
+			<header>Options parameter</header>
+			<p>The options parameter may contain one or more of the following data items.</p>
+			<dl>
+				<dt>localeMatcher</dt>
+				<dd>
+					Possible values are: "best fit" (default) or "lookup".
+				</dd>
+
+				<dt>usage</dt>
+				<dd>
+					Possible values are: "sort" (default) or "search".
+				</dd>
+
+				<dt>sensitivity</dt>
+				<dd>
+					Possible values are: "base", "accent", "case", or "variant" (default).
+				</dd>
+
+				<dt>ignore­Punctua­tion</dt>
+				<dd>
+					Possible values are: true or false (default).
+				</dd>
+
+				<dt>numeric</dt>
+				<dd>
+					Possible values are: true or false (default).
+				</dd>
+
+				<dt>caseFirst</dt>
+				<dd>
+					Possible values are: "upper", "lower" or "false" (default).
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p>number primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>localeCompare example</heading>
+			<p>In English the letter "å" comes before "z", while in Norwegian it comes after.</p>
+			<code>
+				console.log('å'.localeCompare('z', 'en'));  // -1  (or some other negative value)
+				console.log('å'.localeCompare('z', 'nb'));  // 1   (or some other positive value)
+			</code>
+			<p>Equal compare will return a zero.</p>
+			<code>
+				console.log('z'.localeCompare('z', 'en'));  // 0
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare">String.localeCompare method</mdn>
+	</external>
+
+</method>
