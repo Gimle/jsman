@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="fromCharCode" parent="String">
+	<lead>
+		<p>fromCharCode</p>
+	</lead>
+	<description>
+		<p>String.fromCharCode(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="code, …" type="integer" optional="false">Unicode values</parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>fromCharCode example</heading>
+			<code>
+				console.log(String.fromCharCode(49, 50, 51));  // 123
+				console.log(String.fromCharCode(97, 98, 99));  // abc
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode">String.fromCharCode method</mdn>
+	</external>
+
+</method>

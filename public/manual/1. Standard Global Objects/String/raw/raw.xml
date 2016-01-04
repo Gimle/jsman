@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="raw" parent="String">
+	<lead>
+		<p>raw</p>
+	</lead>
+	<description>
+		<p>String.raw`<params/>`</p>
+	</description>
+	<parameters>
+		<parameter name="raw" type="string" optional="false">Raw string</parameter>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>raw example</heading>
+			<code>
+				console.log(String.raw`Escaped\r\nCharacters`);  // Escaped\r\nCharacters
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/raw">String.raw method</mdn>
+	</external>
+
+</method>
