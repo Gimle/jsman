@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
+<page name="substr vs substring vs slice">
+
+	<header>substr vs substring vs slice</header>
+
+	<p>
+		These three methods differ in the parameters, but results in the same primitive string.
+		You can stick to one at all times, or pick the best suited one for each use case.
+	</p>
+
+	<p>When passing in a negative value as first parameter they handle it differently:</p>
+
+	<dl>
+		<dt>substr</dt>
+		<dd>Some older interpreters (IE8) will treat a negative start index as 0.</dd>
+
+		<dt>substring</dt>
+		<dd>The smallest value will be used as start index. A negative start index will be treated as 0.</dd>
+
+		<dt>slice</dt>
+		<dd>A negative start index is acceptable, and will start counting from the end.</dd>
+	</dl>
+
+	<p>
+		<a href="http://jsperf.com/substring-extraction-methods-substring-substr-slice/">Performance stats at jsperf.com</a>
+	</p>
+
+	<p>The constructors</p>
+
+	<dl>
+		<dt>String.substr(begin, [length])</dt>
+		<dd>
+			Starts from <b>begin</b> position and reads <b>length</b> amonut of characters where stop can not be a negative value.
+		</dd>
+
+		<dt>String.substring(start, [stop])</dt>
+		<dd>
+			Starts from <b>begin</b> position and stops at <b>stop</b> position where <b>stop</b> can not be a negative value.
+		</dd>
+
+		<dt>String.slice(begin, [end])</dt>
+		<dd>
+			Starts from <b>begin</b> position and ends at <b>end</b> position where <b>end</b> can be a negative value counting from the end.
+		</dd>
+	</dl>
+
+	<hr/>
+
+	<p>
+		Some examples that produce the same result, but have a different set of parameters in the call.
+	</p>
+
+	<code>
+		var str = 'Hello World';
+
+		console.log(str.substr(1));          // ello World
+		console.log(str.substring(1));       // ello World
+		console.log(str.slice(1));           // ello World
+
+		console.log(str.substr(-1));         // d
+		console.log(str.substring(10));      // d
+		console.log(str.slice(-1));          // d
+
+		console.log(str.substr(1, 9));       // ello Worl
+		console.log(str.substring(1, 10));   // ello Worl
+		console.log(str.slice(1, -1));       // ello Worl
+
+		console.log(str.substr(-4, 3));      // orl
+		console.log(str.substring(7, 10));   // orl
+		console.log(str.slice(-4, -1));      // orl
+
+		console.log(str.substr(0, 1));       // H
+		console.log(str.substring(0, 1));    // H
+		console.log(str.slice(0, 1));        // H
+	</code>
+
+	<p>Be aware, all of these can run into issues with multibyte characters.</p>
+
+	<code lang="javascript">
+		var str = 'हिं';
+
+		console.log(str);                  // हिं
+		console.log(str.length);           // 3
+
+		console.log(str.substr(0, 1));     // ह
+		console.log(str.substring(0, 1));  // ह
+		console.log(str.slice(0, 1));      // ह
+
+		console.log(str.substr(-2, 1));    // ि
+		console.log(str.substr(1, 1));     // ि
+		console.log(str.substring(1, 2));  // ि
+		console.log(str.slice(-2, 2));     // ि
+		console.log(str.slice(1, 2));      // ि
+
+		console.log(str.substr(-1));       // ं
+		console.log(str.substr(2));        // ं
+		console.log(str.substring(2));     // ं
+		console.log(str.slice(-1));        // ं
+		console.log(str.slice(2));         // ं
+
+	</code>
+
+	<section>
+		<header>Comparing to php</header>
+
+		<p>Javascript does not have an equal method of php's substr function.</p>
+
+		<p>The substr method lets you work with a length parameter, just like php, but will not accept a negative length. For these cases you can use slice.</p>
+
+		<p>Example php code</p>
+
+		<code lang="php">
+			$str = 'Hello World';
+			$result = substr($str, 3, 2);     // lo
+			$result = substr($str, 1, -2);    // ello Wor
+			$result = substr($str, -5, -2);   // Wor
+		</code>
+
+		<p>To achieve the same in Javascript you use substr for the first one, and slice for the second one.</p>
+
+		<code>
+			var str = 'Hello World';
+			console.log(str.substr(3, 2));    // lo
+			console.log(str.slice(1, -2));    // ello Wor
+			console.log(str.slice(-5, -2));   // Wor
+		</code>
+
+		<p>
+			You might also want to look at <a href="http://phpjs.org/functions/substr/">substr function at phpjs.org</a>.
+		</p>
+	</section>
+
+</page>
