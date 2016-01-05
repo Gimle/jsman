@@ -38,7 +38,13 @@
 					var pre = document.getElementsByTagName('pre');
 
 					for (var i = 0; i &lt; pre.length; i++) {
-						var text = pre[i].getElementsByTagName('div')[0].innerHTML;
+						var text;
+						if (pre[i].getElementsByTagName('div').length > 0) {
+							text = pre[i].getElementsByTagName('div')[0].innerHTML;
+						}
+						else {
+							text = pre[i].getElementsByTagName('code')[0].innerHTML;
+						}
 						var len = text.search(/\S|$/) - 1; // Find the number of first leading tabs.
 
 						var re1 = new RegExp("\t{" + len + "}"); // Regex to remove them from first line.
@@ -50,9 +56,11 @@
 
 						pre[i].getElementsByTagName('code')[0].innerHTML = text;
 
-						pre[i].getElementsByTagName('button')[0].addEventListener('click', function () {
-							eval(this.parentElement.getElementsByTagName('div')[0].innerHTML);
-						});
+						if (pre[i].getElementsByTagName('div').length > 0) {
+							pre[i].getElementsByTagName('button')[0].addEventListener('click', function () {
+								eval(this.parentElement.getElementsByTagName('div')[0].innerHTML);
+							});
+						}
 					}
 
 					hljs.initHighlighting();

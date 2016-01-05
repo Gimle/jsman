@@ -121,14 +121,25 @@
 	</xsl:template>
 
 	<xsl:template match="code">
-		<pre style="white-space: pre;">
-			<button class="run" style="float: right;" title="Open your console to see console output.">Run</button>
-			<div style="display: none;">
-				<xsl:apply-templates/>
-			</div>
-			<code class="javascript">
-			</code>
-		</pre>
+		<xsl:choose>
+			<xsl:when test="not(@lang) or @lang = '' or @lang = 'javascript'">
+				<pre style="white-space: pre;">
+					<button class="run" style="float: right;" title="Open your console to see console output.">Run</button>
+					<div style="display: none;">
+						<xsl:apply-templates/>
+					</div>
+					<code class="javascript">
+					</code>
+				</pre>
+			</xsl:when>
+			<xsl:otherwise>
+				<pre style="white-space: pre;">
+					<code class="{@lang}">
+						<xsl:apply-templates/>
+					</code>
+				</pre>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="example/heading">
