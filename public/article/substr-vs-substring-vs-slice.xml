@@ -36,7 +36,7 @@
 
 		<dt>String.substring(start, [stop])</dt>
 		<dd>
-			Starts from <b>begin</b> position and stops at <b>stop</b> position where <b>stop</b> can not be a negative value.
+			Starts from <b>start</b> position and stops at <b>stop</b> position where <b>stop</b> can not be a negative value.
 		</dd>
 
 		<dt>String.slice(begin, [end])</dt>
