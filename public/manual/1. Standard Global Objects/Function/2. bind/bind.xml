@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="bind" parent="Function">
+	<lead>
+		<p>bind</p>
+	</lead>
+	<description>
+		<p>Function.bind(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="this" type="object" optional="false"></parameter>
+		<parameter name="arg, …" type="string" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>Function example</heading>
+			<p>Create a new function.</p>
+			<code>
+				var f = function () {
+					return this;
+				};
+				var b = f.bind(location);
+				
+				console.log(f());  // window …
+				console.log(b());  // location …
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">Function.bind method</mdn>
+	</external>
+
+</method>

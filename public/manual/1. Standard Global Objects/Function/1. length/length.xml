@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="length" parent="Function">
+	<lead>
+		<p>length</p>
+	</lead>
+	<description>
+		<p>Function.length</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>length example</heading>
+			<code>
+				var f = function (param1, param2) {
+				};
+				console.log(f.length); //  The function have 2 parameters.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/length">Function.length property</mdn>
+	</external>
+
+</property>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="call" parent="Function">
+	<lead>
+		<p>call</p>
+	</lead>
+	<description>
+		<p>Function.call(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="this" type="object" optional="false"></parameter>
+		<parameter name="arg, …" type="string" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>Function example</heading>
+			<p>Create a new function.</p>
+			<code>
+				var f = function () {
+					return this;
+				};
+				console.log(f.call(location.hash));  // Sets a custom this value for the function.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/call">Function.call method</mdn>
+	</external>
+
+</method>

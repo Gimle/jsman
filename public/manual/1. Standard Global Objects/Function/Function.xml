@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Function">
+	<lead>
+		<p>Function – Creates a Function object.</p>
+	</lead>
+	<description>
+		<p>new Function(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="arg, …" type="string" optional="true"/>
+		<parameter name="body" type="string" optional="false"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>Function example</heading>
+			<p>Create a new function.</p>
+			<code>
+				var f = new Function('	return 1;');
+				console.log(f);
+			</code>
+			<p>Create a new function with parameters.</p>
+			<code>
+				var f = new Function('param1', 'param2', '	return param1 + param2;');
+				console.log(f);
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<xref href="function">function statement</xref>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function">Function object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/x844tc74(v=vs.94).aspx">Function object</msdn>
+	</external>
+</object>

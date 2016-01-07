@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toString" parent="Function">
+	<lead>
+		<p>toString — Returns a string representation of the specified Function object.</p>
+	</lead>
+	<description>
+		<p>Function.toString(<params/>)</p>
+	</description>
+	<return>
+		string primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>toString example</heading>
+			<code>
+				var f = function () {
+					return this;
+				};
+				console.log(typeof f.toString()); // Will return "string".
+				console.log(f.toString()); // Will return a string representation of the function.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/toString">Function.toString method</mdn>
+	</external>
+
+</method>
