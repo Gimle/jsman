@@ -13,8 +13,7 @@
 	</parameters>
 	<examples>
 		<example>
-			<heading>Function example</heading>
-			<p>Create a new function.</p>
+			<heading>call example</heading>
 			<code>
 				var f = function () {
 					return this;

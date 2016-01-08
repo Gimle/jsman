@@ -13,14 +13,13 @@
 	</parameters>
 	<examples>
 		<example>
-			<heading>Function example</heading>
-			<p>Create a new function.</p>
+			<heading>bind example</heading>
 			<code>
 				var f = function () {
 					return this;
 				};
 				var b = f.bind(location);
-				
+
 				console.log(f());  // window …
 				console.log(b());  // location …
 			</code>
