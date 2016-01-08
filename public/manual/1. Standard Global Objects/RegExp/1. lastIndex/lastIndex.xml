@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="lastIndex" parent="RegExp">
+	<lead>
+		<p>lastIndex — Sets or gets the index from which next to start the next match.</p>
+	</lead>
+	<description>
+		<p>RegExp.lastIndex</p>
+	</description>
+	<return>
+		<p>integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>lastIndex example</heading>
+			<p>lastIndex is incremented when performing a test.</p>
+			<code>
+				regex = /^a/g;
+				console.log(regex.lastIndex, regex.test("abc"), regex.lastIndex); // true, lastIndex was 0
+				console.log(regex.lastIndex, regex.test("abc"), regex.lastIndex); // false, lastIndex was 1
+			</code>
+			<p>It can be reset by setting the lastIndex back to beginning.</p>
+			<code>
+				regex = /^a/g;
+				console.log(regex.lastIndex, regex.test("abc"), regex.lastIndex); // true, lastIndex was 0
+				regex.lastIndex = 0;
+				console.log(regex.lastIndex, regex.test("abc"), regex.lastIndex); // true, lastIndex was 0
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex">RegExp.lastIndex property</mdn>
+	</external>
+
+</property>

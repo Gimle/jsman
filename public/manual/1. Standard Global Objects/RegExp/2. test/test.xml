@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="test" parent="RegExp">
+	<lead>
+		<p>test — Use the regular expression as a match test.</p>
+	</lead>
+	<description>
+		<p>RegExp.test(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+	</parameters>
+	<return>
+		<p>boolean primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>test example</heading>
+			<code>
+				console.log(/[a-z]+/.test('Hello World'));  // true
+				console.log(/[a-z]+/.test('FOO'));          // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test">RegExp.test method</mdn>
+	</external>
+
+</method>

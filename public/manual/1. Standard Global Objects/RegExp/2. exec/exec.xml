@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="exec" parent="RegExp">
+	<lead>
+		<p>exec — Executes the regular expression on a string.</p>
+	</lead>
+	<description>
+		<p>RegExp.exec(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"></parameter>
+	</parameters>
+	<return>
+		<p>mixed: Array or null if no match.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>exec example</heading>
+			<code>
+				console.log(/[a-z]+/.exec('Hello World'));  // ["ello", index: 1, input: "Hello World"]
+				console.log(/[a-z]+/.exec('FOO'));          // null
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec">RegExp.exec method</mdn>
+	</external>
+
+</method>

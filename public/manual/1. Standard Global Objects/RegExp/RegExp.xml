@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="RegExp">
+	<lead>
+		<p>RegExp – Creates a RegExp object.</p>
+	</lead>
+	<description>
+		<p>new RegExp(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="pattern" type="string" optional="false"/>
+		<parameter name="flags" type="string" optional="true"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>RegExp example</heading>
+			<code>
+				var regexp = new RegExp('(?:)');
+				console.log(regexp);   // /(?:)/
+
+				regexp = new RegExp('(?:)', 'ig');
+				console.log(regexp);   // /(?:)/gi
+
+				regexp = /([a-z])/m;
+				console.log(regexp);   // /([a-z])/m
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/h6e2eb7w(v=vs.94).aspx">RegExp object</msdn>
+	</external>
+</object>
