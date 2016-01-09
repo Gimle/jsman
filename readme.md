@@ -8,6 +8,6 @@ If you care to contribute check out this repository and add or update informatio
 Setup
 -----
 
-Due to limitations on references in xsl in some browsers, this this project have to be run thru a webserver.
+Due to limitations on references in xsl in some browsers, this project must be run thru a webserver.
 
-Copy config.example.xsl to public/config.xsl and change the value within accordingly. 
+Copy config.example.xsl to public/config.xsl and change the value within accordingly.
