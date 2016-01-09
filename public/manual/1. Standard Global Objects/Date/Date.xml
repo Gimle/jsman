@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Date">
+	<lead>
+		<p>Date – Creates a Date object.</p>
+	</lead>
+	<description>
+		<p>new Date(<params/>)</p>
+		<p>
+			The range of dates that can be represented in a Date object is approximately <number>100000000</number> days (<number>270000</number> years) on either side of <date>1 January 1970</date>.
+		</p>
+	</description>
+	<parameters>
+		<parameter name="date" type="mixed" optional="true">See date below.</parameter>
+		<parameter name="month" type="integer" optional="true">Integer between 0 and 11.</parameter>
+		<parameter name="day" type="integer" optional="true">Integer between 1 and 31.</parameter>
+		<parameter name="hour" type="integer" optional="true">Integer between 0 and 23.</parameter>
+		<parameter name="minutes" type="integer" optional="true">Integer between 0 and 59.</parameter>
+		<parameter name="seconds" type="integer" optional="true">Integer between 0 and 59.</parameter>
+		<parameter name="milliseconds" type="integer" optional="true">Integer between 0 and 999.</parameter>
+		<section>
+			<header>Date parameter</header>
+			<p>Can be a date string, timestamp or year if multiple paramters is provided.</p>
+			<dl>
+				<dt>Not provided</dt>
+				<dd>
+					<p>Current time.</p>
+				</dd>
+
+				<dt>Year</dt>
+				<dd>
+					<p>If called with multiple parameters, the first one will be assumed to be the year.</p>
+					<p>This input is local time.</p>
+				</dd>
+
+				<dt>Integer</dt>
+				<dd>
+					<p>If date is provided as an integer, it sill be number of milliseconds since 1 January 1970 00:00:00 UTC.</p>
+				</dd>
+
+				<dt>String</dt>
+				<dd>
+					<p>String value representing a date.</p>
+					<p>This input is local time if no timezine is specified.</p>
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<examples>
+		<example>
+			<heading>Date example</heading>
+			<code>
+				console.log(new Date());            // Current time.
+				console.log(new Date(undefined));   // Invalid Date.
+			</code>
+			<code>
+				console.log(new Date(2015, 9, 21));              // 21 October 2015
+				console.log(new Date(2015, 9, 21, 16, 29, 00));  // 21 October 2015 16:29:00
+			</code>
+			<code>
+				console.log(new Date(2015));            // 1 January 1970 01:00:02
+				console.log(new Date(1445437740000));   // 21 October 2015 16:29:00
+			</code>
+			<code>
+				console.log(new Date("Oct 21, 2015 16:29:00"));     // 21 October 2015 16:29:00
+				console.log(new Date("2015-10-21 16:29:00"));       // 21 October 2015 16:29:00
+				console.log(new Date("21 October 2015 16:29:00"));  // 21 October 2015 16:29:00
+				console.log(new Date("Invalid time string"));       // Invalid Date.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/cd9w2te4(v=vs.94).aspx">Date object</msdn>
+	</external>
+</object>
