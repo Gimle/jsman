@@ -29,6 +29,18 @@
 		</xsl:for-each>
 	</xsl:template>
 
+	<xsl:template match="number">
+		<span class="number">
+			<xsl:apply-templates/>
+		</span>
+	</xsl:template>
+
+	<xsl:template match="date">
+		<span class="date">
+			<xsl:apply-templates/>
+		</span>
+	</xsl:template>
+
 	<xsl:template match="header">
 		<h6>
 			<xsl:apply-templates/>

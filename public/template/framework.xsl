@@ -64,6 +64,16 @@
 					}
 
 					hljs.initHighlighting();
+
+					var num = document.getElementsByClassName('number');
+					for (var i = 0; i &lt; num.length; i++) {
+						num[i].innerHTML = parseInt(num[i].innerHTML).toLocaleString();
+					};
+
+					var date = document.getElementsByClassName('date');
+					for (var i = 0; i &lt; date.length; i++) {
+						date[i].innerHTML =  new Date(date[i].innerHTML).toLocaleDateString();
+					};
 				</script>
 			</body>
 		</html>
