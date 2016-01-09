@@ -63,8 +63,9 @@
 			</code>
 			<code>
 				console.log(new Date("Oct 21, 2015 16:29:00"));     // 21 October 2015 16:29:00
-				console.log(new Date("2015-10-21 16:29:00"));       // 21 October 2015 16:29:00
 				console.log(new Date("21 October 2015 16:29:00"));  // 21 October 2015 16:29:00
+				console.log(new Date("2015-10-21T16:29:00"));       // 21 October 2015 16:29:00
+				console.log(new Date("2015-10-21 16:29:00"));       // Only supported by some interpreters.
 				console.log(new Date("Invalid time string"));       // Invalid Date.
 			</code>
 		</example>
