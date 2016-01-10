@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toJSON" parent="Date">
+	<lead>
+		<p>toJSON – Converts a Date object to a string.</p>
+	</lead>
+	<description>
+		<p>Date.toJSON(<params/>)</p>
+		<p>
+			JSON does not have a understanding of a date representation.
+			The format of toJSON is compact, human readable, and is understood by most programming languages.
+		</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toJSON example</heading>
+			<code>
+				var date = new Date();
+				console.log(date.toJSON());  //  Returns a string representation of the given date and time.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/toJSON">Date.toJSON method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toLocaleDateString" parent="Date">
+	<lead>
+		<p>toLocaleDateString – Converts a Date object to a string.</p>
+	</lead>
+	<description>
+		<p>Date.toLocaleDateString(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="locales" type="mixed" optional="true">A string or array containing strings for the preferred locale format.</parameter>
+		<parameter name="options" type="object" optional="true">See options below.</parameter>
+		<section>
+			<header>Options parameter</header>
+			<p>The options parameter may contain one or more of the following data items.</p>
+			<dl>
+				<dt>localeMatcher</dt>
+				<dd>
+					Possible values are: "best fit" (default) or "lookup".
+				</dd>
+
+				<dt>timeZone</dt>
+				<dd>
+					The time zone to use.
+				</dd>
+
+				<dt>hour12</dt>
+				<dd>
+					Possible values are: true or false. Default is set to the locale standard value.
+				</dd>
+
+				<dt>formatMatcher</dt>
+				<dd>
+					Possible values are: "best fit" (default) or "basic".
+				</dd>
+
+				<dt>weekday</dt>
+				<dd>
+					Possible values are "narrow", "short" or "long".
+				</dd>
+
+				<dt>era</dt>
+				<dd>
+					Possible values are "narrow", "short" or "long".
+				</dd>
+
+				<dt>year</dt>
+				<dd>
+					Possible values are "numeric" or "2-digit".
+				</dd>
+
+				<dt>month</dt>
+				<dd>
+					Possible values are "numeric", "2-digit", "narrow", "short" or "long".
+				</dd>
+
+				<dt>day</dt>
+				<dd>
+					Possible values are "numeric" or "2-digit".
+				</dd>
+
+				<dt>hour</dt>
+				<dd>
+					Possible values are "numeric" or "2-digit".
+				</dd>
+
+				<dt>minute</dt>
+				<dd>
+					Possible values are "numeric" or "2-digit"
+				</dd>
+
+				<dt>second</dt>
+				<dd>
+					Possible values are "numeric" or "2-digit"
+				</dd>
+
+				<dt>timeZoneName</dt>
+				<dd>
+					Possible values are "short" or "long".
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toLocaleDateString example</heading>
+			<p>The returned value will be of the primitive string type.</p>
+			<code>
+				var date = new Date("2015-10-21T16:29:00");
+				console.log(date.toLocaleDateString());         // Detects the locale automatically.
+				console.log(date.toLocaleDateString('en-US'));  // 10/21/2015
+				console.log(date.toLocaleDateString('nb-NO'));  // 21.10.2015
+				console.log(date.toLocaleDateString('ar-EG'));  // ٢١‏/١٠‏/٢٠١٥
+				console.log(date.toLocaleDateString('ko-KR'));  // 2015. 10. 21.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString">Date.toLocaleDateString method</mdn>
+	</external>
+
+</method>
