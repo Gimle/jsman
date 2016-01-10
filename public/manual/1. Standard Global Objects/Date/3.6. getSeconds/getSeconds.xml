@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
 <method name="getSeconds" parent="Date">
 	<lead>
-		<p>getSeconds – Get the seconds, according to local time (0-59).</p>
+		<p>getSeconds – Get the seconds, according to local time (0–59).</p>
 	</lead>
 	<description>
 		<p>Date.getSeconds(<params/>)</p>
