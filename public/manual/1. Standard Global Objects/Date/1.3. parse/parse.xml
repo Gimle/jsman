@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="parse" parent="Date">
+	<lead>
+		<p>parse – Get the timestamp in milliseconds of the given time string.</p>
+	</lead>
+	<description>
+		<p>Date.parse(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="date" type="string" optional="false">See date below.</parameter>
+		<section>
+			<header>Date parameter</header>
+			<p>String value representing a date.</p>
+			<p>This input is local time if no timezone is specified.</p>
+		</section>
+	</parameters>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>parse example</heading>
+			<code>
+				console.log(Date.parse("Oct 21, 2015 16:29:00"));     // 1445437740000
+				console.log(Date.parse("21 October 2015 16:29:00"));  // 1445437740000
+				console.log(Date.parse("2015-10-21T16:29:00"));       // 1445437740000
+				console.log(Date.parse("2015-10-21 16:29:00"));       // Only supported by some interpreters.
+				console.log(Date.parse("Invalid time string"));       // NaN.
+			</code>
+			<code>
+				var timestamp = Date.parse("2015-10-21T16:29:00");
+
+				console.log(timestamp);   // The timestamp in milliseconds.
+				console.log(Math.round(timestamp / 1000));  // The timestamp rounded to closest second.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/parse">Date.parse method</mdn>
+	</external>
+
+</method>

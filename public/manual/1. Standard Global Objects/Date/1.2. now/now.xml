@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="now" parent="Date">
+	<lead>
+		<p>now – Get the current number of milliseconds since <date>1 January 1970</date>.</p>
+	</lead>
+	<description>
+		<p>Date.now(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>now example</heading>
+			<code>
+				var now = Date.now();
+
+				console.log(now);  // The timestamp in milliseconds.
+
+				console.log(Math.round(now / 1000));  // The timestamp rounded to closest second.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/now">Date.now method</mdn>
+	</external>
+
+</method>

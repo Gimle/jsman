@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="UTC" parent="Date">
+	<lead>
+		<p>UTC – Get the timestamp in milliseconds of the given UTC time.</p>
+	</lead>
+	<description>
+		<p>Date.UTC(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="year" type="integer" optional="false">The year.</parameter>
+		<parameter name="month" type="integer" optional="false">Integer between 0 and 11.</parameter>
+		<parameter name="day" type="integer" optional="false">Integer between 1 and 31.</parameter>
+		<parameter name="hour" type="integer" optional="true">Integer between 0 and 23.</parameter>
+		<parameter name="minutes" type="integer" optional="true">Integer between 0 and 59.</parameter>
+		<parameter name="seconds" type="integer" optional="true">Integer between 0 and 59.</parameter>
+		<parameter name="milliseconds" type="integer" optional="true">Integer between 0 and 999.</parameter>
+	</parameters>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>UTC example</heading>
+			<code>
+				var utcDate = Date.UTC(2015, 9, 21, 16, 29, 00);
+				var localDate = new Date(utcDate);
+
+				console.log(utcDate);         // The timestamp.
+				console.log(Math.round(utcDate / 1000));  // The timestamp rounded to closest second.
+
+				console.log(localDate.getUTCHours(), localDate.getUTCMinutes());  // The UTC time, as specified in the constructor.
+				console.log(localDate.getHours(), localDate.getMinutes());  // The local time.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC">Date.UTC method</mdn>
+	</external>
+
+</method>
