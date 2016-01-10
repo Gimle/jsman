@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getDay" parent="Date">
+	<lead>
+		<p>getDay – Get the day of the week, according to local time (0-6).</p>
+	</lead>
+	<description>
+		<p>Date.getDay(<params/>)</p>
+		<p>Get the day of week, 0 (Sunday) to 6 (Saturday).</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getDay example</heading>
+			<code>
+				var date = new Date(2015, 9, 21, 16, 29, 00);
+				console.log(date.getDay());  // 3
+
+				console.log(new Date().getDay());  // Gets the current day of the week.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay">Date.getDay method</mdn>
+	</external>
+
+</method>

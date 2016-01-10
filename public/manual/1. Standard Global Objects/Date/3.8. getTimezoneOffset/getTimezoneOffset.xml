@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getTimezoneOffset" parent="Date">
+	<lead>
+		<p>getTimezoneOffset – Get the time-zone offset from UTC, in minutes, for the current locale.</p>
+	</lead>
+	<description>
+		<p>Date.getTimezoneOffset(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>Get the local time zone offset.</heading>
+			<code>
+				var date = new Date();
+				console.log(date.getTimezoneOffset());
+			</code>
+		</example>
+		<example>
+			<heading>You can use this to check for summer / winter time.</heading>
+			<code>
+				var winter = new Date(2000, 0, 1).getTimezoneOffset();
+				var summer = new Date(2000, 6, 1).getTimezoneOffset();
+
+				if (winter === summer) {
+					console.log('Current region does not use dst.');
+				}
+				else {
+					var now = new Date().getTimezoneOffset();
+					if (now === winter) {
+						console.log('Currently winter time.');
+					}
+					else {
+						console.log('Currently summer time.');
+					}
+				}
+			</code>
+			<p>
+				A shorter example that will just check if it is currently summer time.
+			</p>
+			<code>
+				if (new Date().getTimezoneOffset() !== new Date(2000, 0, 1).getTimezoneOffset()) {
+					console.log('Currently summer time.');
+				}
+				else {
+					// For regions that does not use dst, this will always be the result.
+					console.log('Currently not summer time.');
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset">Date.getTimezoneOffset method</mdn>
+	</external>
+
+</method>

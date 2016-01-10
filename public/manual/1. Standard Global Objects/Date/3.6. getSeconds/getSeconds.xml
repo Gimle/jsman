@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getSeconds" parent="Date">
+	<lead>
+		<p>getSeconds – Get the seconds, according to local time (0-59).</p>
+	</lead>
+	<description>
+		<p>Date.getSeconds(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getSeconds example</heading>
+			<code>
+				var date = new Date();
+				console.log(date.getSeconds());  // Logs the current seconds.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds">Date.getSeconds method</mdn>
+	</external>
+
+</method>

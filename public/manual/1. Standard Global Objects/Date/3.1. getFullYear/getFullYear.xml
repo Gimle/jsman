@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getFullYear" parent="Date">
+	<lead>
+		<p>getFullYear – Get the year, according to local time (four digits).</p>
+	</lead>
+	<description>
+		<p>Date.getFullYear(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getFullYear example</heading>
+			<code>
+				var date = new Date(2015, 9, 21, 16, 29, 00);
+				console.log(date.getFullYear());  // 2015
+
+				console.log(new Date().getFullYear());  // Gets the current year.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear">Date.getFullYear method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getDate" parent="Date">
+	<lead>
+		<p>getDate – Get the day of the month, according to local time (1-31).</p>
+	</lead>
+	<description>
+		<p>Date.getDate(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getDate example</heading>
+			<code>
+				var date = new Date(2015, 9, 21, 16, 29, 00);
+				console.log(date.getDate());  // 21
+
+				console.log(new Date().getDate());  // Gets the current date.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate">Date.getDate method</mdn>
+	</external>
+
+</method>

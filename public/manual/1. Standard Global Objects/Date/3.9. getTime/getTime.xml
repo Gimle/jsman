@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getTime" parent="Date">
+	<lead>
+		<p>getTime – Get the number of milliseconds since <date>1 Jan 1970</date>.</p>
+	</lead>
+	<description>
+		<p>Date.getTime(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getTime example</heading>
+			<p>Get the current number of milliseconds since <date>1 Jan 1970</date></p>
+			<code>
+				var date = new Date();
+				console.log(date.getTime());
+			</code>
+			<p>The time can be rounded to the closest whole second by using the math object.</p>
+			<code>
+				var date = new Date();
+				console.log(Math.round(date.getTime() / 1000));
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime">Date.getTime method</mdn>
+	</external>
+
+</method>
