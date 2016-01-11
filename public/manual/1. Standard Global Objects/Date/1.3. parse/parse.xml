@@ -22,14 +22,24 @@
 		<example>
 			<heading>parse example</heading>
 			<code>
-				console.log(Date.parse("Oct 21, 2015 16:29:00"));     // 1445437740000
-				console.log(Date.parse("21 October 2015 16:29:00"));  // 1445437740000
-				console.log(Date.parse("2015-10-21T16:29:00"));       // 1445437740000
+				console.log(Date.parse("Oct 21, 2015 16:29:00"));
+				// 1445437740000  (CEST)
+				// 1445459340000  (EDT)
+
+				console.log(Date.parse("21 October 2015 16:29:00"));
+				// 1445437740000  (CEST)
+				// 1445459340000  (EDT)
+
+				console.log(Date.parse("2015-10-21T16:29:00.000Z"));
+				// 1445444940000  (CEST)
+				// 1445444940000  (EDT)
+
+				console.log(Date.parse("2015-10-21T16:29:00"));       // Unpredictable parsing.
 				console.log(Date.parse("2015-10-21 16:29:00"));       // Only supported by some interpreters.
 				console.log(Date.parse("Invalid time string"));       // NaN.
 			</code>
 			<code>
-				var timestamp = Date.parse("2015-10-21T16:29:00");
+				var timestamp = Date.parse("21 October 2015 16:29:00");
 
 				console.log(timestamp);   // The timestamp in milliseconds.
 				console.log(Math.round(timestamp / 1000));  // The timestamp rounded to closest second.

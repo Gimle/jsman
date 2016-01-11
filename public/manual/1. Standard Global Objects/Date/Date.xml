@@ -58,13 +58,22 @@
 				console.log(new Date(2015, 9, 21, 16, 29, 00));  // 21 October 2015 16:29:00
 			</code>
 			<code>
-				console.log(new Date(2015));            // 1 January 1970 01:00:02
-				console.log(new Date(1445437740000));   // 21 October 2015 16:29:00
+				console.log(new Date(2015));
+				// 1 January   1970 01:00:02   (CET)
+				// 31 December 1969 19:00:02   (EST)
+
+				console.log(new Date(1445437740000));
+				// 21 October  2015 16:29:00   (CEST)
+				// 21 October  2015 10:29:00   (EDT)
 			</code>
 			<code>
 				console.log(new Date("Oct 21, 2015 16:29:00"));     // 21 October 2015 16:29:00
 				console.log(new Date("21 October 2015 16:29:00"));  // 21 October 2015 16:29:00
-				console.log(new Date("2015-10-21T16:29:00"));       // 21 October 2015 16:29:00
+				console.log(new Date("2015-10-21T16:29:00.000Z"));
+				// 21 October  2015 18:29:00   (CEST)
+				// 21 October  2015 12:29:00   (EDT)
+
+				console.log(new Date("2015-10-21T16:29:00"));       // Unpredictable parsing.
 				console.log(new Date("2015-10-21 16:29:00"));       // Only supported by some interpreters.
 				console.log(new Date("Invalid time string"));       // Invalid Date.
 			</code>
