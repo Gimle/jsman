@@ -27,6 +27,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/operators/typeof">typeof operator</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof">typeof operator</mdn>
 		<msdn href="https://msdn.microsoft.com/library/259s7zc1(v=vs.94).aspx">typeof operator</msdn>
 	</external>

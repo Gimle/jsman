@@ -27,6 +27,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/RegExp">RegExp object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp object</mdn>
 		<msdn href="https://msdn.microsoft.com/library/h6e2eb7w(v=vs.94).aspx">RegExp object</msdn>
 	</external>

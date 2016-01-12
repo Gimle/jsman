@@ -25,6 +25,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/for_in">for … in statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...in">for … in statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/55wb2d34(v=vs.94).aspx">for … in statement</msdn>
 	</external>

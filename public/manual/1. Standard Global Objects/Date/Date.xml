@@ -80,6 +80,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/Date">Date object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</mdn>
 		<msdn href="https://msdn.microsoft.com/library/cd9w2te4(v=vs.94).aspx">Date object</msdn>
 	</external>
