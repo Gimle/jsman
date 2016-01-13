@@ -33,6 +33,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/switch">switch statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch">switch statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/hzc6t81t(v=vs.94).aspx">switch statement</msdn>
 	</external>

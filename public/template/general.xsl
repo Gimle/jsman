@@ -173,6 +173,9 @@
 		</ul>
 	</xsl:template>
 
+	<xsl:template match="wp">
+		<li><a href="{@href}">WepPlatform: <xsl:apply-templates/></a></li>
+	</xsl:template>
 	<xsl:template match="mdn">
 		<li><a href="{@href}">Mozilla: <xsl:apply-templates/></a></li>
 	</xsl:template>

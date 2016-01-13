@@ -56,6 +56,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/break">break statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break">break statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/3fhdxafb(v=vs.94).aspx">break statement</msdn>
 	</external>

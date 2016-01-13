@@ -22,6 +22,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/while">while statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/while">while statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/6wsy66x9(v=vs.94).aspx">while statement</msdn>
 	</external>

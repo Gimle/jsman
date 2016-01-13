@@ -38,6 +38,7 @@
 		</example>
 	</examples>
 	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/Labeled">label statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label">label statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/d3666y5k(v=vs.94).aspx">label statement</msdn>
 	</external>
