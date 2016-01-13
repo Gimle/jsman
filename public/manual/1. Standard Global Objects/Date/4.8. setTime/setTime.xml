@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="setTime" parent="Date">
+	<lead>
+		<p>setTime – Set the number of milliseconds since <date>1 Jan 1970</date>.</p>
+	</lead>
+	<description>
+		<p>Date.setTime(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="timestamp" type="integer" optional="false"></parameter>
+	</parameters>
+	<return>
+		Integer. The new timestamp.
+	</return>
+	<examples>
+		<example>
+			<heading>setTime example</heading>
+			<code>
+				var date = new Date(2015, 9, 21, 16, 29, 00);
+
+				console.log(date.getTime());
+				// 1445437740000  (CEST)
+				// 1445459340000  (EDT)
+
+				console.log(date.setTime(10000));  // 10000
+				console.log(date);
+				// 01 January  1970 01:00:10 (CET)
+				// 31 December 1969 19:00:10 (EST)
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime">Date.setTime method</mdn>
+	</external>
+</method>

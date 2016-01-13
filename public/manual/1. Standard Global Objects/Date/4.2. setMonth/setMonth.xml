@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="setMonth" parent="Date">
+	<lead>
+		<p>setMonth – Set the month, according to local time (0–11).</p>
+	</lead>
+	<description>
+		<p>Date.setMonth(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="month" type="integer" optional="false"></parameter>
+	</parameters>
+	<return>
+		Integer. The new timestamp.
+	</return>
+	<examples>
+		<example>
+			<heading>setMonth example</heading>
+			<code>
+				var date = new Date(2015, 9, 21, 16, 29, 00);
+
+				console.log(date.getTime());
+				// 1445437740000  (CEST)
+				// 1445459340000  (EDT)
+
+				console.log(date.setMonth(10));
+				// 1448119740000  (CEST)
+				// 1448141340000  (EDT)
+
+				console.log(date);               // 21 November 2015 16:29:00
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth">Date.setMonth method</mdn>
+	</external>
+</method>
