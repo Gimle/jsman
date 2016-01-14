@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getUTCSeconds" parent="Date">
+	<lead>
+		<p>getUTCSeconds – Get the seconds, according to universal time (0–59).</p>
+	</lead>
+	<description>
+		<p>Date.getUTCSeconds(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getUTCSeconds example</heading>
+			<code>
+				console.log(new Date().getUTCDate());  // Gets the current seconds, according to UTC.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCSeconds">Date.getUTCSeconds method</mdn>
+	</external>
+
+</method>

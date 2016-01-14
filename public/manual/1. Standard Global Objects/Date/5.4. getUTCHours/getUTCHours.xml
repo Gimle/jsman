@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getUTCHours" parent="Date">
+	<lead>
+		<p>getUTCHours – Get the hour, according to universal time (0–23).</p>
+	</lead>
+	<description>
+		<p>Date.getUTCHours(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getUTCHours example</heading>
+			<code>
+				console.log(new Date().getUTCHours());  // Gets the current hour, according to UTC.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCHours">Date.getUTCHours method</mdn>
+	</external>
+
+</method>

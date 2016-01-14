@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getUTCDate" parent="Date">
+	<lead>
+		<p>getUTCDate – Get the day of the month, according to universal time (from 1–31).</p>
+	</lead>
+	<description>
+		<p>Date.getUTCDate(<params/>)</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>Get the local time zone offset.</heading>
+			<code>
+				console.log(new Date().getUTCDate());  // Gets the current day of the month, according to UTC.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCDate">Date.getUTCDate method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getUTCMonth" parent="Date">
+	<lead>
+		<p>getUTCMonth – Get the month, according to universal time (0–11).</p>
+	</lead>
+	<description>
+		<p>Date.getUTCMonth(<params/>)</p>
+		<p>Get the month, 0 (January) to 11 (December).</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>getUTCMonth example</heading>
+			<code>
+				console.log(new Date().getUTCMonth());  // Gets the current month, according to UTC.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/getUTCMonth">Date.getUTCMonth method</mdn>
+	</external>
+
+</method>
