@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="setUTCHours" parent="Date">
+	<lead>
+		<p>setUTCHours – Set the hours, according to universal time (0–23).</p>
+	</lead>
+	<description>
+		<p>Date.setUTCHours(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="hours" type="integer" optional="false"></parameter>
+	</parameters>
+	<return>
+		Integer. The new timestamp.
+	</return>
+	<examples>
+		<example>
+			<heading>setUTCHours example</heading>
+			<code>
+				var date = new Date(Date.UTC(2015, 9, 21, 16, 29, 00));
+				console.log(date.getTime());        // 1445444940000
+
+				console.log(date.setUTCHours(10));  // 1445423340000
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCHours">Date.setUTCHours method</mdn>
+	</external>
+</method>

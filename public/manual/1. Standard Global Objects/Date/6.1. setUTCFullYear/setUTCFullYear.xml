@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="setUTCFullYear" parent="Date">
+	<lead>
+		<p>setUTCFullYear – Set the year, according to universal time (four digits).</p>
+	</lead>
+	<description>
+		<p>Date.setUTCFullYear(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="year" type="integer" optional="false"></parameter>
+	</parameters>
+	<return>
+		Integer. The new timestamp.
+	</return>
+	<examples>
+		<example>
+			<heading>setUTCFullYear example</heading>
+			<code>
+				var date = new Date(Date.UTC(2015, 9, 21, 16, 29, 00));
+				console.log(date.getTime());             // 1445444940000
+
+				console.log(date.setUTCFullYear(2000));  // 972145740000
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCFullYear">Date.setUTCFullYear method</mdn>
+	</external>
+</method>

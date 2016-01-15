@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="setUTCMonth" parent="Date">
+	<lead>
+		<p>setUTCMonth – Set the month, according to universal time (0–11).</p>
+	</lead>
+	<description>
+		<p>Date.setUTCMonth(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="month" type="integer" optional="false"></parameter>
+	</parameters>
+	<return>
+		Integer. The new timestamp.
+	</return>
+	<examples>
+		<example>
+			<heading>setUTCMonth example</heading>
+			<code>
+				var date = new Date(Date.UTC(2015, 9, 21, 16, 29, 00));
+				console.log(date.getTime());        // 1445444940000
+
+				console.log(date.setUTCMonth(10));  // 1448123340000
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/setUTCMonth">Date.setUTCMonth method</mdn>
+	</external>
+</method>
