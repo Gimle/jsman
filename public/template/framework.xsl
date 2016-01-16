@@ -3,6 +3,17 @@
 	<xsl:strip-space elements="*"/>
 	<xsl:output method="html" indent="yes"/>
 
+	<xsl:template match="xref">
+		<xsl:choose>
+			<xsl:when test="@href">
+				<a href="{$BASE_PATH}{@href}"><xsl:apply-templates/></a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 	<xsl:template match="/">
 		<html>
 			<head>

@@ -163,7 +163,14 @@
 	</xsl:template>
 
 	<xsl:template match="xref">
-		<a href="{@href}"><xsl:apply-templates/></a>
+		<xsl:choose>
+			<xsl:when test="@href">
+				<a href="{@href}"><xsl:apply-templates/></a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="external">
