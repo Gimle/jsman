@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="for … in">
+<statement name="for … in">
 	<lead>
 		<p>for … in</p>
 	</lead>
@@ -29,4 +29,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...in">for … in statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/55wb2d34(v=vs.94).aspx">for … in statement</msdn>
 	</external>
-</operator>
+</statement>

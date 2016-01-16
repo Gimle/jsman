@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="return">
+<statement name="return">
 	<lead>
 		<p>return – Specifies the value to be returned by a function.</p>
 	</lead>
@@ -63,4 +63,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return">return statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/22a685h9(v=vs.94).aspx">return statement</msdn>
 	</external>
-</operator>
+</statement>

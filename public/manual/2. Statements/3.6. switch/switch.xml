@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="switch">
+<statement name="switch">
 	<lead>
 		<p>switch</p>
 	</lead>
@@ -37,4 +37,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch">switch statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/hzc6t81t(v=vs.94).aspx">switch statement</msdn>
 	</external>
-</operator>
+</statement>

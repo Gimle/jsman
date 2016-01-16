@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="continue">
+<statement name="continue">
 	<lead>
 		<p>continue – Continue the code execution at a different point. If a label is passed, it will continue at the label. If in a loop, it will jump to the next iteration.</p>
 	</lead>
@@ -33,4 +33,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue">continue statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/8de3fkc8(v=vs.94).aspx">continue statement</msdn>
 	</external>
-</operator>
+</statement>

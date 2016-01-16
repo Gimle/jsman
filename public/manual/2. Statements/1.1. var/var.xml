@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="var">
+<statement name="var">
 	<lead>
 		<p>var – Declares one or more variables, and optionally sets a value to them.</p>
 	</lead>
@@ -30,4 +30,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/var">var statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/z16cackw(v=vs.94).aspx">var statement</msdn>
 	</external>
-</operator>
+</statement>

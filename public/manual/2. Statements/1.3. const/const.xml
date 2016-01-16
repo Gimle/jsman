@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="const">
+<statement name="const">
 	<lead>
 		<p>const</p>
 	</lead>
@@ -28,4 +28,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/const">const statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/dn251545(v=vs.94).aspx">const statement</msdn>
 	</external>
-</operator>
+</statement>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="let">
+<statement name="let">
 	<lead>
 		<p>let – Declares one or more block scope variables, and optionally sets a value to them.</p>
 	</lead>
@@ -42,4 +42,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/let">let statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/dn263046(v=vs.94).aspx">let statement</msdn>
 	</external>
-</operator>
+</statement>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="function">
+<statement name="function">
 	<lead>
 		<p>function – Declares a function with the specified parameters.</p>
 	</lead>
@@ -154,4 +154,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/4t2k5yhw(v=vs.94).aspx">function statement</msdn>
 	</external>
-</operator>
+</statement>

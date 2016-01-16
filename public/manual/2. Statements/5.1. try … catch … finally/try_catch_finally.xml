@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="try … catch … finally">
+<statement name="try … catch … finally">
 	<lead>
 		<p>try … catch … finally</p>
 	</lead>
@@ -42,4 +42,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch">try … catch … finally statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/4yahc5d8(v=vs.94).aspx">try … catch … finally statement</msdn>
 	</external>
-</operator>
+</statement>

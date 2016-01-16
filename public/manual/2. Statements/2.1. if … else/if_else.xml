@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="if … else">
+<statement name="if … else">
 	<lead>
 		<p>if … else</p>
 	</lead>
@@ -36,4 +36,4 @@
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/if...else">if … else statement</mdn>
 		<msdn href="https://msdn.microsoft.com/library/85yyde5c(v=vs.94).aspx">if … else statement</msdn>
 	</external>
-</operator>
+</statement>
