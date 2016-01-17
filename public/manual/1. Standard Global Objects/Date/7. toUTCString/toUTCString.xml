@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toUTCString" parent="Date">
+	<lead>
+		<p>toUTCString – Converts a Date object to a string.</p>
+	</lead>
+	<description>
+		<p>Date.toUTCString(<params/>)</p>
+		<p>
+			Interpreters might implement the result of toTimeString to give different return values,
+			it is recomended to use the <xref href="toLocaleString">toLocaleString</xref> method instead.
+		</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toUTCString example</heading>
+			<code>
+				var date = new Date();
+				console.log(date.toUTCString());  // Returns a string representation of the given date and time.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="toLocaleString">Date.toLocaleString()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/toUTCString">Date.toUTCString method</mdn>
+	</external>
+
+</method>

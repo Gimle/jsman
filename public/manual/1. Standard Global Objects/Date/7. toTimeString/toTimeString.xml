@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toTimeString" parent="Date">
+	<lead>
+		<p>toTimeString – Converts a Date object to a string.</p>
+	</lead>
+	<description>
+		<p>Date.toTimeString(<params/>)</p>
+		<p>
+			Interpreters might implement the result of toTimeString to give different return values,
+			it is recomended to use the <xref href="toLocaleTimeString">toLocaleTimeString</xref> method instead.
+		</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toTimeString example</heading>
+			<code>
+				var date = new Date();
+				console.log(date.toTimeString());   //  Returns a string representation of the given time.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="toLocaleTimeString">Date.toLocaleTimeString()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/toTimeString">Date.toTimeString method</mdn>
+	</external>
+
+</method>

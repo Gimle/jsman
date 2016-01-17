@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="valueOf" parent="Date">
+	<lead>
+		<p>valueOf – Returns the primitive value of a Date object.</p>
+	</lead>
+	<description>
+		<p>Date.valueOf(<params/>)</p>
+		<p>
+			Since valueOf sometimes is used to implement other return values,
+			it is recomended to use the <xref href="getTime">getTime()</xref> method instead.
+		</p>
+	</description>
+	<return>
+		<p>Integer</p>
+	</return>
+	<examples>
+		<example>
+			<heading>valueOf example</heading>
+			<code>
+				var date = new Date();
+				console.log(date.valueOf());   //  Returns the timestamp of the given time.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="getTime">Date.getTime()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date/valueOf">Date.valueOf method</mdn>
+	</external>
+
+</method>

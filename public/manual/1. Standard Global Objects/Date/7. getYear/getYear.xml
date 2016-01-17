@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="getYear" parent="Date">
+	<lead>
+		<p>getYear – Deprecated.</p>
+	</lead>
+
+</method>
