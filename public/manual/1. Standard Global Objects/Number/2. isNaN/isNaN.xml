@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="isNaN" parent="Number">
+	<lead>
+		<p>isNaN – Evaluates an argument to determine if it is not a number.</p>
+	</lead>
+	<description>
+		<p>Number.isNaN(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="variable" type="mixed" optional="false"/>
+	</parameters>
+	<return>
+		<p>Returns true if the value is not a number, otherwise false.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>isNaN example</heading>
+			<code>
+				console.log(Number.isNaN(NaN));        // true
+				console.log(Number.isNaN("string"));   // false
+				console.log(Number.isNaN("12"));       // false
+				console.log(Number.isNaN(12));         // false
+				console.log(Number.isNaN(12.42));      // false
+
+				console.log(Number.isNaN(""));         // false
+				console.log(Number.isNaN("\n\t"));     // false
+				console.log(Number.isNaN(null));       // false
+				console.log(Number.isNaN(true));       // false
+
+				console.log(Number.isNaN(undefined));  // false
+
+				console.log(Number.isNaN(Infinity));   // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN">Number.isNaN method</mdn>
+	</external>
+
+</method>
