@@ -10,6 +10,9 @@
 	<parameters>
 		<parameter name="variable" type="mixed" optional="false"/>
 	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<return>
 		<p>Returns true if the value is not a number, otherwise false.</p>
 	</return>
