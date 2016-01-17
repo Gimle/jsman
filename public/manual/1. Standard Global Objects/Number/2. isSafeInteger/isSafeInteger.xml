@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="isSafeInteger" parent="Number">
+	<lead>
+		<p>isSafeInteger – Check whether an integer is in the safe range.</p>
+	</lead>
+	<description>
+		<p>Number.isSafeInteger(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="integer" type="integer" optional="false"/>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>boolean.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>isSafeInteger example</heading>
+			<code>
+				console.log(Number.isSafeInteger(12));                    // true
+				console.log(Number.isSafeInteger(12.42));                 // false
+				console.log(Number.isSafeInteger(12345678901234567890));  // false
+
+				console.log(Number.isSafeInteger('12'));       // false
+				console.log(Number.isSafeInteger(NaN));        // false
+				console.log(Number.isSafeInteger(Infinity));   // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger">Number.isSafeInteger method</mdn>
+	</external>
+
+</method>
