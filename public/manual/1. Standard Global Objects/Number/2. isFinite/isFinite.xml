@@ -5,7 +5,7 @@
 		<p>isFinite – </p>
 	</lead>
 	<description>
-		<p>isFinite(<params/>)</p>
+		<p>Number.isFinite(<params/>)</p>
 	</description>
 	<parameters>
 		<parameter name="variable" type="mixed" optional="false"/>
@@ -20,20 +20,20 @@
 		<example>
 			<heading>isFinite example</heading>
 			<code>
-				console.log(isFinite(NaN));        // false
-				console.log(isFinite("string"));   // false
-				console.log(isFinite("12"));       // true
-				console.log(isFinite(12));         // true
-				console.log(isFinite(12.42));      // true
+				console.log(Number.isFinite(NaN));        // false
+				console.log(Number.isFinite("string"));   // false
+				console.log(Number.isFinite("12"));       // true
+				console.log(Number.isFinite(12));         // true
+				console.log(Number.isFinite(12.42));      // true
 
-				console.log(isFinite(""));         // true
-				console.log(isFinite("\n\t"));     // true
-				console.log(isFinite(null));       // true
-				console.log(isFinite(true));       // true
+				console.log(Number.isFinite(""));         // true
+				console.log(Number.isFinite("\n\t"));     // true
+				console.log(Number.isFinite(null));       // true
+				console.log(Number.isFinite(true));       // true
 
-				console.log(isFinite(undefined));  // false
+				console.log(Number.isFinite(undefined));  // false
 
-				console.log(isFinite(Infinity));   // false
+				console.log(Number.isFinite(Infinity));   // false
 			</code>
 		</example>
 	</examples>
