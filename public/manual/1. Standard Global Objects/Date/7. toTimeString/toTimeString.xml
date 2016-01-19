@@ -8,7 +8,7 @@
 		<p>Date.toTimeString(<params/>)</p>
 		<p>
 			Interpreters might implement the result of toTimeString to give different return values,
-			it is recomended to use the <xref href="toLocaleTimeString">toLocaleTimeString</xref> method instead.
+			it is recomended to use the <xref href="manual/1. Standard Global Objects/Date/2.3. toLocaleTimeString/toLocaleTimeString.xml">toLocaleTimeString</xref> method instead.
 		</p>
 	</description>
 	<return>
@@ -25,7 +25,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="toLocaleTimeString">Date.toLocaleTimeString()</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Date/2.3. toLocaleTimeString/toLocaleTimeString.xml">Date.toLocaleTimeString()</xref></li>
 		</ul>
 	</see-also>
 	<external>

@@ -8,7 +8,7 @@
 		<p>Date.toString(<params/>)</p>
 		<p>
 			Since toString sometimes is used to implement other return values,
-			it is recomended to use the <xref href="toLocaleString">toLocaleString</xref> method instead.
+			it is recomended to use the <xref href="manual/1. Standard Global Objects/Date/2.1. toLocaleString/toLocaleString.xml">toLocaleString</xref> method instead.
 		</p>
 	</description>
 	<return>
@@ -25,7 +25,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="toLocaleString">Date.toLocaleString()</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Date/2.1. toLocaleString/toLocaleString.xml">Date.toLocaleString()</xref></li>
 		</ul>
 	</see-also>
 	<external>

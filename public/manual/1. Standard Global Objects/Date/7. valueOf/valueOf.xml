@@ -8,7 +8,7 @@
 		<p>Date.valueOf(<params/>)</p>
 		<p>
 			Since valueOf sometimes is used to implement other return values,
-			it is recomended to use the <xref href="getTime">getTime()</xref> method instead.
+			it is recomended to use the <xref href="manual/1. Standard Global Objects/Date/3.9. getTime/getTime.xml">getTime()</xref> method instead.
 		</p>
 	</description>
 	<return>
@@ -25,7 +25,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="getTime">Date.getTime()</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Date/3.9. getTime/getTime.xml">Date.getTime()</xref></li>
 		</ul>
 	</see-also>
 	<external>
