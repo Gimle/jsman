@@ -27,7 +27,7 @@
 		</example>
 	</examples>
 	<see-also>
-		<xref href="function">function statement</xref>
+		<xref href="manual/2. Statements/2.2. function/function.xml">function statement</xref>
 	</see-also>
 	<external>
 		<wp href="http://docs.webplatform.org/wiki/javascript/Function">Function object</wp>
