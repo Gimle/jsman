@@ -11,6 +11,9 @@
 		<parameter name="variable" type="mixed" optional="false"></parameter>
 		<parameter name="object" type="object" optional="false"></parameter>
 	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<examples>
 		<example>
 			<heading>for … in example</heading>
