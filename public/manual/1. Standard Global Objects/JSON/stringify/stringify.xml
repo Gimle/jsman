@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="stringify" parent="JSON">
+	<lead>
+		<p>stringify — Converts the input to a json parsable format.</p>
+	</lead>
+	<description>
+		<p>JSON.stringify(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="json" type="mixed" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>stringify example</heading>
+			<code>
+				console.log(JSON.stringify(1.5));                  // 1.5
+				console.log(JSON.stringify({"Hello": "World"}));   // {"Hello":"World"}
+				console.log(JSON.stringify('String'));             // "String"
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">JSON.stringify method</mdn>
+	</external>
+
+</method>

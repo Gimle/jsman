@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="JSON">
+	<lead>
+		<p>JSON</p>
+	</lead>
+	<description>
+		<p>JSON</p>
+	</description>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/JSON">JSON object</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON">JSON object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/cc836458(v=vs.94).aspx">JSON object</msdn>
+	</external>
+</object>

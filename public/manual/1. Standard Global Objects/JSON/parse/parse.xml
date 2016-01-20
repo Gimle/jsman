@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="parse" parent="JSON">
+	<lead>
+		<p>parse — Parses the input as json.</p>
+	</lead>
+	<description>
+		<p>JSON.parse(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="json" type="mixed" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>parse example</heading>
+			<code>
+				console.log(JSON.parse(1.5));                    // 1.5
+				console.log(JSON.parse('{"Hello": "World"}'));   // Object {Hello: "World"}
+				console.log(JSON.parse('"String"'));             // String
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse method</mdn>
+	</external>
+
+</method>
