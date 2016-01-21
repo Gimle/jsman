@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Math">
+	<lead>
+		<p>Math</p>
+	</lead>
+	<description>
+		<p>Math</p>
+		<p>
+			An intrinsic object that provides static properties and methods for mathematical constants and functions.
+			You do not need to create an instance of Math with the new operator, and will give an error if you attempt to do so.
+		</p>
+	</description>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/Math">Math object</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math">Math object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/b272f386(v=vs.94).aspx">Math object</msdn>
+	</external>
+</object>
