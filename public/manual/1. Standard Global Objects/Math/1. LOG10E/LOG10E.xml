@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="LOG10E" parent="Math">
+	<lead>
+		<p>LOG10E — Returns the base 10 logarithm of e.</p>
+	</lead>
+	<description>
+		<p>Math.LOG10E</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>LOG10E example</heading>
+			<code>
+				console.log(Math.LOG10E);                      // 0.4342944819032518
+				console.log(Number(Math.LOG10E).toFixed(20));  // 0.43429448190325181667
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG10E">Math.LOG10E property</mdn>
+	</external>
+
+</property>

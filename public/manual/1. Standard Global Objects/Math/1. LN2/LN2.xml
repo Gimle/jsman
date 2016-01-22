@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="LN2" parent="Math">
+	<lead>
+		<p>LN2 — Returns the natural logarithm of 2.</p>
+	</lead>
+	<description>
+		<p>Math.LN2</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>LN2 example</heading>
+			<code>
+				console.log(Math.LN2);                      // 0.6931471805599453
+				console.log(Number(Math.LN2).toFixed(20));  // 0.69314718055994528623
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/LN2">Math.LN2 property</mdn>
+	</external>
+
+</property>

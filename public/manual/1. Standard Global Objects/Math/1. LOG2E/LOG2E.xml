@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="LOG2E" parent="Math">
+	<lead>
+		<p>LOG2E — Returns the base 2 logarithm of e.</p>
+	</lead>
+	<description>
+		<p>Math.LOG2E</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>LOG2E example</heading>
+			<code>
+				console.log(Math.LOG2E);                      // 1.4426950408889634
+				console.log(Number(Math.LOG2E).toFixed(20));  // 1.44269504088896338700
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/LOG2E">Math.LOG2E property</mdn>
+	</external>
+
+</property>

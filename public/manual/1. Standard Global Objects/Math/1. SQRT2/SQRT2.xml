@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="SQRT2" parent="Math">
+	<lead>
+		<p>SQRT2 — Returns the square root of 2.</p>
+	</lead>
+	<description>
+		<p>Math.SQRT2</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>SQRT2 example</heading>
+			<code>
+				console.log(Math.SQRT2);                      // 1.4142135623730951
+				console.log(Number(Math.SQRT2).toFixed(20));  // 1.41421356237309514547
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/SQRT2">Math.SQRT2 property</mdn>
+	</external>
+
+</property>

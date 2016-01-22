@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="E" parent="Math">
+	<lead>
+		<p>E — Returns the base of natural logarithms e.</p>
+	</lead>
+	<description>
+		<p>Math.E</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>E example</heading>
+			<code>
+				console.log(Math.E);                      // 2.718281828459045
+				console.log(Number(Math.E).toFixed(20));  // 2.71828182845904509080
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/E">Math.E property</mdn>
+	</external>
+
+</property>

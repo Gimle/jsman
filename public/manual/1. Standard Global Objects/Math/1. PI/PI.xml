@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="PI" parent="Math">
+	<lead>
+		<p>PI — Returns the value of π (pi).</p>
+	</lead>
+	<description>
+		<p>Math.PI</p>
+	</description>
+	<return>
+		number primitive.
+	</return>
+	<examples>
+		<example>
+			<heading>PI example</heading>
+			<code>
+				console.log(Math.PI);                      // 3.141592653589793
+				console.log(Number(Math.PI).toFixed(20));  // 3.14159265358979311600
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/PI">Math.PI property</mdn>
+	</external>
+
+</property>
