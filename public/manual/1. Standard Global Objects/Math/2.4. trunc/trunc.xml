@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="trunc" parent="Math">
+	<lead>
+		<p>trunc — Returns the number without it's fractional digits.</p>
+	</lead>
+	<description>
+		<p>Math.trunc(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>trunc example</heading>
+			<code>
+				console.log(Math.trunc(1.5));    // 1
+				console.log(Math.trunc(-1.5));   // -1
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc">Math.trunc method</mdn>
+	</external>
+
+</method>

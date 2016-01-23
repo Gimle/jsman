@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="round" parent="Math">
+	<lead>
+		<p>round — Rounds to the closest whole number.</p>
+	</lead>
+	<description>
+		<p>Math.round(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>round example</heading>
+			<code>
+				console.log(Math.round(1));     // 1
+				console.log(Math.round(1.0));   // 1
+				console.log(Math.round(1.2));   // 1
+				console.log(Math.round(1.49));  // 1
+				console.log(Math.round(1.5));   // 2
+				console.log(Math.round(1.8));   // 2
+				console.log(Math.round(2));     // 2
+			</code>
+		</example>
+
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Math/2.2. ceil/ceil.xml">ceil</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Math/2.3. floor/floor.xml">floor</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/round">Math.round method</mdn>
+	</external>
+
+</method>
