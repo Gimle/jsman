@@ -6,6 +6,8 @@
 	<section>
 		<header>Mixed</header>
 		<ul>
+			<li><a href="http://jshint.com/">jshint.com/</a> – JavaScript Code Quality Tool.</li>
+			<li><a href="http://eslint.org/">eslint.org/</a> – JavaScript Code Quality Tool.</li>
 			<li><a href="http://jslint.com/">jslint.com/</a> – JavaScript Code Quality Tool.</li>
 		</ul>
 	</section>
