@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="min" parent="Math">
+	<lead>
+		<p>min — Returns the number with the lowest value.</p>
+	</lead>
+	<description>
+		<p>Math.min(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="true"></parameter>
+		<parameter name="numbers, …" type="number" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>min example</heading>
+			<code>
+				console.log(Math.min(11, 8));   // 8
+				console.log(Math.min(-2, 3));   // -2
+				console.log(Math.min(-3, -7));  // -7
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Math/3.2. max/max.xml">max</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/min">Math.min method</mdn>
+	</external>
+
+</method>
