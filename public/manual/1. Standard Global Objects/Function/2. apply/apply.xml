@@ -18,7 +18,7 @@
 				var f = function () {
 					return this;
 				};
-				console.log(f.call(location.hash));  // Sets a custom this value for the function.
+				console.log(f.apply(location.hash));  // Sets a custom this value for the function.
 			</code>
 		</example>
 	</examples>
