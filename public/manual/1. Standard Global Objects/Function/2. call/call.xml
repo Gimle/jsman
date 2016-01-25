@@ -9,7 +9,7 @@
 	</description>
 	<parameters>
 		<parameter name="this" type="object" optional="false"></parameter>
-		<parameter name="arg, …" type="string" optional="true"></parameter>
+		<parameter name="arg, …" type="mixed" optional="true"></parameter>
 	</parameters>
 	<examples>
 		<example>
