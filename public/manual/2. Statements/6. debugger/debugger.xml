@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<statement name="debugger">
+	<lead>
+		<p>debugger – Pauses execution and marks the point in a debugger.</p>
+	</lead>
+	<description>
+		<p>debugger</p>
+	</description>
+	<examples>
+		<example>
+			<heading>debugger example</heading>
+			<code>
+				function debugMe () {
+					debugger;
+				}
+				debugMe();
+			</code>
+		</example>
+	</examples>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/debugger">debugger statement</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/debugger">debugger statement</mdn>
+		<msdn href="https://msdn.microsoft.com/Library/0bwt76sk(v=vs.94).aspx">debugger statement</msdn>
+	</external>
+</statement>

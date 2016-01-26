@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<statement name="throw">
+	<lead>
+		<p>throw – Throw an exception.</p>
+	</lead>
+	<description>
+		<p>throw <params/></p>
+	</description>
+	<parameters>
+		<parameter name="expression" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>throw example</heading>
+			<code>
+				try {
+					throw 42;
+					console.log('Never executed.');
+				}
+				catch (e) {
+					console.log(e);  // 42
+				}
+			</code>
+		</example>
+		<example>
+			<heading>throw example</heading>
+			<code>
+				try {
+					throw new Error(42);
+					console.log('Never executed.');
+				}
+				catch (e) {
+					console.log(e);          // Error: 42(…)
+					console.log(e.message);  // 42
+					console.log(e.name);     // Error
+				}
+			</code>
+		</example>
+		<example>
+			<heading>throw example</heading>
+			<code>
+				function myException (code, message) {
+					this.name = 'myException';
+					this.code = code;
+					this.message = message;
+				}
+
+				try {
+					throw new myException(42, 'Custom exception.');
+					console.log('Never executed.');
+				}
+				catch (e) {
+					console.log(e.code);     // 42
+					console.log(e.message);  // Custom exception.
+					console.log(e.name);     // myException
+				}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/statements/throw">throw statement</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw">throw statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/85fscz6h(v=vs.94).aspx">throw statement</msdn>
+	</external>
+</statement>

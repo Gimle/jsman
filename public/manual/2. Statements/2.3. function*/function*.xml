@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<statement name="function*">
+	<lead>
+		<p>function – Declares a generator.</p>
+	</lead>
+	<description>
+		<p>function (<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="param, …" type="mixed" optional="true">Variables to pass into the generator.</parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>function* example</heading>
+			<code>
+				function* keyGen () {
+					var key = 0;
+					while (true) {
+						yield key++;
+					}
+				}
+
+				var key = keyGen();
+
+				console.log(key.next());  // Object {value: 0, done: false}
+				console.log(key.next());  // Object {value: 1, done: false}
+				console.log(key.next());  // Object {value: 2, done: false}
+
+				console.log(key.next().value);  // 3
+			</code>
+		</example>
+		<example>
+			<heading>function* example</heading>
+			<code>
+				function* range (start, end) {
+					while (start &lt; end) {
+						yield start;
+						start += 1;
+					}
+				}
+
+				for (var i of range(0, 5)) {
+					console.log(i);
+				}
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="yield">yield</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function*">function* statement</mdn>
+	</external>
+</statement>

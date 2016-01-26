@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<statement name="class">
+	<lead>
+		<p>class – Declares a class.</p>
+	</lead>
+	<description>
+		<p>class name <params/></p>
+	</description>
+	<parameters>
+		<parameter name="extends" type="class" optional="true"></parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>class example</heading>
+			<code>
+				"use strict";
+
+				class a {
+					constructor () {
+					}
+				}
+				console.log(typeof a);   // function
+
+				var b = new a();
+				console.log(b);          // a {}
+				console.log(typeof b);   // object
+			</code>
+		</example>
+		<example>
+			<heading>class example</heading>
+			<code>
+				"use strict";
+
+				class MyClass {
+					myMethod () {
+						return 'Hello World';
+					}
+				}
+
+				var myClass = new MyClass();
+
+				console.log(myClass.myMethod());
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class">class statement</mdn>
+		<msdn href="https://msdn.microsoft.com/library/dn802832(v=vs.94).aspx">class statement</msdn>
+	</external>
+</statement>
