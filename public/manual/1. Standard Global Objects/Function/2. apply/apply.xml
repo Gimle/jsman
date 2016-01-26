@@ -21,6 +21,53 @@
 				console.log(f.apply(location.hash));  // Sets a custom this value for the function.
 			</code>
 		</example>
+		<example>
+			<heading>apply example</heading>
+			<code>
+				var getName = function () {
+					return this.name.first + ' ' + this.name.last;
+				}
+
+				var lars = {
+					name: {
+						first: 'Lars',
+						last: 'Doe'
+					}
+				};
+
+				console.log(getName.apply(lars));
+			</code>
+		</example>
+		<example>
+			<heading>apply example</heading>
+			<code>
+				var getName = function (lastFirst, includeAge) {
+					var result = '';
+					if (lastFirst) {
+						result = this.name.last + ', ' + this.name.first;
+					}
+					else {
+						result = this.name.first + ' ' + this.name.last;
+					}
+					if (includeAge) {
+						result += ' (' + this.age + ')';
+					}
+					return result;
+				}
+
+				var lars = {
+					name: {
+						first: 'Lars',
+						last: 'Doe'
+					},
+					age: 20
+				};
+
+				console.log(getName.apply(lars));                  // Lars Doe
+				console.log(getName.apply(lars, [true]));          // Doe, Lars
+				console.log(getName.apply(lars, [false, true]));   // Lars Doe (20)
+			</code>
+		</example>
 	</examples>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">Function.apply method</mdn>
