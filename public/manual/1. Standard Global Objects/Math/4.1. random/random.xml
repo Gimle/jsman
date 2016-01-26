@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="random" parent="Math">
+	<lead>
+		<p>random — Returns a random floating point value between 0 and 1.</p>
+	</lead>
+	<description>
+		<p>Math.random(<params/>)</p>
+	</description>
+	<examples>
+		<example>
+			<heading>random example</heading>
+			<code>
+				console.log(Math.random());                   // A random float between 0 and 1.
+				console.log(Math.random() * 100);             // A random float between 0 and 100.
+				console.log(Math.floor(Math.random() * 11));  // A random integer between 0 and 10.
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Math.random method</mdn>
+	</external>
+
+</method>

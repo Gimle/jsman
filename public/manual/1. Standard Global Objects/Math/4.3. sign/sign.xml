@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="sign" parent="Math">
+	<lead>
+		<p>sign — Check if the number is positive, negative or zero.</p>
+	</lead>
+	<description>
+		<p>Math.sign(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		mixed. Integer (1, 0, -0, 1) for numbers or NaN for non number input.
+	</return>
+	<examples>
+		<example>
+			<heading>sign example</heading>
+			<code>
+				console.log(Math.sign(10));        // 1
+				console.log(Math.sign(0));         // 0
+				console.log(Math.sign(-5));        // -1
+				console.log(Math.sign(-0));        // -0
+				console.log(Math.sign('8'));       // 1
+				console.log(Math.sign('string'));  // NaN
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sign">Math.sign method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="abs" parent="Math">
+	<lead>
+		<p>abs — Returns the absolute value of a number.</p>
+	</lead>
+	<description>
+		<p>Math.abs(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>abs example</heading>
+			<code>
+				console.log(Math.abs(4));          // 4
+				console.log(Math.abs(-1.2));       // 1.2
+				console.log(Math.abs(null));       // 0
+				console.log(Math.abs(true));       // 1
+				console.log(Math.abs(-Infinity));  // Infinity
+				console.log(Math.abs(''));         // 0
+				console.log(Math.abs('String'));   // NaN
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/abs">Math.abs method</mdn>
+	</external>
+
+</method>
