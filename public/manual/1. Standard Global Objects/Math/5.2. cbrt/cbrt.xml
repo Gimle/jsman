@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="cbrt" parent="Math">
+	<lead>
+		<p>cbrt — Returns the cube root of a number.</p>
+	</lead>
+	<description>
+		<p>Math.cbrt(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>cbrt example</heading>
+			<code>
+				console.log(Math.cbrt(1));    // 1
+				console.log(Math.cbrt(8));    // 2
+				console.log(Math.cbrt(27));   // 3
+				console.log(Math.cbrt(42));   // 3.4760266448864496
+				console.log(Math.cbrt(0));    // 0
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/cbrt">Math.cbrt method</mdn>
+	</external>
+
+</method>
