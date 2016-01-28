@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="clz32" parent="Math">
+	<lead>
+		<p>clz32 — Returns the number of leading zero bits in the 32-bit binary representation of a number.</p>
+	</lead>
+	<description>
+		<p>Math.clz32(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>clz32 example</heading>
+			<code>
+				console.log(Math.clz32(1));      // 31
+				console.log(Math.clz32(1.5));    // 31
+				console.log(Math.clz32(2));      // 30
+				console.log(Math.clz32(3));      // 30
+				console.log(Math.clz32(4));      // 29
+				console.log(Math.clz32(7));      // 29
+				console.log(Math.clz32(8));      // 28
+				console.log(Math.clz32(4095));   // 20
+				console.log(Math.clz32(4096));   // 19
+				console.log(Math.clz32(-10));    // 0
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32">Math.clz32 method</mdn>
+	</external>
+
+</method>

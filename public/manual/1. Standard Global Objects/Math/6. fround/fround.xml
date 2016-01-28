@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="fround" parent="Math">
+	<lead>
+		<p>fround — Returns the nearest single-precision floating-point format of a number.</p>
+	</lead>
+	<description>
+		<p>Math.fround(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>fround example</heading>
+			<code>
+				console.log(Math.fround(1));     // 1
+				console.log(Math.fround(1.0));   // 1
+				console.log(Math.fround(1.2));   // 1.2000000476837158
+				console.log(Math.fround(1.49));  // 1.4900000095367432
+				console.log(Math.fround(1.5));   // 1
+				console.log(Math.fround(1.8));   // 1.7999999523162842
+				console.log(Math.fround(2));     // 2
+			</code>
+		</example>
+
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Math/2.1. round/round.xml">round</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/fround">Math.fround method</mdn>
+	</external>
+
+</method>

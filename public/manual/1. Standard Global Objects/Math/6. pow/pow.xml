@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="pow" parent="Math">
+	<lead>
+		<p>pow — Returns the value of x to the power of y.</p>
+	</lead>
+	<description>
+		<p>Math.pow(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="x" type="number" optional="false"></parameter>
+		<parameter name="y" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>pow example</heading>
+			<code>
+				console.log(Math.pow(2, 2));   // 4
+				console.log(Math.pow(2, 4));   // 16
+				console.log(Math.pow(16, 4));  // 65536
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/pow">Math.pow method</mdn>
+	</external>
+
+</method>

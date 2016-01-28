@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="imul" parent="Math">
+	<lead>
+		<p>imul — Returns the product of two numbers that are treated as 32-bit signed integers.</p>
+	</lead>
+	<description>
+		<p>Math.imul(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="num1" type="number" optional="false"></parameter>
+		<parameter name="num2" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>imul example</heading>
+			<code>
+				console.log(Math.imul(3, 4));      // 12
+				console.log(Math.imul(8, 11));     // 88
+				console.log(Math.imul(-3, '4'));   // -12
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/imul">Math.imul method</mdn>
+	</external>
+
+</method>
