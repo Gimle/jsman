@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="acosh" parent="Math">
+	<lead>
+		<p>acosh — Returns the hyperbolic arc-cosine of a number.</p>
+	</lead>
+	<description>
+		<p>Math.acosh(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false">A number equal to or greater than 1.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>acosh example</heading>
+			<code>
+				console.log(Math.acosh(1));    // 0
+				console.log(Math.acosh(4));    // 2.0634370688955608
+				console.log(Math.acosh(4.2));  // 2.113748230923511
+				console.log(Math.acosh(10));   // 2.993222846126381
+				console.log(Math.acosh(0));    // NaN
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/acosh">Math.acosh method</mdn>
+	</external>
+
+</method>

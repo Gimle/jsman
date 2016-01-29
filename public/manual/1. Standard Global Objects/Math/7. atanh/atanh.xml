@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="atanh" parent="Math">
+	<lead>
+		<p>atanh — Returns the hyperbolic arc-tangent of a number.</p>
+	</lead>
+	<description>
+		<p>Math.atanh(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>atanh example</heading>
+			<code>
+				console.log(Math.atanh(1));    // Infinity
+				console.log(Math.atanh(4));    // NaN
+				console.log(Math.atanh(.5));   // 0.5493061443340549
+				console.log(Math.atanh(-1));   // -Infinity
+				console.log(Math.atanh(0));    // 0
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/atanh">Math.atanh method</mdn>
+	</external>
+
+</method>

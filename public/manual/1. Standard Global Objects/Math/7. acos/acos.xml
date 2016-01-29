@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="acos" parent="Math">
+	<lead>
+		<p>acos — Returns the arc-cosine (in radians) of a number.</p>
+	</lead>
+	<description>
+		<p>Math.acos(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false">A floating number between -1 and 1.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>acos example</heading>
+			<code>
+				console.log(Math.acos(0.5));   // 1.0471975511965979
+				console.log(Math.acos(4));     // NaN
+				console.log(Math.acos(1));     // 0
+				console.log(Math.acos(-1));    // 3.141592653589793
+				console.log(Math.acos(0));     // 1.5707963267948966
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/acos">Math.acos method</mdn>
+	</external>
+
+</method>

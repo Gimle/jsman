@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="atan2" parent="Math">
+	<lead>
+		<p>atan2 — Returns the arc-tangent of the quotient of x and y.</p>
+	</lead>
+	<description>
+		<p>Math.atan2(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="x" type="number" optional="false"></parameter>
+		<parameter name="y" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>atan2 example</heading>
+			<code>
+				console.log(Math.atan2(0, 0));    // 0
+				console.log(Math.atan2(0, -0));   // 3.141592653589793
+				console.log(Math.atan2(-0, 0));   // -0
+				console.log(Math.atan2(40, 4));   // 1.4711276743037347
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/atan2">Math.atan2 method</mdn>
+	</external>
+
+</method>

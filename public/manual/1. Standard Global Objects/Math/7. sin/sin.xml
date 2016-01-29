@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="sin" parent="Math">
+	<lead>
+		<p>sin — Returns the sine of a number.</p>
+	</lead>
+	<description>
+		<p>Math.sin(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>sin example</heading>
+			<code>
+				console.log(Math.sin(10));   // -0.5440211108893698
+				console.log(Math.sin(0));    // 0
+				console.log(Math.sin(-5));   // 0.9589242746631385
+				console.log(Math.sin('8'));  // 0.9893582466233818
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sin">Math.sin method</mdn>
+	</external>
+
+</method>

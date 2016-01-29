@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="cosh" parent="Math">
+	<lead>
+		<p>cosh — Returns the hyperbolic cosine of a number.</p>
+	</lead>
+	<description>
+		<p>Math.cosh(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>cosh example</heading>
+			<code>
+				console.log(Math.cosh(0));     // 1
+				console.log(Math.cosh(0.5));   // 1.1276259652063807
+				console.log(Math.cosh(1));     // 1.5430806348152437
+				console.log(Math.cosh(-1));    // 1.5430806348152437
+				console.log(Math.cosh(3));     // 10.067661995777765
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/cosh">Math.cosh method</mdn>
+	</external>
+
+</method>

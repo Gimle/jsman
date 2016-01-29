@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="tanh" parent="Math">
+	<lead>
+		<p>tanh — Returns the hyperbolic tangent of a number.</p>
+	</lead>
+	<description>
+		<p>Math.tanh(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>tanh example</heading>
+			<code>
+				console.log(Math.tanh(4));    // 0.9993292997390669
+				console.log(Math.tanh(0));    // 0
+				console.log(Math.tanh(-3));   // -0.9950547536867306
+				console.log(Math.tanh('2'));  // 0.964027580075817
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/tanh">Math.tanh method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="log" parent="Math">
+	<lead>
+		<p>log — Returns the <xref href="manual/1. Standard Global Objects/Math/1. E/E.xml">Math.E</xref> of a number.</p>
+	</lead>
+	<description>
+		<p>Math.log(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>log example</heading>
+			<code>
+				console.log(Math.log(3));    // 1.0986122886681098
+				console.log(Math.log(8));    // 2.0794415416798357
+				console.log(Math.log(-3));   // NaN
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/log">Math.log method</mdn>
+	</external>
+
+</method>

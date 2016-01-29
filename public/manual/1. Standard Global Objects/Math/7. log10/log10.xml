@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="log10" parent="Math">
+	<lead>
+		<p>log10 — Returns the base 10 logarithm of a number.</p>
+	</lead>
+	<description>
+		<p>Math.log10(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>log10 example</heading>
+			<code>
+				console.log(Math.log10(3));    // 0.47712125471966244
+				console.log(Math.log10(8));    // 0.9030899869919435
+				console.log(Math.log10(-3));   // NaN
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/log10">Math.log10 method</mdn>
+	</external>
+
+</method>

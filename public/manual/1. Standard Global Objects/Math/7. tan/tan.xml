@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="tan" parent="Math">
+	<lead>
+		<p>tan — Returns the tangent of a number.</p>
+	</lead>
+	<description>
+		<p>Math.tan(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>tan example</heading>
+			<code>
+				console.log(Math.tan(4));    // 1.1578212823495777
+				console.log(Math.tan(0));    // 0
+				console.log(Math.tan(-3));   // 0.1425465430742778
+				console.log(Math.tan('2'));  // -2.185039863261519
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/tan">Math.tan method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="sinh" parent="Math">
+	<lead>
+		<p>sinh — Returns the inverse hyperbolic sine of a number.</p>
+	</lead>
+	<description>
+		<p>Math.sinh(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>sinh example</heading>
+			<code>
+				console.log(Math.sinh(1.2));  // 1.5094613554121725
+				console.log(Math.sinh(0));    // 0
+				console.log(Math.sinh(-3));   // -10.017874927409903
+				console.log(Math.sinh('2'));  // 3.626860407847019
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/sinh">Math.sinh method</mdn>
+	</external>
+
+</method>

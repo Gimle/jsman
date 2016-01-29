@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="hypot" parent="Math">
+	<lead>
+		<p>hypot — Returns the square root of the sum of the squares of the arguments.</p>
+	</lead>
+	<description>
+		<p>Math.hypot(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="value" type="number" optional="false"></parameter>
+		<parameter name="values, …" type="number" optional="true"></parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>hypot example</heading>
+			<code>
+				console.log(Math.hypot(42));        // 42
+				console.log(Math.hypot(3, 4));      // 5
+				console.log(Math.hypot(8, 11));     // 13.601470508735444
+				console.log(Math.hypot(-3, '4'));   // 5
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/hypot">Math.hypot method</mdn>
+	</external>
+
+</method>

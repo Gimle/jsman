@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="asin" parent="Math">
+	<lead>
+		<p>asin — Returns the arc-sine (in radians) of a number.</p>
+	</lead>
+	<description>
+		<p>Math.asin(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="number" type="number" optional="false">A number between -1 and 1.</parameter>
+	</parameters>
+	<examples>
+		<example>
+			<heading>asin example</heading>
+			<code>
+				console.log(Math.asin(0.5));   // 0.5235987755982989
+				console.log(Math.asin(4));     // NaN
+				console.log(Math.asin(1));     // 1.5707963267948966
+				console.log(Math.asin(-1));    // -1.5707963267948966
+				console.log(Math.asin(0));     // 0
+			</code>
+		</example>
+
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/asin">Math.asin method</mdn>
+	</external>
+
+</method>
