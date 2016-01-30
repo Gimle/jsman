@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="decodeURI">
+	<lead>
+		<p>decodeURI</p>
+	</lead>
+	<description>
+		<p>decodeURI(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="encodedUri" type="string" optional="false"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>decodeURI example</heading>
+			<code>
+				var uri = decodeURI('http://example.com/%7B%22foo%22:%20%5B%22bar%22%5D%7D');
+				console.log(uri);  // http://example.com/{"foo": ["bar"]}
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/encodeURI/encodeURI.xml">encodeURI object</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/decodeURIComponent/decodeURIComponent.xml">decodeURIComponent object</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/ht8a077w(v=vs.94).aspx">decodeURI object</msdn>
+	</external>
+</object>

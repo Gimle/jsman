@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="decodeURIComponent">
+	<lead>
+		<p>decodeURIComponent</p>
+	</lead>
+	<description>
+		<p>decodeURIComponent(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="encodedUriComponent" type="string" optional="false"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>decodeURIComponent example</heading>
+			<p>Decodes a url parameter.</p>
+			<code>
+				var uriComponent = decodeURIComponent('%7B%22foo%22:%20%5B%22bar%22%5D%7D');
+				console.log(uriComponent);  // {"foo": ["bar"]}
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/decodeURI/decodeURI.xml">decodeURI object</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent">decodeURIComponent object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/91b80x6x(v=vs.94).aspx">decodeURIComponent object</msdn>
+	</external>
+</object>
