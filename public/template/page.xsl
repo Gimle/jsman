@@ -27,6 +27,11 @@
 		</xsl:element>
 	</xsl:template>
 
+	<xsl:template match="see-also">
+		<h3>See also</h3>
+		<xsl:apply-templates/>
+	</xsl:template>
+
 	<xsl:template match="code">
 		<xsl:choose>
 			<xsl:when test="not(@lang) or @lang = '' or @lang = 'javascript'">
