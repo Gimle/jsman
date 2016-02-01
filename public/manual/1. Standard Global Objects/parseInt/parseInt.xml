@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="parseInt">
+	<lead>
+		<p>parseInt – Parses a string as an integer</p>
+	</lead>
+	<description>
+		<p>parseInt(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"/>
+		<parameter name="radix" type="integer" optional="false" default="10">A numeric value between 2 and 36 specifying the representation.</parameter>
+	</parameters>
+	<return>
+		<p>Returns an integer representation of the string.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>parseInt example</heading>
+			<code>
+				console.log(parseInt('123 String'));   // 123
+				console.log(parseInt('String 123'));   // NaN
+				console.log(parseInt('12'));           // 12
+				console.log(parseInt(12));             // 12
+				console.log(parseInt('12.42'));        // 12
+
+				console.log(parseInt(Infinity));       // NaN
+				console.log(parseInt('Infinity'));     // NaN
+
+				console.log(parseInt('255', 8));       // 173
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/parseFloat/parseFloat.xml">parseFloat</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/parseInt">parseInt object</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseInt">parseInt object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/x53yedee(v=vs.94).aspx">parseInt object</msdn>
+	</external>
+</object>

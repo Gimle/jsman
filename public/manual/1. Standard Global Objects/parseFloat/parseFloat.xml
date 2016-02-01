@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="parseFloat">
+	<lead>
+		<p>parseFloat – Parses a string as a float</p>
+	</lead>
+	<description>
+		<p>parseFloat(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="string" type="string" optional="false"/>
+	</parameters>
+	<return>
+		<p>Returns a float representation of the string.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>parseFloat example</heading>
+			<code>
+				console.log(parseFloat('123 String'));   // 123
+				console.log(parseFloat('String 123'));   // NaN
+				console.log(parseFloat('12'));           // 12
+				console.log(parseFloat(12));             // 12
+				console.log(parseFloat('12.42'));        // 12.42
+
+				console.log(parseFloat(Infinity));       // Infinity
+				console.log(parseFloat('Infinity'));     // Infinity
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/parseInt/parseInt.xml">parseInt</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/parseFloat">parseFloat object</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseFloat">parseFloat object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/d5hbbd4z(v=vs.94).aspx">parseFloat object</msdn>
+	</external>
+</object>
