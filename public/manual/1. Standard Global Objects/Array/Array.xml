@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Array">
+	<lead>
+		<p>Array – Creates an array.</p>
+	</lead>
+	<description>
+		<p>new Array(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="params, …" type="mixed" optional="true"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>array example</heading>
+			<p>Two ways of creating an array.</p>
+			<code>
+				var array = new Array(1, 2, 3);
+				console.log(array);          // [1, 2, 3]
+				console.log(typeof array);   // object
+				console.log(array.length);   // 3
+				array[3] = 4;
+				console.log(array);          // [1, 2, 3, 4]
+			</code>
+			<code>
+				var array = [1, 2, 3];
+				console.log(array);          // [1, 2, 3]
+				console.log(typeof array);   // object
+				console.log(array.length);   // 3
+				array[3] = 4;
+				console.log(array);          // [1, 2, 3, 4]
+			</code>
+		</example>
+		<example>
+			<heading>array example</heading>
+			<code>
+				var array = [1, 2, 3];
+				array[4] = 5;
+				console.log(array);          // [1, 2, 3, 4: 5]
+				console.log(array.length);   // 11
+				console.log(array[3]);       // undefined
+				array[3] = 4;
+				console.log(array);          // [1, 2, 3, 4, 5]
+			</code>
+		</example>
+		<example>
+			<heading>array example</heading>
+			<p>Setting initial size of an array. See <xref href="manual/1. Standard Global Objects/Array/2.1. of/of.xml">Array.of</xref> to set as value instead.</p>
+			<code>
+				var array = new Array(10);
+				console.log(array);          // []
+				console.log(array.length);   // 10
+			</code>
+		</example>
+		<example>
+			<heading>array example</heading>
+			<code>
+				var array = [1, 2, 3, 4];
+				console.log(array);          // [1, 2, 3, 4]
+
+				var first = array[0];
+				console.log(first);           // 1
+
+				var last = array[array.length - 1];
+				console.log(last);            // 4
+
+				console.log(array[10]);       // undefined
+			</code>
+		</example>
+	</examples>
+	<external>
+		<wp href="http://docs.webplatform.org/wiki/javascript/Array">Array</wp>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</mdn>
+		<msdn href="https://msdn.microsoft.com/library/ecczf11c(v=vs.94).aspx">Array</msdn>
+	</external>
+</object>
