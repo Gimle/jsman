@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
+<property name="length" parent="Array">
+	<lead>
+		<p>length</p>
+	</lead>
+	<description>
+		<p>Array.length</p>
+	</description>
+	<return>
+		integer.
+	</return>
+	<examples>
+		<example>
+			<heading>length example</heading>
+			<code>
+				var array = [1, 2, 3, 4];
+				console.log(array.length);  // 4
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/length">Array.length property</mdn>
+	</external>
+
+</property>
