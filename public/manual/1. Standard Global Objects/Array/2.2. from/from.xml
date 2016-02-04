@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="from" parent="Array">
+	<lead>
+		<p>from — Creates a new array from an array like input.</p>
+	</lead>
+	<description>
+		<p>Array.from(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="array" type="mixed" optional="false">See array below.</parameter>
+		<parameter name="callback" type="function" optional="true">See callback below</parameter>
+		<parameter name="this" type="object" optional="true"></parameter>
+		<section>
+			<header>array</header>
+			<p>An array, or array like input. Something that has a length and indexed items.</p>
+		</section>
+		<section>
+			<header>callback</header>
+			<p>The following parameters is passed to the callback.</p>
+			<dl>
+				<dt>value</dt>
+				<dd>
+					The value of the current index.
+				</dd>
+
+				<dt>index</dt>
+				<dd>
+					The current index.
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>array</p>
+	</return>
+	<examples>
+		<example>
+			<heading>from example</heading>
+			<code>
+				console.log(Array.from([]));           // []
+				console.log(Array.from([1, 2, 3]));    // [1, 2, 3]
+				console.log(Array.from(123));          // []
+				console.log(Array.from('123'));        // ["1", "2", "3"]
+				console.log(Array.from('String'));     // ["S", "t", "r", "i", "n", "g"]
+			</code>
+			<code>
+				var result = Array.from([1, 2, 3], function (value, index) {
+					console.log(value, index);
+					return value * value;
+				});
+				console.log(result);     // [1, 4, 9]
+			</code>
+			<code>
+				var result = Array.from(new Set([1, 2, 3]), function (value, index) {
+					console.log(value, index);
+					return value * value;
+				});
+				console.log(result);     // [1, 4, 9]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from method</mdn>
+	</external>
+</method>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="of" parent="Array">
+	<lead>
+		<p>of — Creates an array.</p>
+	</lead>
+	<description>
+		<p>Array.of(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="params, …" type="mixed" optional="true"/>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>array</p>
+	</return>
+	<examples>
+		<example>
+			<heading>of example</heading>
+			<code>
+				var array = Array.of(1, 2, 3);
+				console.log(array);          // [1, 2, 3]
+			</code>
+		</example>
+		<example>
+			<heading>of example</heading>
+			<code>
+				var array = Array.of(10);
+				console.log(array);          // [10]
+				console.log(array.length);   // 1
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/of">Array.of method</mdn>
+	</external>
+</method>
