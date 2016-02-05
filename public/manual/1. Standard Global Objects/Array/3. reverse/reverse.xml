@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="reverse" parent="Array">
+	<lead>
+		<p>unshift — Reverses an array.</p>
+	</lead>
+	<description>
+		<p>Array.reverse(<params/>)</p>
+	</description>
+	<return>
+		<p>The reversed array.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>reverse example</heading>
+			<code>
+				var array = [4, 8, 16, 32];
+				console.log(array);              // [4, 8, 16, 32]
+				console.log(array.reverse());    // [32, 16, 8, 4]
+				console.log(array);              // [32, 16, 8, 4]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse">Array.reverse method</mdn>
+	</external>
+
+</method>
