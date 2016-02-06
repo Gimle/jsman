@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="unshift" parent="Array">
+	<lead>
+		<p>unshift — Adds a new value to the beginning of the array.</p>
+	</lead>
+	<description>
+		<p>Array.unshift(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="value" type="mixed" optional="false"></parameter>
+	</parameters>
+	<return>
+		<p>integer. The new length of the array.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>unshift example</heading>
+			<code>
+				var array = [4, 8, 16, 32];
+				console.log(array);              // [4, 8, 16, 32]
+				console.log(array.length);       // 4
+				console.log(array.unshift(2));   // 5
+				console.log(array);              // [2, 4, 8, 16, 32]
+				console.log(array.length);       // 5
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Array/pop/pop.xml">pop</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Array/push/push.xml">push</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Array/shift/shift.xml">shift</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift">Array.unshift method</mdn>
+	</external>
+
+</method>

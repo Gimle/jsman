@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="pop" parent="Array">
+	<lead>
+		<p>pop — Removes the last element off an array and returns it.</p>
+	</lead>
+	<description>
+		<p>Array.pop(<params/>)</p>
+	</description>
+	<return>
+		<p>mixed. The value that was removed.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>pop example</heading>
+			<code>
+				var array = [2, 4, 8, 16];
+				console.log(array);          // [2, 4, 8, 16]
+				console.log(array.length);   // 4
+				console.log(array.pop());    // 16
+				console.log(array);          // [2, 4, 8]
+				console.log(array.length);   // 3
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Array/push/push.xml">push</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Array/shift/shift.xml">shift</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Array/unshift/unshift.xml">unshift</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">Array.pop method</mdn>
+	</external>
+
+</method>
