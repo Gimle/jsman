@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="fill" parent="Array">
+	<lead>
+		<p>fill — Fills an array with a static value.</p>
+	</lead>
+	<description>
+		<p>Array.fill(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="value" type="mixed" optional="false"></parameter>
+		<parameter name="start" type="integer" optional="true"></parameter>
+		<parameter name="end" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>The array with the filled values.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>fill example</heading>
+			<p>The array is overwritten when overwriting.</p>
+			<code>
+				var array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.fill(3));        // [3, 3, 3, 3, 3, 3, 3]
+				console.log(array);                // [3, 3, 3, 3, 3, 3, 3]
+
+				array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.fill(3, 2));     // [2, 4, 3, 3, 3, 3, 3]
+				console.log(array);                // [2, 4, 3, 3, 3, 3, 3]
+
+				array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.fill(3, 2, 4));  // [2, 4, 3, 3, 16, 4, 32]
+				console.log(array);                // [2, 4, 3, 3, 16, 4, 32]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/fill">Array.fill method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="splice" parent="Array">
+	<lead>
+		<p>splice — Cuts a piece out of an array, and optionally put in new value(s) in its place.</p>
+	</lead>
+	<description>
+		<p>Array.splice(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="start" type="integer" optional="false"></parameter>
+		<parameter name="length" type="integer" optional="false"></parameter>
+		<parameter name="item, …" type="mixed" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>The cut out piece array.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>splice example</heading>
+			<code>
+				var array = [2, 4, 8, 16, 32];
+				console.log(array);                // [2, 4, 8, 16, 32]
+				console.log(array.splice(1, 2));   // [4, 8]
+				console.log(array);                // [2, 16, 32]
+			</code>
+		</example>
+		<example>
+			<heading>splice example</heading>
+			<code>
+				var array = [2, 4, 8, 16, 32];
+				console.log(array);                         // [2, 4, 8, 16, 32]
+				console.log(array.splice(1, 2, 5, 7, 9));   // [4, 8]
+				console.log(array);                         // [2, 5, 7, 9, 16, 32]
+			</code>
+		</example>
+		<example>
+			<heading>splice example</heading>
+			<code>
+				var array = [2, 4, 8];
+				console.log(array);                    // [2, 4, 8]
+				console.log(array.splice(1, 4, 11));   // [4, 8]
+				console.log(array);                    // [2, 11]
+			</code>
+		</example>
+		<example>
+			<heading>splice example</heading>
+			<code>
+				var array = [2, 4, 8, 16, 32];
+				console.log(array);                                  // [2, 4, 8, 16, 32]
+				console.log(array.splice(1, array.length - 2, 11));  // [4, 8, 16]
+				console.log(array);                                  // [2, 11, 32]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">Array.splice method</mdn>
+	</external>
+
+</method>

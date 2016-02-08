@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="concat" parent="Array">
+	<lead>
+		<p>concat — Based on the given input array, returns a new array with the parameters provided added to the end.</p>
+		<p>If the parameter is an array, each value will be added.</p>
+	</lead>
+	<description>
+		<p>Array.concat(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="item" type="mixed" optional="false"></parameter>
+		<parameter name="item, …" type="mixed" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>The new array with the values added.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>concat example</heading>
+			<code>
+				var array = [2, 4, 8, 16];
+				console.log(array);                 // [2, 4, 8, 16]
+				console.log(array.concat(32, 64));  // [2, 4, 8, 16, 32, 64]
+				console.log(array);                 // [2, 4, 8, 16]
+			</code>
+		</example>
+		<example>
+			<heading>concat example</heading>
+			<code>
+				var array = [2, 4, 8];
+				var array2 = [16, 32];
+				var array3 = [64, 128];
+				console.log(array);                         // [2, 4, 8]
+				console.log(array.concat(array2, array3));  // [2, 4, 8, 16, 32, 64, 128]
+				console.log(array);                         // [2, 4, 8]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">Array.concat method</mdn>
+	</external>
+
+</method>

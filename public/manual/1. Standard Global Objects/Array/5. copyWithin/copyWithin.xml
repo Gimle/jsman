@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="copyWithin" parent="Array">
+	<lead>
+		<p>copyWithin — Copies a subset of the array and pastes over the array's current values starting at target.</p>
+	</lead>
+	<description>
+		<p>Array.copyWithin(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="target" type="integer" optional="false"></parameter>
+		<parameter name="start" type="integer" optional="false"></parameter>
+		<parameter name="end" type="integer" optional="true"></parameter>
+	</parameters>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<return>
+		<p>The array with the filled values.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>copyWithin example</heading>
+			<p>The array is overwritten when filling.</p>
+			<code>
+				var array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.copyWithin(1, 1));        // [2, 4, 8, 4, 16, 4, 32]
+				console.log(array);                         // [2, 4, 8, 4, 16, 4, 32]
+
+				array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.copyWithin(1, 3, 5));     // [2, 4, 16, 4, 16, 4, 32]
+				console.log(array);                         // [2, 4, 16, 4, 16, 4, 32]
+
+				array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.copyWithin(0, 1, 5));     // [4, 8, 4, 16, 16, 4, 32]
+				console.log(array);                         // [4, 8, 4, 16, 16, 4, 32]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin">Array.copyWithin method</mdn>
+	</external>
+
+</method>
