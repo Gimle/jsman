@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="slice" parent="Array">
+	<lead>
+		<p>slice — Copies a piece out of an array and returns it.</p>
+	</lead>
+	<description>
+		<p>Array.slice(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="begin" type="integer" optional="true"></parameter>
+		<parameter name="end" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>The copied piece of the array.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>slice example</heading>
+			<code>
+				var array = [2, 4, 8, 16, 32, 64];
+				console.log(array.slice());      // [2, 4, 8, 16, 32, 64]
+				console.log(array.slice(2));     // [8, 16, 32, 64]
+				console.log(array.slice(2, 2));  // []
+				console.log(array.slice(2, 5));  // [8, 16, 32]
+				console.log(array);              // [2, 4, 8, 16, 32, 64]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">Array.slice method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="indexOf" parent="Array">
+	<lead>
+		<p>indexOf — Returns the first position of the element with the given value.</p>
+	</lead>
+	<description>
+		<p>Array.indexOf(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="search" type="integer" optional="true"></parameter>
+		<parameter name="offset" type="integer" optional="true"></parameter>
+	</parameters>
+	<return>
+		<p>integer.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>indexOf example</heading>
+			<code>
+				var array = [2, 4, 8, 4, 16, 4, 32];
+				console.log(array.indexOf());      // -1
+				console.log(array.indexOf(3));     // -1
+				console.log(array.indexOf(4));     // 1
+				console.log(array.indexOf(4, 2));  // 3
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Array/lastIndexOf/lastIndexOf.xml">Array.lastIndexOf()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">Array.indexOf method</mdn>
+	</external>
+
+</method>
