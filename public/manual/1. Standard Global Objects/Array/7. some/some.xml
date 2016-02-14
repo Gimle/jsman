@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="some" parent="Array">
+	<lead>
+		<p>some — Executes a provided function once per array element. If all the functions returns a false value, it return false. If any returns a true value, it will break the loop and retrun true.</p>
+	</lead>
+	<description>
+		<p>Array.some(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="callback" type="function" optional="false">See callback below.</parameter>
+		<parameter name="this" type="object" optional="true"></parameter>
+		<section>
+			<header>callback</header>
+			<p>The following parameters is passed to the callback.</p>
+			<dl>
+				<dt>value</dt>
+				<dd>
+					The value of the current index.
+				</dd>
+
+				<dt>index</dt>
+				<dd>
+					The current index.
+				</dd>
+
+				<dt>array</dt>
+				<dd>
+					The array.
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p>Returns false if all iterations fail, otherwise true.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>some example</heading>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.some(function () {
+					console.log(this);
+					return true;
+				});
+
+				console.log(result);  // true
+			</code>
+			<code>
+				var arr = [2, 4, 8];
+
+				var result = arr.some(function (value, index, array) {
+					console.log(value, index, array);
+					return true;
+				});
+
+				console.log(result);  // true
+			</code>
+			<p>Passing in a custom object for this.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.some(function () {
+					console.log(this);
+					return true;
+				}, document.location);
+
+				console.log(result);  // true
+			</code>
+			<p>Emulates a failed test when the value 2 is discovered. This will make it go to the next iteration.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.some(function (value) {
+					console.log(this);
+					if (value === 2) {
+						return 0;
+					}
+					return true;
+				});
+
+				console.log(result);  // true
+			</code>
+			<p>All callbacks return a false value, so all iterations are performed, and the end result is set to false.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.some(function (value) {
+					console.log(this);
+					return 0;
+				});
+
+				console.log(result);  // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/every">Array.every method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="map" parent="Array">
+	<lead>
+		<p>map — Creates a new array with the values returned from the callback.</p>
+	</lead>
+	<description>
+		<p>Array.map(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="callback" type="function" optional="false">See callback below.</parameter>
+		<parameter name="this" type="object" optional="true"></parameter>
+		<section>
+			<header>callback</header>
+			<p>The following parameters is passed to the callback.</p>
+			<dl>
+				<dt>value</dt>
+				<dd>
+					The value of the current index.
+				</dd>
+
+				<dt>index</dt>
+				<dd>
+					The current index.
+				</dd>
+
+				<dt>array</dt>
+				<dd>
+					The array.
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p>Returns a new array with the return values from the callback.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>map example</heading>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.map(function () {
+					console.log(this);
+					return true;
+				});
+
+				console.log(result);  // [true, true, true]
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<code>
+				var arr = [2, 4, 8];
+
+				var result = arr.map(function (value, index, array) {
+					console.log(value, index, array);
+					return true;
+				});
+
+				console.log(result);  // [true, true, true]
+				console.log(arr);     // [2, 4, 8]
+			</code>
+			<p>Passing in a custom object for this.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.map(function () {
+					console.log(this);
+					return true;
+				}, document.location);
+
+				console.log(result);  // [true, true, true]
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>False for 4</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.map(function (value) {
+					if (value === 4) {
+						return false;
+					}
+					return true;
+				});
+
+				console.log(result);  // [true, false, true]
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>Return false for all.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.map(function (value) {
+					console.log(value);
+					return false;
+				});
+
+				console.log(result);  // [false, false, false]
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>Return a new array with values doubled of the input.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.map(function (value) {
+					console.log(value);
+					return value * 2;
+				});
+
+				console.log(result);  // [4, 8, 16]
+				console.log(array);   // [2, 4, 8]
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map">Array.map method</mdn>
+	</external>
+
+</method>

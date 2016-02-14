@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="reduce" parent="Array">
+	<lead>
+		<p>reduce — Loops thru the array, and for each value the result of the last callback is made available.</p>
+	</lead>
+	<description>
+		<p>Array.reduce(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="callback" type="function" optional="false">See callback below.</parameter>
+		<parameter name="first" type="mixed" optional="true">See first below.</parameter>
+		<section>
+			<header>callback</header>
+			<p>The following parameters is passed to the callback.</p>
+			<dl>
+				<dt>previous</dt>
+				<dd>
+					The value of the current index.
+				</dd>
+
+				<dt>value</dt>
+				<dd>
+					The value of the current index.
+				</dd>
+
+				<dt>index</dt>
+				<dd>
+					The current index.
+				</dd>
+
+				<dt>array</dt>
+				<dd>
+					The array.
+				</dd>
+			</dl>
+		</section>
+		<section>
+			<header>first</header>
+			<p>The value of previous for the first iteration.</p>
+			<p>If not provided the first loop is skipped.</p>
+		</section>
+	</parameters>
+	<return>
+		<p>Returns a new array with the return value from the callback.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>reduce example</heading>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.reduce(function () {
+					console.log(this);
+					return true;
+				});
+
+				console.log(result);  // true
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<code>
+				var arr = [2, 4, 8];
+
+				var result = arr.reduce(function (previous, value, index, array) {
+					console.log(previous, value, index, array);
+					return true;
+				});
+
+				console.log(result);  // true
+				console.log(arr);     // [2, 4, 8]
+			</code>
+			<p>Passing in a custom object for this.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.reduce(function () {
+					console.log(this);
+					return true;
+				}, document.location);
+
+				console.log(result);  // true
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>False for 4</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.reduce(function (value) {
+					if (value === 4) {
+						return false;
+					}
+					return true;
+				});
+
+				console.log(result);  // true
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>Return false for all.</p>
+			<code>
+				var array = [2, 4, 8];
+
+				var result = array.reduce(function (value) {
+					console.log(value);
+					return false;
+				});
+
+				console.log(result);  // false
+				console.log(array);   // [2, 4, 8]
+			</code>
+			<p>Return a new array with values doubled of the input.</p>
+			<code>
+				var array = [1, 2, 3, 4, 5];
+
+				var result = array.reduce(function (previous, value) {
+					var sum = previous + value;
+					console.log(previous, value, sum);
+					return sum;
+				});
+
+				console.log(result);  // 15
+			</code>
+			<code>
+				var array = [1, 2, 3, 4, 5];
+
+				var result = array.reduce(function (previous, value) {
+					var sum = previous + value;
+					console.log(previous, value, sum);
+					return sum;
+				}, 0);
+
+				console.log(result);  // 15
+			</code>
+			<code>
+				var array = [1, 2, 3, 4, 5];
+
+				var result = array.reduce(function (previous, value) {
+					var sum = previous * value;
+					console.log(previous, value, sum);
+					return sum;
+				}, 10);
+
+				console.log(result);  // 1200
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">Array.reduce method</mdn>
+	</external>
+
+</method>
