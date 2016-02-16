@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="keys" parent="Array">
+	<lead>
+		<p>keys — Returns an <xref>ArrayIterator</xref> with the keys of the array.</p>
+	</lead>
+	<description>
+		<p>Array.keys(<params/>)</p>
+	</description>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>keys example</heading>
+			<code>
+				var array = [2, 4, 8];
+				var keys = array.keys();
+
+				console.log(typeof keys);  // object
+				console.log(keys);         // ArrayIterator {}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/keys">Array.keys method</mdn>
+	</external>
+
+</method>

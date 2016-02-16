@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="entries" parent="Array">
+	<lead>
+		<p>entries — Returns an <xref>ArrayIterator</xref> of the array.</p>
+	</lead>
+	<description>
+		<p>Array.entries(<params/>)</p>
+	</description>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>entries example</heading>
+			<code>
+				var array = [2, 4, 8];
+				var entries = array.entries();
+
+				console.log(typeof entries);  // object
+				console.log(entries);         // ArrayIterator {}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/entries">Array.entries method</mdn>
+	</external>
+
+</method>
