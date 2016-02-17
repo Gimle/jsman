@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toLocaleString" parent="Array">
+	<lead>
+		<p>toLocaleString — Flattens the elements of an array into a string.</p>
+	</lead>
+	<description>
+		<p>Array.toLocaleString(<params/>)</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toLocaleString example</heading>
+			<code>
+				var array = [2, 4, 8, 16];
+				console.log(array);                   // [2, 4, 8, 16]
+				console.log(array.toLocaleString());  // A string representation of the array using the local join character.
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Array/join/join.xml">Array.join()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString">Array.toLocaleString method</mdn>
+	</external>
+
+</method>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="toString" parent="Array">
+	<lead>
+		<p>toString — Flattens the elements of an array into a string.</p>
+	</lead>
+	<description>
+		<p>Array.toString(<params/>)</p>
+		<p>Since toString sometimes is used to implement other return values, it is recomended to use the <xref href="manual/1. Standard Global Objects/Array/join/join.xml">join method</xref> instead.</p>
+	</description>
+	<return>
+		<p>string primitive.</p>
+	</return>
+	<examples>
+		<example>
+			<heading>toString example</heading>
+			<code>
+				var array = [2, 4, 8, 16];
+				console.log(array);             // [2, 4, 8, 16]
+				console.log(array.toString());  // 2,4,8,16
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Array/join/join.xml">Array.join()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/toString">Array.toString method</mdn>
+	</external>
+
+</method>
