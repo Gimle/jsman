@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="eval">
+	<lead>
+		<p>eval</p>
+	</lead>
+	<description>
+		<p>eval(<params/>)</p>
+		<p>
+			Executes code stored in a string variable.
+			Passing in code that is created by, or can be modified by a third pary is considered a security risk.
+		</p>
+	</description>
+	<parameters>
+		<parameter name="code" type="string" optional="false"/>
+	</parameters>
+	<examples>
+		<example>
+			<heading>eval example</heading>
+			<code>
+				var code = 'console.log(document);'
+
+				eval(code);  // Will log out the document object.
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/eval">eval object</mdn>
+		<msdn href="https://msdn.microsoft.com/library/12k71sw7(v=vs.94).aspx">eval object</msdn>
+	</external>
+</object>
