@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="undefined">
+	<lead>
+		<p>undefined — A variable which does not have it’s value defined.</p>
+	</lead>
+	<description>
+		<p>undefined</p>
+	</description>
+	<examples>
+		<example>
+			<heading>undefined</heading>
+			<code>
+				var a;
+				var b = undefined;
+				console.log(typeof a);          // undefined
+				console.log(a);                 // undefined
+				console.log(typeof b);          // undefined
+				console.log(b);                 // undefined
+			</code>
+		</example>
+		<example>
+			<heading>In some situations you might en up with the sting 'undefined'</heading>
+			<p>When checking typeof an undefined variable, the result is a string.</p>
+			<code>
+				var a;
+				console.log(a === undefined);                 // true
+				console.log(typeof a === undefined);          // false
+				console.log(a === 'undefined');               // false
+				console.log(typeof a === 'undefined');        // true
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined property</mdn>
+	</external>
+</operator>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../template/pageWrapper.xsl"?>
+<page name="Primitives">
+	<header>Primitives</header>
+	<p>In Javascript primitives are properties on the the standard global object.</p>
+</page>

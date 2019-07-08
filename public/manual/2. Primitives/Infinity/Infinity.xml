@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="Infinity">
+	<lead>
+		<p>Infinity — A value representing infinity. This is the same as the value of Number.POSITIVE_INFINITY</p>
+	</lead>
+	<description>
+		<p>Infinity</p>
+	</description>
+	<examples>
+		<example>
+			<heading>Infinity</heading>
+			<code>
+				var b = Infinity;
+				console.log(typeof b);   // number
+				console.log(b);          // Infinity
+			</code>
+		</example>
+		<example>
+			<heading>Infinity as a math result</heading>
+			<code>
+				var a = Math.pow(10, 1000);
+				console.log(a);          // Infinity
+				console.log(1 / a);      // 0
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Number/1. POSITIVE_INFINITY/POSITIVE_INFINITY.xml">Number.POSITIVE_INFINITY</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity">Infinity property</mdn>
+	</external>
+</operator>

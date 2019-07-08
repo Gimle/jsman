@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="null">
+	<lead>
+		<p>null — A variable value expresses a lack of identification.</p>
+	</lead>
+	<description>
+		<p>null</p>
+	</description>
+	<examples>
+		<example>
+			<heading>null</heading>
+			<code>
+				var b = null;
+				console.log(typeof b);          // object
+				console.log(b);                 // null
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null property</mdn>
+	</external>
+</operator>

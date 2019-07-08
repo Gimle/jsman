@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="NaN">
+	<lead>
+		<p>NaN — Not a Number. A value that is used to represent the the value is not a number. This will often be a result when performing math operations on values that is not a number. This is the same as the value of Number.NaN</p>
+	</lead>
+	<description>
+		<p>null</p>
+	</description>
+	<examples>
+		<example>
+			<heading>NaN</heading>
+			<code>
+				var b = NaN;
+				console.log(typeof b);   // number
+				console.log(b);          // NaN
+			</code>
+		</example>
+		<example>
+			<heading>NaN as a math result</heading>
+			<code>
+				var a = 'one';
+				var b = 2;
+				console.log(a * b);      // NaN
+				console.log(a);          // one
+				console.log(b);          // 2
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Number/1. NaN/NaN.xml">Number.NaN</xref></li>
+			<li><xref href="manual/1. Standard Global Objects/Number/2. isNaN/isNaN.xml">Number.isNaN()</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN">NaN property</mdn>
+	</external>
+</operator>

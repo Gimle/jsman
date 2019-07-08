@@ -16,6 +16,11 @@
 		</example>
 
 	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/2. Primitives/Infinity/Infinity.xml">Infinity primitive</xref></li>
+		</ul>
+	</see-also>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/POSITIVE_INFINITY">Number.POSITIVE_INFINITY property</mdn>
 	</external>
