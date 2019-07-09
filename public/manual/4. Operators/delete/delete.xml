@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="delete">
+	<lead>
+		<p>delete — Remove a property from an object.</p>
+	</lead>
+	<description>
+		<p>delete <params/></p>
+	</description>
+	<parameters>
+		<parameter name="variable" type="mixed" optional="false">The property to remove.</parameter>
+	</parameters>
+	<return>
+		boolean.
+	</return>
+	<examples>
+		<example>
+			<heading>delete example</heading>
+			<code>
+				var person = {
+					firstName: "John",
+					lastName: "Doe",
+					email: "john.doe@example.com",
+				};
+				console.log(person);                 // {firstName: "John", lastName: "Doe", email: "john.doe@example.com"}
+				console.log(delete person.email);    // true
+				console.log(person);                 // {firstName: "John", lastName: "Doe"}
+			</code>
+		</example>
+		<example>
+			<heading>delete non existant property</heading>
+			<code>
+				var person = {
+					firstName: "John",
+					lastName: "Doe",
+				};
+				console.log(delete person.invalid);  // true
+			</code>
+		</example>
+		<example>
+			<heading>delete non deletable property</heading>
+			<code>
+				console.log(delete Math.PI);         // false
+			</code>
+			<code>
+				'use strict'
+
+				console.log(delete Math.PI);         // In strict mode an exception is thrown
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/delete">delete operator</mdn>
+	</external>
+</operator>

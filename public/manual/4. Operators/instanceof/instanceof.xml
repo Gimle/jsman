@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="instanceof">
+	<lead>
+		<p>instanceof — Used to determine whether a variable is an instantiated object of a certain prototype.</p>
+	</lead>
+	<description>
+		<p>object instanceof <params/></p>
+	</description>
+	<parameters>
+		<parameter name="constructor" type="prototype" optional="false">The prototype to check against.</parameter>
+	</parameters>
+	<return>
+		boolean.
+	</return>
+	<examples>
+		<example>
+			<heading>instanceof example</heading>
+			<code>
+				class Animal {}
+				class Cat extends Animal {}
+				class Dog extends Animal {}
+
+				var a = new Animal();
+				var c = new Cat();
+				var d = new Dog();
+
+				console.log(a instanceof Animal);  // true
+				console.log(c instanceof Animal);  // true
+				console.log(d instanceof Animal);  // true
+
+				console.log(a instanceof Dog);     // false
+				console.log(c instanceof Dog);     // false
+				console.log(d instanceof Dog);     // true
+			</code>
+		</example>
+		<example>
+			<heading>instanceof example</heading>
+			<code>
+				var a = new String('one');
+				var b = 'two';
+
+				console.log(a instanceof String);  // true
+				console.log(b instanceof String);  // false
+				console.log(a instanceof Object);  // true
+				console.log(b instanceof Object);  // false
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof">instanceof operator</mdn>
+	</external>
+</operator>
