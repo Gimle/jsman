@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
 <method name="clearTimeout" parent="window">
 	<lead>
-		<p>clearTimeout — Clears a previously setTimeout.</p>
+		<p>clearTimeout — Clears a previously <xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref>.</p>
 	</lead>
 	<description>
 		<p>clearTimeout(<params/>)</p>
@@ -39,11 +39,11 @@
 		</example>
 		<see-also>
 			<ul>
-				<li><xref href="setTimeout">setTimeout</xref></li>
+				<li><xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref></li>
 			</ul>
 		</see-also>
 		<external>
-			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/clearTimeout">clearTimeout</mdn>
+			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout">clearTimeout</mdn>
 		</external>
 	</examples>
 </method>

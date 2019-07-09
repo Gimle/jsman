@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
 <operator name="Infinity">
 	<lead>
-		<p>Infinity — A value representing infinity. This is the same as the value of Number.POSITIVE_INFINITY</p>
+		<p>Infinity — A value representing infinity. This is the same as the value of <xref href="manual/1. Standard Global Objects/Number/1. POSITIVE_INFINITY/POSITIVE_INFINITY.xml">Number.POSITIVE_INFINITY</xref>.</p>
 	</lead>
 	<description>
 		<p>Infinity</p>
@@ -31,6 +31,6 @@
 		</ul>
 	</see-also>
 	<external>
-		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity">Infinity property</mdn>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity">Infinity</mdn>
 	</external>
 </operator>

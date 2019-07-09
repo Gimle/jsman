@@ -17,7 +17,7 @@
 		<example>
 			<heading>class example</heading>
 			<code>
-				"use strict";
+				'use strict';
 
 				class a {
 					constructor () {
@@ -33,7 +33,7 @@
 		<example>
 			<heading>class example</heading>
 			<code>
-				"use strict";
+				'use strict';
 
 				class MyClass {
 					myMethod () {
@@ -49,6 +49,5 @@
 	</examples>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class">class statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/dn802832(v=vs.94).aspx">class statement</msdn>
 	</external>
 </statement>

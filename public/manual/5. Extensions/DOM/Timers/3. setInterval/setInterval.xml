@@ -14,10 +14,10 @@
 	</parameters>
 	<return>
 		<p>Returns the id of the current interval.</p>
-		<p>This id can later be used with: <xref>clearInterval</xref>.</p>
+		<p>This id can later be used with: <xref href="manual/5. Extensions/DOM/Timers/4. clearInterval/clearInterval.xml">clearInterval</xref>.</p>
 	</return>
 	<notes>
-		<p>setInterval can run into trouble if delay is too short. See <xref>setInterval</xref> for a workaround in these cases.</p>
+		<p>setInterval can run into trouble if delay is too short. See recursive examples in <xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref> for a workaround in these cases.</p>
 	</notes>
 	<examples>
 		<example>
@@ -31,11 +31,11 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="clearTimeout">setTimeout</xref></li>
-			<li><xref href="clearInterval">clearInterval</xref></li>
+			<li><xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref></li>
+			<li><xref href="manual/5. Extensions/DOM/Timers/4. clearInterval/clearInterval.xml">clearInterval</xref></li>
 		</ul>
 	</see-also>
 	<external>
-		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setInterval">setInterval</mdn>
+		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/setInterval">setInterval</mdn>
 	</external>
 </method>

@@ -29,8 +29,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/continue">continue statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue">continue statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/8de3fkc8(v=vs.94).aspx">continue statement</msdn>
 	</external>
 </statement>

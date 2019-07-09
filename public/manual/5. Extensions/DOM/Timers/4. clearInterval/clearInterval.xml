@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
 <method name="clearInterval" parent="window">
 	<lead>
-		<p>clearInterval — Clears a previously setInterval.</p>
+		<p>clearInterval — Clears a previously <xref href="manual/5. Extensions/DOM/Timers/3. setInterval/setInterval.xml">setInterval</xref>.</p>
 	</lead>
 	<description>
 		<p>clearInterval(<params/>)</p>
@@ -26,11 +26,11 @@
 		</example>
 		<see-also>
 			<ul>
-				<li><xref href="setInterval">setInterval</xref></li>
+				<li><xref href="manual/5. Extensions/DOM/Timers/3. setInterval/setInterval.xml">setInterval</xref></li>
 			</ul>
 		</see-also>
 		<external>
-			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/clearInterval">clearInterval</mdn>
+			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval">clearInterval</mdn>
 		</external>
 	</examples>
 </method>

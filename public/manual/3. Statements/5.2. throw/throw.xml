@@ -59,8 +59,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/throw">throw statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw">throw statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/85fscz6h(v=vs.94).aspx">throw statement</msdn>
 	</external>
 </statement>

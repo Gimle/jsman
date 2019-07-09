@@ -59,8 +59,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/return">return statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return">return statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/22a685h9(v=vs.94).aspx">return statement</msdn>
 	</external>
 </statement>

@@ -19,7 +19,8 @@
 		<example>
 			<heading>let example</heading>
 			<code>
-				"use strict";
+				'use strict';
+
 				function doit () {
 					let x = 'y'; // Sets "y" an the value for the variable named x.
 					console.log(x);
@@ -28,7 +29,8 @@
 			</code>
 			<heading>let example</heading>
 			<code>
-				"use strict";
+				'use strict';
+
 				function doit () {
 					let a = 'b', x = 'y';
 					console.log(a);
@@ -40,6 +42,5 @@
 	</examples>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/let">let statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/dn263046(v=vs.94).aspx">let statement</msdn>
 	</external>
 </statement>

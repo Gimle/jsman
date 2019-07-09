@@ -14,7 +14,7 @@
 	</parameters>
 	<return>
 		<p>Returns the id of the current interval.</p>
-		<p>This id can later be used with: <xref>clearTimeout</xref>.</p>
+		<p>This id can later be used with: <xref href="manual/5. Extensions/DOM/Timers/2. clearTimeout/clearTimeout.xml">clearTimeout</xref>.</p>
 	</return>
 	<examples>
 		<example>
@@ -63,10 +63,10 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="clearTimeout">clearTimeout</xref></li>
+			<li><xref href="manual/5. Extensions/DOM/Timers/2. clearTimeout/clearTimeout.xml">clearTimeout</xref></li>
 		</ul>
 	</see-also>
 	<external>
-		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowTimers/setTimeout">setTimeout</mdn>
+		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout">setTimeout</mdn>
 	</external>
 </method>

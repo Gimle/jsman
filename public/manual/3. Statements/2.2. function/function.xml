@@ -133,7 +133,8 @@
 			<heading>function example</heading>
 			<p>Spreading variable in function call. Available from ES 6.</p>
 			<code>
-				"use strict";
+				'use strict';
+
 				function f (foo, bar) {
 					return {foo: foo, bar: bar};
 				}
@@ -150,8 +151,6 @@
 		</ul>
 	</see-also>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/function">function statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/4t2k5yhw(v=vs.94).aspx">function statement</msdn>
 	</external>
 </statement>

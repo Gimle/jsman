@@ -19,8 +19,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/debugger">debugger statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/debugger">debugger statement</mdn>
-		<msdn href="https://msdn.microsoft.com/Library/0bwt76sk(v=vs.94).aspx">debugger statement</msdn>
 	</external>
 </statement>

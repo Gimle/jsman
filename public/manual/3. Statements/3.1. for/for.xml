@@ -40,8 +40,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/statements/for">for statement</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for">for statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/s1cyybdf(v=vs.94).aspx">for statement</msdn>
 	</external>
 </statement>

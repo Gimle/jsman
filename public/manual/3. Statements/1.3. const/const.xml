@@ -26,6 +26,5 @@
 	</examples>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/const">const statement</mdn>
-		<msdn href="https://msdn.microsoft.com/library/dn251545(v=vs.94).aspx">const statement</msdn>
 	</external>
 </statement>

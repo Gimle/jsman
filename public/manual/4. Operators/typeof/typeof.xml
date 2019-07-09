@@ -10,6 +10,9 @@
 	<parameters>
 		<parameter name="variable" type="mixed" optional="false">The variable to get the type of.</parameter>
 	</parameters>
+	<return>
+		string - A string indicating the variable type.
+	</return>
 	<examples>
 		<example>
 			<heading>typeof example</heading>
@@ -27,8 +30,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/operators/typeof">typeof operator</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof">typeof operator</mdn>
-		<msdn href="https://msdn.microsoft.com/library/259s7zc1(v=vs.94).aspx">typeof operator</msdn>
 	</external>
 </operator>
