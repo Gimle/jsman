@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
-<page name="substr vs substring vs slice">
+<page name="substr vs substring vs slice" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
 
 	<header>substr vs substring vs slice</header>
 
@@ -13,13 +14,13 @@
 
 	<dl>
 		<dt>substr</dt>
-		<dd>Some older interpreters (IE8) will treat a negative start index as 0.</dd>
+		<dd><p>Some older interpreters (IE8) will treat a negative start index as 0.</p></dd>
 
 		<dt>substring</dt>
-		<dd>The smallest value will be used as start index. A negative start index will be treated as 0.</dd>
+		<dd><p>The smallest value will be used as start index. A negative start index will be treated as 0.</p></dd>
 
 		<dt>slice</dt>
-		<dd>A negative start index is acceptable, and will start counting from the end.</dd>
+		<dd><p>A negative start index is acceptable, and will start counting from the end.</p></dd>
 	</dl>
 
 	<p>
@@ -31,17 +32,17 @@
 	<dl>
 		<dt>String.substr(begin, [length])</dt>
 		<dd>
-			Starts from <b>begin</b> position and reads <b>length</b> amonut of characters where stop can not be a negative value.
+			<p>Starts from <b>begin</b> position and reads <b>length</b> amonut of characters where stop can not be a negative value.</p>
 		</dd>
 
 		<dt>String.substring(start, [stop])</dt>
 		<dd>
-			Starts from <b>start</b> position and stops at <b>stop</b> position where <b>stop</b> can not be a negative value.
+			<p>Starts from <b>start</b> position and stops at <b>stop</b> position where <b>stop</b> can not be a negative value.</p>
 		</dd>
 
 		<dt>String.slice(begin, [end])</dt>
 		<dd>
-			Starts from <b>begin</b> position and ends at <b>end</b> position where <b>end</b> can be a negative value counting from the end.
+			<p>Starts from <b>begin</b> position and ends at <b>end</b> position where <b>end</b> can be a negative value counting from the end.</p>
 		</dd>
 	</dl>
 

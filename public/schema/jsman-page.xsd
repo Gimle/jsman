@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.jsman.net/xsd/page" xmlns="http://www.jsman.net/xsd/page" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="page">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="header"/>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="p"/>
+					<xs:element ref="dl"/>
+					<xs:element ref="ul"/>
+					<xs:element ref="hr"/>
+					<xs:element ref="code"/>
+					<xs:element ref="section"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="header"/>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="p"/>
+					<xs:element ref="dl"/>
+					<xs:element ref="ul"/>
+					<xs:element ref="hr"/>
+					<xs:element ref="code"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="header">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="p">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="a"/>
+				<xs:element ref="b"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ul">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="li"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="li">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dl">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element ref="dt"/>
+					<xs:element ref="dd"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dt">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dd">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="a">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="b">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hr">
+		<xs:complexType>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="code">
+		<xs:complexType mixed="true">
+			<xs:attribute name="lang" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
-<page name="Links">
+<page name="Links" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
 	<header>Links</header>
 
 	<section>
 		<header>Mixed</header>
 		<ul>
-			<li><a href="http://jshint.com/">jshint.com/</a> – JavaScript Code Quality Tool.</li>
-			<li><a href="http://eslint.org/">eslint.org/</a> – JavaScript Code Quality Tool.</li>
-			<li><a href="http://jslint.com/">jslint.com/</a> – JavaScript Code Quality Tool.</li>
+			<li><p><a href="http://jshint.com/">jshint.com/</a> – JavaScript Code Quality Tool.</p></li>
+			<li><p><a href="http://eslint.org/">eslint.org/</a> – JavaScript Code Quality Tool.</p></li>
+			<li><p><a href="http://jslint.com/">jslint.com/</a> – JavaScript Code Quality Tool.</p></li>
 		</ul>
 	</section>
 
 	<section>
 		<header>Videos</header>
 		<ul>
-			<li><a href="http://youtube.com/watch?v=F6k8lTrAE2g">youtube.com/…</a> – Node.js: JavaScript on the Server by Ryan Dahl. (July 28, 2010)</li>
-			<li><a href="http://paulirish.com/2010/10-things-i-learned-from-the-jquery-source/">paulirish.com/…</a> – 10 Things I Learned from the jQuery Source by Paul Irish. (June 14, 2010)</li>
-			<li><a href="http://youtube.com/watch?v=hQVTIJBZook">youtube.com/…</a> – The Good Parts by Doug Crockford. (February 27, 2009)</li>
-			<li><a href="http://youtube.com/watch?v=xIxDJof7xxQ">youtube.com/…</a> – About HTML5, but mostly about the JavaScript by Ian Hickson. (September 22, 2008)</li>
+			<li><p><a href="http://youtube.com/watch?v=F6k8lTrAE2g">youtube.com/…</a> – Node.js: JavaScript on the Server by Ryan Dahl. (July 28, 2010)</p></li>
+			<li><p><a href="http://paulirish.com/2010/10-things-i-learned-from-the-jquery-source/">paulirish.com/…</a> – 10 Things I Learned from the jQuery Source by Paul Irish. (June 14, 2010)</p></li>
+			<li><p><a href="http://youtube.com/watch?v=hQVTIJBZook">youtube.com/…</a> – The Good Parts by Doug Crockford. (February 27, 2009)</p></li>
+			<li><p><a href="http://youtube.com/watch?v=xIxDJof7xxQ">youtube.com/…</a> – About HTML5, but mostly about the JavaScript by Ian Hickson. (September 22, 2008)</p></li>
 		</ul>
 	</section>
 </page>
