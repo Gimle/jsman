@@ -71,7 +71,6 @@
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
-
 	<xs:element name="dt">
 		<xs:complexType mixed="true">
 		</xs:complexType>

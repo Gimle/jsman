@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="substring" parent="String">
+<method name="substring" parent="String" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>substring — Extracts the chars in a string between two specified indexes.</p>
 	</lead>
@@ -26,6 +27,11 @@
 			</code>
 		</example>
 	</examples>
+	<see-also>
+		<ul>
+			<li><p><xref href="article/substr-vs-substring-vs-slice.xml">Article on substr vs substring vs slice</xref></p></li>
+		</ul>
+	</see-also>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/substring">String.substring method</mdn>
 	</external>

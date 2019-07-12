@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../template/pageWrapper.xsl"?>
-<page name="Standard Global Objects">
+<page name="Standard Global Objects" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../../schema/jsman-page.xsd">
 	<header>Standard Global Objects</header>
 	<p>This section refer to objects in the global scope.</p>
 </page>

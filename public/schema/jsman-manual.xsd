@@ -78,6 +78,36 @@
 		</xs:complexType>
 	</xs:element>
 
+	<xs:element name="property">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lead"/>
+				<xs:element ref="description"/>
+				<xs:element ref="parameters" minOccurs="0"/>
+				<xs:element ref="return" minOccurs="0"/>
+				<xs:element ref="changelog" minOccurs="0"/>
+				<xs:element ref="notes" minOccurs="0"/>
+				<xs:element ref="examples"/>
+				<xs:element ref="see-also" minOccurs="0"/>
+				<xs:element ref="external"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="parent" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="heading"/>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="p"/>
+					<xs:element ref="dl"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
 	<xs:element name="lead">
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -98,6 +128,8 @@
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="parameter"/>
+				<xs:element ref="p"/>
+				<xs:element ref="section"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
@@ -224,6 +256,28 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="li">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dl">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:sequence>
+					<xs:element ref="dt"/>
+					<xs:element ref="dd"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dt">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dd">
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="p"/>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="endsWith" parent="String">
+<method name="endsWith" parent="String" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>endsWith — Check if the string ends with this string.</p>
 	</lead>
@@ -10,12 +11,12 @@
 	<parameters>
 		<parameter name="string" type="string" optional="false"></parameter>
 	</parameters>
-	<changelog>
-		<change version="ES 6">Introduced.</change>
-	</changelog>
 	<return>
 		<p>boolean primitive.</p>
 	</return>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<examples>
 		<example>
 			<heading>endsWith example</heading>

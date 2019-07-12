@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="localeCompare" parent="String">
+<method name="localeCompare" parent="String" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>localeCompare — Compare two stings based on locale rules.</p>
 	</lead>
@@ -12,37 +13,37 @@
 		<parameter name="locales" type="string" optional="true"></parameter>
 		<parameter name="options" type="object" optional="true">See options below.</parameter>
 		<section>
-			<header>Options parameter</header>
+			<heading>Options parameter</heading>
 			<p>The options parameter may contain one or more of the following data items.</p>
 			<dl>
 				<dt>localeMatcher</dt>
 				<dd>
-					Possible values are: "best fit" (default) or "lookup".
+					<p>Possible values are: "best fit" (default) or "lookup".</p>
 				</dd>
 
 				<dt>usage</dt>
 				<dd>
-					Possible values are: "sort" (default) or "search".
+					<p>Possible values are: "sort" (default) or "search".</p>
 				</dd>
 
 				<dt>sensitivity</dt>
 				<dd>
-					Possible values are: "base", "accent", "case", or "variant" (default).
+					<p>Possible values are: "base", "accent", "case", or "variant" (default).</p>
 				</dd>
 
 				<dt>ignore­Punctua­tion</dt>
 				<dd>
-					Possible values are: true or false (default).
+					<p>Possible values are: true or false (default).</p>
 				</dd>
 
 				<dt>numeric</dt>
 				<dd>
-					Possible values are: true or false (default).
+					<p>Possible values are: true or false (default).</p>
 				</dd>
 
 				<dt>caseFirst</dt>
 				<dd>
-					Possible values are: "upper", "lower" or "false" (default).
+					<p>Possible values are: "upper", "lower" or "false" (default).</p>
 				</dd>
 			</dl>
 		</section>

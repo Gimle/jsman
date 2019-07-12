@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:default="http://www.jsman.net/xsd/manual" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:strip-space elements="*"/>
 	<xsl:output method="html" indent="yes"/>
 
-	<xsl:template match="@*|node()">
-		<xsl:copy>
+	<xsl:template match="*">
+		<xsl:element name="{local-name()}">
 			<xsl:apply-templates select="@*|node()"/>
-		</xsl:copy>
+		</xsl:element>
 	</xsl:template>
 
-	<xsl:template match="params">
+	<xsl:template match="default:params">
 		<xsl:variable name="separator" select="@separator"/>
-		<xsl:for-each select="/*/parameters/parameter">
+		<xsl:for-each select="/*/default:parameters/default:parameter">
 			<xsl:if test="@optional = 'true'">
 				<xsl:value-of select="'['"/>
 			</xsl:if>
@@ -24,39 +24,39 @@
 				<xsl:value-of select="separator"/>
 			</xsl:if>
 		</xsl:for-each>
-		<xsl:for-each select="/*/parameters/parameter[@optional='true']">
+		<xsl:for-each select="/*/default:parameters/default:parameter[@optional='true']">
 			<xsl:value-of select="']'"/>
 		</xsl:for-each>
 	</xsl:template>
 
-	<xsl:template match="number">
+	<xsl:template match="default:number">
 		<span class="number">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
 
-	<xsl:template match="date">
+	<xsl:template match="default:date">
 		<span class="date">
 			<xsl:apply-templates/>
 		</span>
 	</xsl:template>
 
-	<xsl:template match="header">
+	<xsl:template match="default:heading">
 		<h6>
 			<xsl:apply-templates/>
 		</h6>
 	</xsl:template>
 
-	<xsl:template match="lead">
+	<xsl:template match="default:lead">
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="description">
+	<xsl:template match="default:description">
 		<h3>Description</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="parameters">
+	<xsl:template match="default:parameters">
 		<h3>Parameters</h3>
 		<table>
 			<thead>
@@ -69,13 +69,13 @@
 				</tr>
 			</thead>
 			<tbody>
-				<xsl:apply-templates select="parameter"/>
+				<xsl:apply-templates select="default:parameter"/>
 			</tbody>
 		</table>
 		<xsl:apply-templates select="node()[name() != 'parameter']"/>
 	</xsl:template>
 
-	<xsl:template match="parameter">
+	<xsl:template match="default:parameter">
 		<tr>
 			<td><xsl:value-of select="@name"/></td>
 			<td><xsl:apply-templates/></td>
@@ -90,17 +90,17 @@
 		</tr>
 	</xsl:template>
 
-	<xsl:template match="return">
+	<xsl:template match="default:return">
 		<h3>Return values</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="notes">
+	<xsl:template match="default:notes">
 		<h3>Notes</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="changelog">
+	<xsl:template match="default:changelog">
 		<h3>Changelog</h3>
 		<table>
 			<thead>
@@ -110,29 +110,29 @@
 				</tr>
 			</thead>
 			<tbody>
-				<xsl:apply-templates select="change"/>
+				<xsl:apply-templates select="default:change"/>
 			</tbody>
 		</table>
 	</xsl:template>
 
-	<xsl:template match="change">
+	<xsl:template match="default:change">
 		<tr>
 			<td><xsl:value-of select="@version"/></td>
 			<td><xsl:apply-templates/></td>
 		</tr>
 	</xsl:template>
 
-	<xsl:template match="examples">
+	<xsl:template match="default:examples">
 		<h3>Examples</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="example">
-		<h6>Example #<xsl:value-of select="count(preceding-sibling::example) + 1"/><xsl:value-of select="' – '"/><xsl:value-of select="./heading"/></h6>
+	<xsl:template match="default:example">
+		<h6>Example #<xsl:value-of select="count(preceding-sibling::default:example) + 1"/><xsl:value-of select="' – '"/><xsl:value-of select="./default:heading"/></h6>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="code">
+	<xsl:template match="default:code">
 		<xsl:choose>
 			<xsl:when test="not(@lang) or @lang = '' or @lang = 'javascript'">
 				<pre style="white-space: pre;">
@@ -154,15 +154,15 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="example/heading">
+	<xsl:template match="default:example/default:heading">
 	</xsl:template>
 
-	<xsl:template match="see-also">
+	<xsl:template match="default:see-also">
 		<h3>See also</h3>
 		<xsl:apply-templates/>
 	</xsl:template>
 
-	<xsl:template match="xref">
+	<xsl:template match="default:xref">
 		<xsl:choose>
 			<xsl:when test="@href">
 				<a href="{@href}"><xsl:apply-templates/></a>
@@ -173,21 +173,15 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="external">
+	<xsl:template match="default:external">
 		<h3>External references</h3>
 		<ul>
 			<xsl:apply-templates/>
 		</ul>
 	</xsl:template>
 
-	<xsl:template match="wp">
-		<li><a href="{@href}">WebPlatform: <xsl:apply-templates/></a></li>
-	</xsl:template>
-	<xsl:template match="mdn">
+	<xsl:template match="default:mdn">
 		<li><a href="{@href}">Mozilla: <xsl:apply-templates/></a></li>
-	</xsl:template>
-	<xsl:template match="msdn">
-		<li><a href="{@href}">Microsoft: <xsl:apply-templates/></a></li>
 	</xsl:template>
 
 </xsl:stylesheet>
