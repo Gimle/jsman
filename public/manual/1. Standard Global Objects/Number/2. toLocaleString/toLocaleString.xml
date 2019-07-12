@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="toLocaleString" parent="Number">
+<method name="toLocaleString" parent="Number" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>toLocaleString — Returns a string representation of the specified Number object.</p>
 	</lead>
@@ -11,37 +12,37 @@
 		<parameter name="locales" type="mixed" optional="true">A string or array containing strings for the preferred locale format.</parameter>
 		<parameter name="options" type="object" optional="true">See options below.</parameter>
 		<section>
-			<header>Options parameter</header>
+			<heading>Options parameter</heading>
 			<p>The options parameter may contain one or more of the following data items.</p>
 			<dl>
 				<dt>localeMatcher</dt>
 				<dd>
-					Possible values are: "best fit" (default) or "lookup".
+					<p>Possible values are: "best fit" (default) or "lookup".</p>
 				</dd>
 
 				<dt>style</dt>
 				<dd>
-					Possible values are: "decimal" (default), "currency" or "percent". The currency parameter is also required if this value is set to the value "currency".
+					<p>Possible values are: "decimal" (default), "currency" or "percent". The currency parameter is also required if this value is set to the value "currency".</p>
 				</dd>
 
 				<dt>currency</dt>
 				<dd>
-					Possible values are the ISO 4217 currency codes. External references: <a href="http://www.currency-iso.org/dam/downloads/lists/list_one.xml">currency-iso.org XML file of codes. See "Ccy" element value</a> and <a href="http://www.currency-iso.org/en/home/tables/table-a1.html">currency-iso.org Current currency &amp; funds code list page</a>.
+					<p>Possible values are the ISO 4217 currency codes. External references: <a href="http://www.currency-iso.org/dam/downloads/lists/list_one.xml">currency-iso.org XML file of codes. See "Ccy" element value</a> and <a href="http://www.currency-iso.org/en/home/tables/table-a1.html">currency-iso.org Current currency &amp; funds code list page</a>.</p>
 				</dd>
 
 				<dt>currencyDisplay</dt>
 				<dd>
-					Possible values are: "symbol" (default) or "name".
+					<p>Possible values are: "symbol" (default) or "name".</p>
 				</dd>
 
 				<dt>useGrouping</dt>
 				<dd>
-					Possible values are: true (default) or false.
+					<p>Possible values are: true (default) or false.</p>
 				</dd>
 
 				<dt>minimumIntegerDigits</dt>
 				<dd>
-					Possible values are from 1 (default) to 21.
+					<p>Possible values are from 1 (default) to 21.</p>
 				</dd>
 
 				<dt>minimumFractionDigits</dt>
@@ -49,15 +50,15 @@
 					<p>Possible values are from 0 to 20.</p>
 					<p>
 						Default values:
-						<ul>
-							<li>Decimal: 0.</li>
-							<li>
-								Currency: The default follows the selected currency rules.
-								If none is supplied by the currency it will fall back to 2.
-							</li>
-							<li>Percent: 0.</li>
-						</ul>
 					</p>
+					<ul>
+						<li><p>Decimal: 0.</p></li>
+						<li>
+							<p>Currency: The default follows the selected currency rules.
+							If none is supplied by the currency it will fall back to 2.</p>
+						</li>
+						<li><p>Percent: 0.</p></li>
+					</ul>
 				</dd>
 
 				<dt>maximumFractionDigits</dt>
@@ -65,15 +66,15 @@
 					<p>Possible values are from 0 to 20.</p>
 					<p>
 						Default values (If minimumFractionDigits is larger than the default value below then it will be used instead):
-						<ul>
-							<li>Decimal: 3.</li>
-							<li>
-								Currency: The default follows the selected currency rules.
-								If none is supplied by the currency it will fall back to 2.
-							</li>
-							<li>Percent: 0.</li>
-						</ul>
 					</p>
+					<ul>
+						<li><p>Decimal: 3.</p></li>
+						<li>
+							<p>Currency: The default follows the selected currency rules.
+							If none is supplied by the currency it will fall back to 2.</p>
+						</li>
+						<li><p>Percent: 0.</p></li>
+					</ul>
 				</dd>
 
 				<dt>minimumSignificantDigits</dt>
@@ -93,6 +94,7 @@
 	</parameters>
 	<return>
 		<p>A string representation of the number formatted to the parameters given.</p>
+		<p>The returned value will be of the primitive string type.</p>
 	</return>
 	<changelog>
 		<change version="ES 5.1">
@@ -100,7 +102,6 @@
 		</change>
 	</changelog>
 	<examples>
-		<p>The returned value will be of the primitive string type.</p>
 		<example>
 			<heading>toLocalString example</heading>
 			<code>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="sign" parent="Math">
+<method name="sign" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>sign — Check if the number is positive, negative or zero.</p>
 	</lead>
@@ -10,12 +11,12 @@
 	<parameters>
 		<parameter name="number" type="number" optional="false"></parameter>
 	</parameters>
+	<return>
+		<p>mixed. Integer (1, 0, -0, 1) for numbers or NaN for non number input.</p>
+	</return>
 	<changelog>
 		<change version="ES 6">Introduced.</change>
 	</changelog>
-	<return>
-		mixed. Integer (1, 0, -0, 1) for numbers or NaN for non number input.
-	</return>
 	<examples>
 		<example>
 			<heading>sign example</heading>

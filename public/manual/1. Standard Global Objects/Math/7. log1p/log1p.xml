@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="log1p" parent="Math">
+<method name="log1p" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>log1p — Returns the <xref href="manual/1. Standard Global Objects/Math/1. E/E.xml">Math.E</xref> of 1 + a number.</p>
 	</lead>

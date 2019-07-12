@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="floor" parent="Math">
+<method name="floor" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>floor — Rounds down to the closest whole number.</p>
 	</lead>
@@ -27,8 +28,8 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/Math/2.2. ceil/ceil.xml">ceil</xref></li>
-			<li><xref href="manual/1. Standard Global Objects/Math/2.1. round/round.xml">round</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/Math/2.2. ceil/ceil.xml">ceil</xref></p></li>
+			<li><p><xref href="manual/1. Standard Global Objects/Math/2.1. round/round.xml">round</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

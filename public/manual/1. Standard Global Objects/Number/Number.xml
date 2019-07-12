@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="Number">
+<object name="Number" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>Number – Creates a wrapper object to allow you to work with numerical values.</p>
 	</lead>
@@ -31,12 +32,10 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="Primitives">Primitives</xref></li>
+			<li><p><xref href="manual/2. Primitives/Primitives.xml">Primitives</xref></p></li>
 		</ul>
 	</see-also>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/Number">Number object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/dwab3ed2(v=vs.94).aspx">Number object</msdn>
 	</external>
 </object>

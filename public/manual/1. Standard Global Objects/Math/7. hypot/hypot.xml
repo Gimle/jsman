@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="hypot" parent="Math">
+<method name="hypot" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>hypot — Returns the square root of the sum of the squares of the arguments.</p>
 	</lead>

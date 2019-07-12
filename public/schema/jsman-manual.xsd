@@ -18,9 +18,9 @@
 				<xs:element ref="return" minOccurs="0"/>
 				<xs:element ref="changelog" minOccurs="0"/>
 				<xs:element ref="notes" minOccurs="0"/>
-				<xs:element ref="examples"/>
+				<xs:element ref="examples" minOccurs="0"/>
 				<xs:element ref="see-also" minOccurs="0"/>
-				<xs:element ref="external"/>
+				<xs:element ref="external" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="name" type="xs:string" use="required"/>
 			<xs:attribute name="parent" type="xs:string" use="required"/>
@@ -36,9 +36,9 @@
 				<xs:element ref="return" minOccurs="0"/>
 				<xs:element ref="changelog" minOccurs="0"/>
 				<xs:element ref="notes" minOccurs="0"/>
-				<xs:element ref="examples"/>
+				<xs:element ref="examples" minOccurs="0"/>
 				<xs:element ref="see-also" minOccurs="0"/>
-				<xs:element ref="external"/>
+				<xs:element ref="external" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="name" type="xs:string" use="required"/>
 		</xs:complexType>
@@ -53,9 +53,9 @@
 				<xs:element ref="return" minOccurs="0"/>
 				<xs:element ref="changelog" minOccurs="0"/>
 				<xs:element ref="notes" minOccurs="0"/>
-				<xs:element ref="examples"/>
+				<xs:element ref="examples" minOccurs="0"/>
 				<xs:element ref="see-also" minOccurs="0"/>
-				<xs:element ref="external"/>
+				<xs:element ref="external" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="name" type="xs:string" use="required"/>
 		</xs:complexType>
@@ -70,9 +70,9 @@
 				<xs:element ref="return" minOccurs="0"/>
 				<xs:element ref="changelog" minOccurs="0"/>
 				<xs:element ref="notes" minOccurs="0"/>
-				<xs:element ref="examples"/>
+				<xs:element ref="examples" minOccurs="0"/>
 				<xs:element ref="see-also" minOccurs="0"/>
-				<xs:element ref="external"/>
+				<xs:element ref="external" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="name" type="xs:string" use="required"/>
 		</xs:complexType>
@@ -87,9 +87,9 @@
 				<xs:element ref="return" minOccurs="0"/>
 				<xs:element ref="changelog" minOccurs="0"/>
 				<xs:element ref="notes" minOccurs="0"/>
-				<xs:element ref="examples"/>
+				<xs:element ref="examples" minOccurs="0"/>
 				<xs:element ref="see-also" minOccurs="0"/>
-				<xs:element ref="external"/>
+				<xs:element ref="external" minOccurs="0"/>
 			</xs:sequence>
 			<xs:attribute name="name" type="xs:string" use="required"/>
 			<xs:attribute name="parent" type="xs:string" use="required"/>
@@ -138,6 +138,7 @@
 			<xs:attribute name="name" type="xs:string" use="required"/>
 			<xs:attribute name="type" type="xs:string" use="optional"/>
 			<xs:attribute name="optional" type="nullbool" use="required"/>
+			<xs:attribute name="default" type="xs:string" use="optional"/>
 		</xs:complexType>
 	</xs:element>
 
@@ -162,6 +163,8 @@
 				<xs:simpleType>
 					<xs:restriction base="xs:token">
 						<xs:enumeration value="ES 6"/>
+						<xs:enumeration value="ES 5.1"/>
+						<xs:enumeration value="ES 1"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:attribute>
@@ -183,6 +186,8 @@
 				<xs:element ref="b"/>
 				<xs:element ref="params"/>
 				<xs:element ref="xref"/>
+				<xs:element ref="number"/>
+				<xs:element ref="date"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
@@ -193,6 +198,14 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="b">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="number">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="date">
 		<xs:complexType mixed="true">
 		</xs:complexType>
 	</xs:element>
@@ -281,6 +294,7 @@
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="p"/>
+				<xs:element ref="ul"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>

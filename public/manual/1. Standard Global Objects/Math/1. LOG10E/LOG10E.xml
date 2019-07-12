@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
-<property name="LOG10E" parent="Math">
+<property name="LOG10E" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>LOG10E — Returns the base 10 logarithm of e.</p>
 	</lead>
@@ -8,7 +9,7 @@
 		<p>Math.LOG10E</p>
 	</description>
 	<return>
-		number primitive.
+		<p>number primitive.</p>
 	</return>
 	<examples>
 		<example>

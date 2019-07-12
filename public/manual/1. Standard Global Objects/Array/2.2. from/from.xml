@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="from" parent="Array">
+<method name="from" parent="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>from — Creates a new array from an array like input.</p>
 	</lead>
@@ -12,31 +13,31 @@
 		<parameter name="callback" type="function" optional="true">See callback below</parameter>
 		<parameter name="this" type="object" optional="true"></parameter>
 		<section>
-			<header>array</header>
+			<heading>array</heading>
 			<p>An array, or array like input. Something that has a length and indexed items.</p>
 		</section>
 		<section>
-			<header>callback</header>
+			<heading>callback</heading>
 			<p>The following parameters is passed to the callback.</p>
 			<dl>
 				<dt>value</dt>
 				<dd>
-					The value of the current index.
+					<p>The value of the current index.</p>
 				</dd>
 
 				<dt>index</dt>
 				<dd>
-					The current index.
+					<p>The current index.</p>
 				</dd>
 			</dl>
 		</section>
 	</parameters>
-	<changelog>
-		<change version="ES 6">Introduced.</change>
-	</changelog>
 	<return>
 		<p>array</p>
 	</return>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<examples>
 		<example>
 			<heading>from example</heading>

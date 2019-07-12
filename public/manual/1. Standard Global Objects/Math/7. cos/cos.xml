@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="cos" parent="Math">
+<method name="cos" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>cos — Returns the cosine of an angle measured in radians.</p>
 	</lead>
@@ -11,7 +12,7 @@
 		<parameter name="radians" type="number" optional="false"></parameter>
 	</parameters>
 	<return>
-		number. A number between -1 and 1 representing cosine of the angle.
+		<p>number. A number between -1 and 1 representing cosine of the angle.</p>
 	</return>
 	<examples>
 		<example>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="parse" parent="Date">
+<method name="parse" parent="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>parse – Get the timestamp in milliseconds of the given time string.</p>
 	</lead>
@@ -10,7 +11,7 @@
 	<parameters>
 		<parameter name="date" type="string" optional="false">See date below.</parameter>
 		<section>
-			<header>Date parameter</header>
+			<heading>Date parameter</heading>
 			<p>String value representing a date.</p>
 			<p>This input is local time if no timezone is specified.</p>
 		</section>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="Function">
+<object name="Function" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>Function – Creates a Function object.</p>
 	</lead>
@@ -27,11 +28,11 @@
 		</example>
 	</examples>
 	<see-also>
-		<xref href="manual/3. Statements/2.2. function/function.xml">function statement</xref>
+		<ul>
+			<li><p><xref href="manual/3. Statements/2.2. function/function.xml">function statement</xref></p></li>
+		</ul>
 	</see-also>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/Function">Function object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function">Function object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/x844tc74(v=vs.94).aspx">Function object</msdn>
 	</external>
 </object>

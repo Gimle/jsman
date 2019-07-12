@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="setUTCMinutes" parent="Date">
+<method name="setUTCMinutes" parent="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>setUTCMinutes – Set the minutes, according to universal time (0–59).</p>
 	</lead>
@@ -11,7 +12,7 @@
 		<parameter name="minutes" type="integer" optional="false"></parameter>
 	</parameters>
 	<return>
-		Integer. The new timestamp.
+		<p>Integer. The new timestamp.</p>
 	</return>
 	<examples>
 		<example>

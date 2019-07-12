@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
-<property name="POSITIVE_INFINITY" parent="Number">
+<property name="POSITIVE_INFINITY" parent="Number" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>POSITIVE_INFINITY — Returns positive Infinity.</p>
 	</lead>
@@ -18,7 +19,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/2. Primitives/Infinity/Infinity.xml">Infinity primitive</xref></li>
+			<li><p><xref href="manual/2. Primitives/Infinity/Infinity.xml">Infinity primitive</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

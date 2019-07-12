@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="parseFloat">
+<object name="parseFloat" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>parseFloat – Parses a string as a float</p>
 	</lead>
@@ -30,12 +31,10 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/parseInt/parseInt.xml">parseInt</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/parseInt/parseInt.xml">parseInt</xref></p></li>
 		</ul>
 	</see-also>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/parseFloat">parseFloat object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseFloat">parseFloat object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/d5hbbd4z(v=vs.94).aspx">parseFloat object</msdn>
 	</external>
 </object>

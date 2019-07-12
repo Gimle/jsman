@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="indexOf" parent="Array">
+<method name="indexOf" parent="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>indexOf — Returns the first position of the element with the given value.</p>
 	</lead>
@@ -28,7 +29,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/Array/lastIndexOf/lastIndexOf.xml">Array.lastIndexOf()</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/Array/lastIndexOf/lastIndexOf.xml">Array.lastIndexOf()</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

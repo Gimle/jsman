@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="reduce" parent="Array">
+<method name="reduce" parent="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>reduce — Loops thru the array, and for each value the result of the last callback is made available.</p>
 	</lead>
@@ -11,32 +12,32 @@
 		<parameter name="callback" type="function" optional="false">See callback below.</parameter>
 		<parameter name="first" type="mixed" optional="true">See first below.</parameter>
 		<section>
-			<header>callback</header>
+			<heading>callback</heading>
 			<p>The following parameters is passed to the callback.</p>
 			<dl>
 				<dt>previous</dt>
 				<dd>
-					The value of the current index.
+					<p>The value of the current index.</p>
 				</dd>
 
 				<dt>value</dt>
 				<dd>
-					The value of the current index.
+					<p>The value of the current index.</p>
 				</dd>
 
 				<dt>index</dt>
 				<dd>
-					The current index.
+					<p>The current index.</p>
 				</dd>
 
 				<dt>array</dt>
 				<dd>
-					The array.
+					<p>The array.</p>
 				</dd>
 			</dl>
 		</section>
 		<section>
-			<header>first</header>
+			<heading>first</heading>
 			<p>The value of previous for the first iteration.</p>
 			<p>If not provided the first loop is skipped.</p>
 		</section>

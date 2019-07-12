@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="getYear" parent="Date">
+<method name="getYear" parent="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>getYear – Deprecated.</p>
 	</lead>
+	<description>
+		<p>Date.getYear()</p>
+	</description>
+	<changelog>
+		<change version="ES 5.1">Deprecated.</change>
+	</changelog>
+	<see-also>
+		<ul>
+			<li><p><xref href="manual/1. Standard Global Objects/Date/3.1. getFullYear/getFullYear.xml">Date.getFullYear()</xref></p></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getYear">Date.getYear method</mdn>
+	</external>
 
 </method>

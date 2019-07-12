@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="copyWithin" parent="Array">
+<method name="copyWithin" parent="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>copyWithin — Copies a subset of the array and pastes over the array's current values starting at target.</p>
 	</lead>
@@ -12,12 +13,12 @@
 		<parameter name="start" type="integer" optional="false"></parameter>
 		<parameter name="end" type="integer" optional="true"></parameter>
 	</parameters>
-	<changelog>
-		<change version="ES 6">Introduced.</change>
-	</changelog>
 	<return>
 		<p>The array with the filled values.</p>
 	</return>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<examples>
 		<example>
 			<heading>copyWithin example</heading>

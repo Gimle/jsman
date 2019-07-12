@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="Array">
+<object name="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>Array – Creates an array.</p>
 	</lead>
@@ -69,8 +70,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/Array">Array</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</mdn>
-		<msdn href="https://msdn.microsoft.com/library/ecczf11c(v=vs.94).aspx">Array</msdn>
 	</external>
 </object>

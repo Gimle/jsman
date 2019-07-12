@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="Date">
+<object name="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>Date – Creates a Date object.</p>
 	</lead>
@@ -19,7 +20,7 @@
 		<parameter name="seconds" type="integer" optional="true">Integer between 0 and 59.</parameter>
 		<parameter name="milliseconds" type="integer" optional="true">Integer between 0 and 999.</parameter>
 		<section>
-			<header>Date parameter</header>
+			<heading>Date parameter</heading>
 			<p>Can be a date string, timestamp or year if multiple paramters is provided.</p>
 			<dl>
 				<dt>Not provided</dt>
@@ -80,8 +81,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/Date">Date object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/cd9w2te4(v=vs.94).aspx">Date object</msdn>
 	</external>
 </object>

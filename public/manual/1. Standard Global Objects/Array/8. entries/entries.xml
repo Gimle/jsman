@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="entries" parent="Array">
+<method name="entries" parent="Array" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
-		<p>entries — Returns an <xref>ArrayIterator</xref> of the array.</p>
+		<p>entries — Returns an <xref href="">ArrayIterator</xref> of the array.</p>
 	</lead>
 	<description>
 		<p>Array.entries(<params/>)</p>

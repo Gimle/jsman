@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="toLocaleString" parent="Date">
+<method name="toLocaleString" parent="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>toLocaleString – Converts a Date object to a string.</p>
 	</lead>
@@ -11,72 +12,72 @@
 		<parameter name="locales" type="mixed" optional="true">A string or array containing strings for the preferred locale format.</parameter>
 		<parameter name="options" type="object" optional="true">See options below.</parameter>
 		<section>
-			<header>Options parameter</header>
+			<heading>Options parameter</heading>
 			<p>The options parameter may contain one or more of the following data items.</p>
 			<dl>
 				<dt>localeMatcher</dt>
 				<dd>
-					Possible values are: "best fit" (default) or "lookup".
+					<p>Possible values are: "best fit" (default) or "lookup".</p>
 				</dd>
 
 				<dt>timeZone</dt>
 				<dd>
-					The time zone to use.
+					<p>The time zone to use.</p>
 				</dd>
 
 				<dt>hour12</dt>
 				<dd>
-					Possible values are: true or false. Default is set to the locale standard value.
+					<p>Possible values are: true or false. Default is set to the locale standard value.</p>
 				</dd>
 
 				<dt>formatMatcher</dt>
 				<dd>
-					Possible values are: "best fit" (default) or "basic".
+					<p>Possible values are: "best fit" (default) or "basic".</p>
 				</dd>
 
 				<dt>weekday</dt>
 				<dd>
-					Possible values are "narrow", "short" or "long".
+					<p>Possible values are "narrow", "short" or "long".</p>
 				</dd>
 
 				<dt>era</dt>
 				<dd>
-					Possible values are "narrow", "short" or "long".
+					<p>Possible values are "narrow", "short" or "long".</p>
 				</dd>
 
 				<dt>year</dt>
 				<dd>
-					Possible values are "numeric" or "2-digit".
+					<p>Possible values are "numeric" or "2-digit".</p>
 				</dd>
 
 				<dt>month</dt>
 				<dd>
-					Possible values are "numeric", "2-digit", "narrow", "short" or "long".
+					<p>Possible values are "numeric", "2-digit", "narrow", "short" or "long".</p>
 				</dd>
 
 				<dt>day</dt>
 				<dd>
-					Possible values are "numeric" or "2-digit".
+					<p>Possible values are "numeric" or "2-digit".</p>
 				</dd>
 
 				<dt>hour</dt>
 				<dd>
-					Possible values are "numeric" or "2-digit".
+					<p>Possible values are "numeric" or "2-digit".</p>
 				</dd>
 
 				<dt>minute</dt>
 				<dd>
-					Possible values are "numeric" or "2-digit"
+					<p>Possible values are "numeric" or "2-digit"</p>
 				</dd>
 
 				<dt>second</dt>
 				<dd>
-					Possible values are "numeric" or "2-digit"
+					<p>Possible values are "numeric" or "2-digit"</p>
 				</dd>
 
 				<dt>timeZoneName</dt>
 				<dd>
-					Possible values are "short" or "long".
+					<p>Possible values are "short" or "long".</p>
 				</dd>
 			</dl>
 		</section>

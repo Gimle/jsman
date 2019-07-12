@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="decodeURI">
+<object name="decodeURI" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>decodeURI</p>
 	</lead>
@@ -21,12 +22,11 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/encodeURI/encodeURI.xml">encodeURI object</xref></li>
-			<li><xref href="manual/1. Standard Global Objects/decodeURIComponent/decodeURIComponent.xml">decodeURIComponent object</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/encodeURI/encodeURI.xml">encodeURI object</xref></p></li>
+			<li><p><xref href="manual/1. Standard Global Objects/decodeURIComponent/decodeURIComponent.xml">decodeURIComponent object</xref></p></li>
 		</ul>
 	</see-also>
 	<external>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURI">decodeURI object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/ht8a077w(v=vs.94).aspx">decodeURI object</msdn>
 	</external>
 </object>

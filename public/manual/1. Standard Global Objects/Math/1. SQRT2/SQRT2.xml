@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/propertyWrapper.xsl"?>
-<property name="SQRT2" parent="Math">
+<property name="SQRT2" parent="Math" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>SQRT2 — Returns the square root of 2.</p>
 	</lead>
@@ -8,7 +9,7 @@
 		<p>Math.SQRT2</p>
 	</description>
 	<return>
-		number primitive.
+		<p>number primitive.</p>
 	</return>
 	<examples>
 		<example>

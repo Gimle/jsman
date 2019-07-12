@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
-<object name="RegExp">
+<object name="RegExp" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>RegExp – Creates a RegExp object.</p>
 	</lead>
@@ -27,8 +28,6 @@
 		</example>
 	</examples>
 	<external>
-		<wp href="http://docs.webplatform.org/wiki/javascript/RegExp">RegExp object</wp>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp object</mdn>
-		<msdn href="https://msdn.microsoft.com/library/h6e2eb7w(v=vs.94).aspx">RegExp object</msdn>
 	</external>
 </object>

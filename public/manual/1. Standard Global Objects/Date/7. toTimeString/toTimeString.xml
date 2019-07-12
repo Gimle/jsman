@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="toTimeString" parent="Date">
+<method name="toTimeString" parent="Date" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>toTimeString – Converts a Date object to a string.</p>
 	</lead>
@@ -25,7 +26,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/Date/2.3. toLocaleTimeString/toLocaleTimeString.xml">Date.toLocaleTimeString()</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/Date/2.3. toLocaleTimeString/toLocaleTimeString.xml">Date.toLocaleTimeString()</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

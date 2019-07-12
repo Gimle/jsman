@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
-<method name="isSafeInteger" parent="Number">
+<method name="isSafeInteger" parent="Number" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>isSafeInteger – Check whether an integer is in the safe range.</p>
 	</lead>
@@ -10,12 +11,12 @@
 	<parameters>
 		<parameter name="integer" type="integer" optional="false"/>
 	</parameters>
-	<changelog>
-		<change version="ES 6">Introduced.</change>
-	</changelog>
 	<return>
 		<p>boolean.</p>
 	</return>
+	<changelog>
+		<change version="ES 6">Introduced.</change>
+	</changelog>
 	<examples>
 		<example>
 			<heading>isSafeInteger example</heading>
