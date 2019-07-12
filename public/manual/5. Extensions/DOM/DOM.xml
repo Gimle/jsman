@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/pageWrapper.xsl"?>
-<page name="DOM">
+<page name="DOM" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../../../schema/jsman-page.xsd">
 	<header>Document Object Model</header>
 	<p>The DOM extension is used for representing and interacting with objects in HTML, XHTML and XML documents.</p>
 </page>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
-<page name="Manual">
+<page name="Manual" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
 	<header>Manual</header>
 	<p>This manual is not ready yet. Please visit <a href="https://github.com/Gimle/jsman">https://github.com/Gimle/jsman</a> to help contribute.</p>
 </page>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.jsman.net/xsd/manual" xmlns="http://www.jsman.net/xsd/manual" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:simpleType name="nullbool">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="true"/>
+			<xs:enumeration value="false"/>
+			<xs:enumeration value="null"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="method">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lead"/>
+				<xs:element ref="description"/>
+				<xs:element ref="parameters" minOccurs="0"/>
+				<xs:element ref="return" minOccurs="0"/>
+				<xs:element ref="changelog" minOccurs="0"/>
+				<xs:element ref="notes" minOccurs="0"/>
+				<xs:element ref="examples"/>
+				<xs:element ref="see-also" minOccurs="0"/>
+				<xs:element ref="external"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="parent" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="operator">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lead"/>
+				<xs:element ref="description"/>
+				<xs:element ref="parameters" minOccurs="0"/>
+				<xs:element ref="return" minOccurs="0"/>
+				<xs:element ref="changelog" minOccurs="0"/>
+				<xs:element ref="notes" minOccurs="0"/>
+				<xs:element ref="examples"/>
+				<xs:element ref="see-also" minOccurs="0"/>
+				<xs:element ref="external"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="statement">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lead"/>
+				<xs:element ref="description"/>
+				<xs:element ref="parameters" minOccurs="0"/>
+				<xs:element ref="return" minOccurs="0"/>
+				<xs:element ref="changelog" minOccurs="0"/>
+				<xs:element ref="notes" minOccurs="0"/>
+				<xs:element ref="examples"/>
+				<xs:element ref="see-also" minOccurs="0"/>
+				<xs:element ref="external"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="object">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lead"/>
+				<xs:element ref="description"/>
+				<xs:element ref="parameters" minOccurs="0"/>
+				<xs:element ref="return" minOccurs="0"/>
+				<xs:element ref="changelog" minOccurs="0"/>
+				<xs:element ref="notes" minOccurs="0"/>
+				<xs:element ref="examples"/>
+				<xs:element ref="see-also" minOccurs="0"/>
+				<xs:element ref="external"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="lead">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="description">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="parameters">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="parameter"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parameter">
+		<xs:complexType mixed="true">
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="type" type="xs:string" use="optional"/>
+			<xs:attribute name="optional" type="nullbool" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="return">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="changelog">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="change"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="change">
+		<xs:complexType mixed="true">
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:token">
+						<xs:enumeration value="ES 6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="notes">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="p">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="a"/>
+				<xs:element ref="b"/>
+				<xs:element ref="params"/>
+				<xs:element ref="xref"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="a">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="b">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="params">
+		<xs:complexType>
+			<xs:attribute name="separator" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="xref">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="examples">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="example"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="example">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="heading"/>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="heading"/>
+					<xs:element ref="p" minOccurs="0"/>
+					<xs:element ref="code"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="heading">
+		<xs:complexType mixed="true">
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="code">
+		<xs:complexType mixed="true">
+			<xs:attribute name="lang" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="see-also">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="ul"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ul">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="li"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="li">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="p"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="external">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="mdn"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="mdn">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

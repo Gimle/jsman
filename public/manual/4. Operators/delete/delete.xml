@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="delete">
+<operator name="delete" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>delete — Remove a property from an object.</p>
 	</lead>
@@ -11,7 +12,7 @@
 		<parameter name="variable" type="mixed" optional="false">The property to remove.</parameter>
 	</parameters>
 	<return>
-		boolean.
+		<p>boolean.</p>
 	</return>
 	<examples>
 		<example>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<operator name="Infinity">
+<operator name="Infinity" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>Infinity — A value representing infinity. This is the same as the value of <xref href="manual/1. Standard Global Objects/Number/1. POSITIVE_INFINITY/POSITIVE_INFINITY.xml">Number.POSITIVE_INFINITY</xref>.</p>
 	</lead>
@@ -27,7 +28,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="manual/1. Standard Global Objects/Number/1. POSITIVE_INFINITY/POSITIVE_INFINITY.xml">Number.POSITIVE_INFINITY</xref></li>
+			<li><p><xref href="manual/1. Standard Global Objects/Number/1. POSITIVE_INFINITY/POSITIVE_INFINITY.xml">Number.POSITIVE_INFINITY</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

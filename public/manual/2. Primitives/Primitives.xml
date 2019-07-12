@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../template/pageWrapper.xsl"?>
-<page name="Primitives">
+<page name="Primitives" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../../schema/jsman-page.xsd">
 	<header>Primitives</header>
 	<p>In Javascript primitives are properties on the the standard global object.</p>
 </page>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
-<statement name="function*">
+<statement name="function*" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>function – Declares a generator.</p>
 	</lead>
@@ -51,7 +52,7 @@
 	</examples>
 	<see-also>
 		<ul>
-			<li><xref href="yield">yield</xref></li>
+			<li><p><xref href="yield">yield</xref></p></li>
 		</ul>
 	</see-also>
 	<external>

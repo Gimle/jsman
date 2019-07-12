@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../../../../template/methodWrapper.xsl"?>
-<method name="clearTimeout" parent="window">
+<method name="clearTimeout" parent="window" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../../schema/jsman-manual.xsd">
 	<lead>
 		<p>clearTimeout — Clears a previously <xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref>.</p>
 	</lead>
@@ -37,13 +38,13 @@
 				loop();
 			</code>
 		</example>
-		<see-also>
-			<ul>
-				<li><xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref></li>
-			</ul>
-		</see-also>
-		<external>
-			<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout">clearTimeout</mdn>
-		</external>
 	</examples>
+	<see-also>
+		<ul>
+			<li><p><xref href="manual/5. Extensions/DOM/Timers/1. setTimeout/setTimeout.xml">setTimeout</xref></p></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout">clearTimeout</mdn>
+	</external>
 </method>
