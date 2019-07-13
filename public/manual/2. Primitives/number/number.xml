@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="number" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>number — A primitive number.</p>
+	</lead>
+	<description>
+		<p>number</p>
+	</description>
+	<examples>
+		<example>
+			<heading>number</heading>
+			<code>
+				var a = 1;
+				var b = new Number(1);
+				console.log(typeof a);          // number
+				console.log(typeof b);          // object
+				console.log(a);                 // 1
+				console.log(b);                 // Number {1}
+				console.log(a.toFixed(2));      // 1.00
+				console.log(b.toFixed(2));      // 1.00
+			</code>
+		</example>
+		<example>
+			<heading>number</heading>
+			<code>
+				var a = 1.5;
+				var b = new Number(1.5);
+				a.x = 2;
+				b.x = 2;
+				console.log(a);                 // 1.5
+				console.log(b);                 // Number {1.5, x: 2}
+				console.log(a.x);               // undefined
+				console.log(b.x);               // 2
+				console.log(a.toFixed(2));      // 1.50
+				console.log(b.toFixed(2));      // 1.50
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Number/Number.xml">Number object</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</mdn>
+	</external>
+</operator>

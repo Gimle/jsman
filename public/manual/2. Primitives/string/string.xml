@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="string" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>string — A primitive string.</p>
+	</lead>
+	<description>
+		<p>string</p>
+	</description>
+	<examples>
+		<example>
+			<heading>string</heading>
+			<code>
+				var a = 'foo';
+				var b = new String('bar');
+				console.log(typeof a);          // string
+				console.log(typeof b);          // object
+				console.log(a);                 // foo
+				console.log(b);                 // String {"bar"}
+				console.log(a.toUpperCase());   // FOO
+				console.log(b.toUpperCase());   // BAR
+			</code>
+		</example>
+		<example>
+			<heading>string</heading>
+			<code>
+				var a = 'foo';
+				var b = new String('foo');
+				a.x = 'bar';
+				b.x = 'bar';
+				console.log(a);       // foo
+				console.log(b);       // String {"foo", x: "bar"}
+				console.log(a.x);     // undefined
+				console.log(b.x);     // bar
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/String/String.xml">String object</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</mdn>
+	</external>
+</operator>

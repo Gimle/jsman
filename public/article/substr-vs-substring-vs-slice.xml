@@ -3,7 +3,7 @@
 <page name="substr vs substring vs slice" xmlns="http://www.jsman.net/xsd/page"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
 
-	<header>substr vs substring vs slice</header>
+	<heading>substr vs substring vs slice</heading>
 
 	<p>
 		These three methods differ in the parameters, but results in the same primitive string.
@@ -103,7 +103,7 @@
 	</code>
 
 	<section>
-		<header>Comparing to php</header>
+		<heading>Comparing to php</heading>
 
 		<p>Javascript does not have an equal method of php's substr function.</p>
 

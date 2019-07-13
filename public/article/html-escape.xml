@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
+<page name="html escape" xmlns="http://www.jsman.net/xsd/page"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
+
+	<heading>html escape</heading>
+
+	<p>
+		When working with web development there is often a need to convert special characters in different ways.
+	</p>
+
+	<p>
+		A simple replace function to replace special characters with their entity representations.
+	</p>
+	<code>
+		const escapeHtml = unsafe => {
+			return unsafe
+				.replace(/&amp;/g, '&amp;amp;')
+				.replace(/&lt;/g, '&amp;lt;')
+				.replace(/&gt;/g, '&amp;gt;')
+				.replace(/"/g, '&amp;quot;')
+				.replace(/'/g, '&amp;#039;')
+			;
+		};
+
+		console.log(escapeHtml('&lt;foo bar="baz"&gt;&amp;&lt;/foo&gt;'));  // &amp;lt;foo bar=&amp;quot;baz&amp;quot;&amp;gt;&amp;amp;&amp;lt;/foo&amp;gt;
+	</code>
+
+	<p>
+		If you need to populate a dom node with escaped html, you can simply use textContent instead of innerHTML.
+	</p>
+	<code>
+		document.getElementById('result1').textContent = '';
+
+		let line1 = document.createElement('div');
+		let line2 = document.createElement('div');
+
+		line1.innerHTML = '&lt;b&gt;Bold text&lt;/b&gt;';
+		line2.textContent = '&lt;b&gt;Bold text&lt;/b&gt;';
+
+		document.getElementById('result1').appendChild(line1);
+		document.getElementById('result1').appendChild(line2);
+	</code>
+	<result id="result1"/>
+
+	<p>
+		There is also built in methods for URL encoding of strings. <xref href="manual/1. Standard Global Objects/encodeURI/encodeURI.xml">encodeURI</xref> and <xref href="manual/1. Standard Global Objects/encodeURIComponent/encodeURIComponent.xml">encodeURIComponent</xref> respectively.
+	</p>
+	<code>
+		// Encoding a complete URI will not escape url components like = and &amp;.
+		console.log(encodeURI('&lt;foo bar="baz"&gt;&amp;&lt;/foo&gt;'));           // %3Cfoo%20bar=%22baz%22%3E&amp;%3C/foo%3E
+
+		// To encode all special characters:
+		console.log(encodeURIComponent('&lt;foo bar="baz"&gt;&amp;&lt;/foo&gt;'));  // %3Cfoo%20bar%3D%22baz%22%3E%26%3C%2Ffoo%3E
+	</code>
+
+</page>

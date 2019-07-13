@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="../template/pageWrapper.xsl"?>
 <page name="Links" xmlns="http://www.jsman.net/xsd/page" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../schema/jsman-page.xsd">
-	<header>Links</header>
+	<heading>Links</heading>
 	<section>
-		<header>Mixed</header>
+		<heading>Mixed</heading>
 		<ul>
 			<li>
 				<p><a href="http://jshint.com/">jshint.com/</a> &#x2013; JavaScript Code Quality Tool.</p>
@@ -17,7 +17,7 @@
 		</ul>
 	</section>
 	<section>
-		<header>Videos</header>
+		<heading>Videos</heading>
 		<ul>
 			<li>
 				<p><a href="http://youtube.com/watch?v=F6k8lTrAE2g">youtube.com/&#x2026;</a> &#x2013; Node.js: JavaScript on the Server by Ryan Dahl. (July 28, 2010)</p>

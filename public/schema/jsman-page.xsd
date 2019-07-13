@@ -3,13 +3,16 @@
 	<xs:element name="page">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="header"/>
+				<xs:element ref="heading"/>
 				<xs:choice minOccurs="0" maxOccurs="unbounded">
 					<xs:element ref="p"/>
 					<xs:element ref="dl"/>
 					<xs:element ref="ul"/>
 					<xs:element ref="hr"/>
-					<xs:element ref="code"/>
+					<xs:sequence>
+						<xs:element ref="code"/>
+						<xs:element ref="result" minOccurs="0"/>
+					</xs:sequence>
 					<xs:element ref="section"/>
 				</xs:choice>
 			</xs:sequence>
@@ -20,7 +23,7 @@
 	<xs:element name="section">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="header"/>
+				<xs:element ref="heading"/>
 				<xs:choice minOccurs="0" maxOccurs="unbounded">
 					<xs:element ref="p"/>
 					<xs:element ref="dl"/>
@@ -32,7 +35,7 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="header">
+	<xs:element name="heading">
 		<xs:complexType mixed="true">
 		</xs:complexType>
 	</xs:element>
@@ -42,6 +45,7 @@
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="a"/>
 				<xs:element ref="b"/>
+				<xs:element ref="xref"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
@@ -100,6 +104,17 @@
 	<xs:element name="code">
 		<xs:complexType mixed="true">
 			<xs:attribute name="lang" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="result">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="xref">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
 		</xs:complexType>
 	</xs:element>
 

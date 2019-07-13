@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/operatorWrapper.xsl"?>
+<operator name="boolean" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>boolean — A primitive boolean.</p>
+	</lead>
+	<description>
+		<p>boolean</p>
+	</description>
+	<examples>
+		<example>
+			<heading>boolean</heading>
+			<code>
+				var a = true;
+				var b = new Boolean(true);
+				console.log(typeof a);          // boolean
+				console.log(typeof b);          // object
+				console.log(a);                 // true
+				console.log(b);                 // Boolean {true}
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><xref href="manual/1. Standard Global Objects/Boolean/Boolean.xml">Boolean object</xref></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</mdn>
+	</external>
+</operator>

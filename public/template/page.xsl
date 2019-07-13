@@ -14,7 +14,7 @@
 		</xsl:element>
 	</xsl:template>
 
-	<xsl:template match="default:header">
+	<xsl:template match="default:heading">
 		<xsl:element name="h6">
 			<xsl:apply-templates/>
 		</xsl:element>
@@ -26,7 +26,7 @@
 		</xsl:element>
 	</xsl:template>
 
-	<xsl:template match="default:page/default:header">
+	<xsl:template match="default:page/default:heading">
 		<xsl:element name="h1">
 			<xsl:apply-templates/>
 		</xsl:element>
@@ -55,6 +55,32 @@
 						<xsl:apply-templates/>
 					</code>
 				</pre>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="default:result">
+		<xsl:element name="div">
+			<xsl:attribute name="class">
+				<xsl:value-of select="'result'"/>
+			</xsl:attribute>
+			<button class="reset" style="float: right;" title="Reset the output.">Reset</button>
+			<xsl:element name="div">
+				<xsl:attribute name="id">
+					<xsl:value-of select="@id"/>
+				</xsl:attribute>
+				<i>Run example above to see the output.</i>
+			</xsl:element>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="default:xref">
+		<xsl:choose>
+			<xsl:when test="@href">
+				<a href="{@href}"><xsl:apply-templates/></a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
