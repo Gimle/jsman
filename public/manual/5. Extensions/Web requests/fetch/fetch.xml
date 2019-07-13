@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="fetch" parent="window" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>fetch — Fetches a resource from the web.</p>
+	</lead>
+	<description>
+		<p>fetch(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="resource" type="mixed" optional="false">url or object.</parameter>
+		<parameter name="settings" type="object" optional="true"></parameter>
+		<section>
+			<heading>Settings parameters</heading>
+			<dl>
+				<dt>method</dt>
+				<dd>
+					<p>Request method, e.g., GET, POST, HEAD, …</p>
+				</dd>
+				<dt>headers</dt>
+				<dd>
+					<p>Custom headers for the request.</p>
+				</dd>
+				<dt>body</dt>
+				<dd>
+					<p>The body for the request.</p>
+				</dd>
+				<dt>mode</dt>
+				<dd>
+					<p>Request mode, e.g., cors, no-cors, same-origin, …</p>
+				</dd>
+				<dt>credentials</dt>
+				<dd>
+					<p>Custom credentials for the request.</p>
+				</dd>
+				<dt>cache</dt>
+				<dd>
+					<p>Request cache, e.g., no-store, reload, no-cache, …</p>
+				</dd>
+				<dt>redirect</dt>
+				<dd>
+					<p>Request redirect: follow, error, manual.</p>
+				</dd>
+				<dt>referrer</dt>
+				<dd>
+					<p>Request referrer: no-referrer, client or URL</p>
+				</dd>
+				<dt>referrerPolicy</dt>
+				<dd>
+					<p>Request referrer policy, e.g., no-referrer, origin, unsafe-url, …</p>
+				</dd>
+				<dt>integrity</dt>
+				<dd>
+					<p>A cryptographic hash that the request must match.</p>
+				</dd>
+				<dt>keepalive</dt>
+				<dd>
+					<p>Allow the request to stay alive.</p>
+				</dd>
+				<dt>signal</dt>
+				<dd>
+					<p>A signal to communicate with the fetch process.</p>
+				</dd>
+			</dl>
+		</section>
+	</parameters>
+	<return>
+		<p><xref href="manual/1. Standard Global Objects/Promise/Promise.xml">new Promise</xref></p>
+	</return>
+	<examples>
+		<example>
+			<heading>fetch example</heading>
+			<code>
+				let result = fetch('<const name="BASE_PATH"/>humans.txt');
+
+				result.then(result => {
+					return result.text();
+				}).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>fetch error example</heading>
+			<code>
+				let result = fetch('<const name="BASE_PATH"/>humans.txt.notfound');
+
+				result.then(result => {
+					if (!result.ok) {
+						throw new Error('Got responce code: ' + result.status);
+					}
+					return result.text();
+				}).then(result => {
+					console.log(result);
+				}).catch(error => {
+					console.log(error.message);
+				});
+			</code>
+		</example>
+	</examples>
+	<see-also>
+		<ul>
+			<li><p><xref href="manual/1. Standard Global Objects/Promise/Promise.xml">Promise</xref></p></li>
+		</ul>
+	</see-also>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">fetch api</mdn>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">fetch method</mdn>
+		<gwd href="https://developers.google.com/web/updates/2015/03/introduction-to-fetch">Introduction to fetch</gwd>
+	</external>
+</method>

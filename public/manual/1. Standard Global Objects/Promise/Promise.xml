@@ -75,8 +75,14 @@
 			</code>
 		</example>
 	</examples>
+	<see-also>
+		<ul>
+			<li><p><xref href="manual/5. Extensions/Web requests/fetch/fetch.xml">fetch</xref></p></li>
+		</ul>
+	</see-also>
 	<external>
 		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using Promises</mdn>
 		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise object</mdn>
+		<gwd href="https://developers.google.com/web/fundamentals/primers/promises">JavaScript Promises: an Introduction</gwd>
 	</external>
 </object>

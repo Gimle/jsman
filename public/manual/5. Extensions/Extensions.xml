@@ -2,5 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="../../template/pageWrapper.xsl"?>
 <page name="Extensions" xmlns="http://www.jsman.net/xsd/page"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/page ../../schema/jsman-page.xsd">
-	<header>Extensions</header>
+	<heading>Extensions</heading>
+	<p>
+		In this documentation you will often see prefixes with a certain object, like window or document.
+		The functionality will in many cases also be available in other cotexts too, like web workers and nodejs.
+	</p>
 </page>

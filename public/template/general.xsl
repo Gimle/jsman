@@ -178,6 +178,13 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="default:const">
+		<!-- https://tux.quixotic.no/dev/nginx/~tux/gimle/jsman/ -->
+		<!-- <xsl:text> -->
+			<xsl:value-of select="'https://tux.quixotic.no/dev/nginx/~tux/gimle/jsman/'"/>
+		<!-- </xsl:text> -->
+	</xsl:template>
+
 	<xsl:template match="default:external">
 		<h3>External references</h3>
 		<ul>
@@ -187,6 +194,9 @@
 
 	<xsl:template match="default:mdn">
 		<li><a href="{@href}">Mozilla: <xsl:apply-templates/></a></li>
+	</xsl:template>
+	<xsl:template match="default:gwd">
+		<li><a href="{@href}">Google: <xsl:apply-templates/></a></li>
 	</xsl:template>
 
 </xsl:stylesheet>

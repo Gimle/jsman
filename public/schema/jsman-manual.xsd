@@ -249,7 +249,22 @@
 
 	<xs:element name="code">
 		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="const"/>
+			</xs:choice>
 			<xs:attribute name="lang" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="const">
+		<xs:complexType>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:token">
+						<xs:enumeration value="BASE_PATH"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 
@@ -303,10 +318,16 @@
 		<xs:complexType>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="mdn"/>
+				<xs:element ref="gwd"/>
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="mdn">
+		<xs:complexType mixed="true">
+			<xs:attribute name="href" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gwd">
 		<xs:complexType mixed="true">
 			<xs:attribute name="href" type="xs:string" use="required"/>
 		</xs:complexType>
