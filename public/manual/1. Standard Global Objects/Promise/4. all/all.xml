@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="all" parent="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>all — A new Promise for when all Promises are resolved or one is rejected without its own catch.</p>
+	</lead>
+	<description>
+		<p>Promise.all(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="promises" type="iterable" optional="false">An array of promises.</parameter>
+	</parameters>
+	<return>
+		<p>A new Promise that resovles when all promises in the input array are completed.</p>
+	</return>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Promise.all example</heading>
+			<code>
+				let mypromise1 = new Promise(resolve => {
+					resolve('resolved promise 1! :)');
+				});
+				let mypromise2 = new Promise((resolve, reject) => {
+					resolve('resolved promise 2! :)');
+				});
+
+				Promise.all([mypromise1, mypromise2]).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Promise.all rejection example</heading>
+			<p>Example showing Promise.all rejecting immediately when one promise rejects without its own catch method. The caught rejection will be the first of the promises that was rejected.</p>
+			<code>
+				let mypromise1 = new Promise(resolve => {
+					setTimeout(() => {
+						resolve('resolved! :)');
+					}, 200);
+				});
+				let mypromise2 = new Promise((resolve, reject) => {
+					reject('rejected promise 2 :(');
+				});
+				let mypromise3 = new Promise((resolve, reject) => {
+					reject('rejected promise 3 :(');
+				});
+
+				Promise.all([mypromise1, mypromise2, mypromise3]).then(result => {
+					console.log(result);
+				}).catch(error => {
+					console.log(error);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Promise.all rejection example</heading>
+			<p>When a catch method is provided, then Promise.all will also execute the then callback, but with an undefined value for the rejected promise.</p>
+			<code>
+				let mypromise1 = new Promise(resolve => {
+					setTimeout(() => {
+						resolve('resolved! :)');
+					}, 500);
+				});
+				let mypromise2 = new Promise((resolve, reject) => {
+					reject('rejected promise 2 :(');
+				}).catch(error => {
+					console.log(error);
+				});
+				let mypromise3 = new Promise(resolve => {
+					resolve('resolved! :)');
+				});
+				let mypromise4 = new Promise((resolve, reject) => {
+					reject('rejected promise 4 :(');
+				}).catch(error => {
+					console.log(error);
+				});
+
+				Promise.all([mypromise1, mypromise2, mypromise3, mypromise4]).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">Promise.all method</mdn>
+	</external>
+
+</method>

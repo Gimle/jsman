@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../template/objectWrapper.xsl"?>
+<object name="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>Promise – Creates a Promise object. Many JavaScript functions already return a promise, and will therefore support this pattern without being wrapped manually in a Promise object.</p>
+	</lead>
+	<description>
+		<p>new Promise(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="executor" type="function" optional="false"/>
+		<section>
+			<heading>Executor parameters</heading>
+			<dl>
+				<dt>resolve</dt>
+				<dd>
+					<p>A callable to resolve the Promise. The promise did what it was supposed to, and all is well.</p>
+				</dd>
+
+				<dt>reject</dt>
+				<dd>
+					<p>A callable to reject the Promise. Something went wrong.</p>
+				</dd>
+			</dl>
+			<p>Each of the executor functions may have one argument that will passed down to the callback.</p>
+		</section>
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Promise example</heading>
+			<code>
+				new Promise((resolve, reject) => {
+					// Randomly resolve or reject the promise.
+					if (Math.random() >= 0.5) {
+						resolve('resolved! :)');
+					}
+					reject('rejected :(');
+				}).then(result => {
+					console.log(result);
+				}).catch(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Late binding example</heading>
+			<code>
+				let mypromise = new Promise(resolve => {
+					setTimeout(() => {
+						resolve('resolved! :)');
+					}, 200);
+				});
+
+
+				// Make a delay so the callback is executed some time after the actual promise was resolved.
+				setTimeout(() => {
+					mypromise.then(result => {
+						console.log(result); // resolved! :)
+					});
+				}, 1000);
+
+				// As soon as the promise is resolved this will execute, which should happen after about 200ms.
+				mypromise.then(result => {
+					console.log(mypromise); // Promise {&lt;resolved&gt;}
+				});
+
+				// First log entry. At this time the promise is still pending since it should take about 200ms to resolve.
+				console.log(mypromise);     // Promise {&lt;pending&gt;}
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">Using Promises</mdn>
+		<mdn href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise object</mdn>
+	</external>
+</object>

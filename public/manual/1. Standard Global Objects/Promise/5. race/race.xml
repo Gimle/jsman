@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="race" parent="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>race — A new Promise for when one Promise is completed (resolved or rejected), whichever is completed first.</p>
+	</lead>
+	<description>
+		<p>Promise.race(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="promises" type="iterable" optional="false">An array of promises.</parameter>
+	</parameters>
+	<return>
+		<p>A new Promise that resovles when one promise in the input array are completed.</p>
+	</return>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Promise.race example</heading>
+			<code>
+				let mypromise1 = new Promise(resolve => {
+					resolve('resolved promise 1! :)');
+				});
+				let mypromise2 = new Promise((resolve, reject) => {
+					resolve('resolved promise 2! :)');
+				});
+
+				Promise.race([mypromise1, mypromise2]).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Promise.race example</heading>
+			<code>
+				let mypromise1 = new Promise(resolve => {
+					setTimeout(() => {
+						resolve('resolved promise 1! :)');
+					}, 1000);
+				});
+				let mypromise2 = new Promise((resolve, reject) => {
+					setTimeout(() => {
+						resolve('resolved promise 2! :)');
+					}, 500);
+				});
+
+				Promise.race([mypromise1, mypromise2]).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race">Promise.race method</mdn>
+	</external>
+
+</method>

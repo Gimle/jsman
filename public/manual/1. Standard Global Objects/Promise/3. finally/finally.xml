@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="finally" parent="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>finally — A callback for a completed Promise.</p>
+	</lead>
+	<description>
+		<p>Promise.finally()</p>
+	</description>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Nested example</heading>
+			<code>
+				new Promise((resolve, reject) => {
+					// Randomly resolve or reject the promise.
+					if (Math.random() >= 0.5) {
+						resolve('resolved! :)');
+					}
+					reject('rejected :(');
+				}).then(result => {
+					console.log(result);
+				}).catch(error => {
+					console.log(error);
+				}).finally(() => {
+					console.log('Finally!');
+				});
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally">Promise.finally method</mdn>
+	</external>
+
+</method>

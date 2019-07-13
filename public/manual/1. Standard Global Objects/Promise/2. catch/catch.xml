@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="catch" parent="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>catch — A callback for a rejected Promise. Will execute as soon as the promise is rejcted. If the promise is already rejcted, it will execute instantly.</p>
+	</lead>
+	<description>
+		<p>Promise.catch(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="result" type="mixed" optional="true">The result from the reject function in the promise.</parameter>
+
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Nested example</heading>
+			<code>
+				new Promise((resolve, reject) => {
+					reject('rejected :(');
+				}).catch(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Hook example</heading>
+			<code>
+				let mypromise = new Promise((resolve, reject) => {
+					reject('rejected :(');
+				});
+
+				mypromise.catch(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Late hook example</heading>
+			<p>When there is no catch hook for a rejected promise, an error is shown. With a late hook the error disappears as soon as the catch method is attached.</p>
+			<code>
+				let mypromise = new Promise((resolve, reject) => {
+					reject('rejected :(');
+				});
+
+				// Nothing to catch the error, so an error message is shown.
+
+				// After about 2 seconds the catch method is attached and replaces the previous error.
+				setTimeout(() => {
+					mypromise.catch(result => {
+						console.log(result);
+					});
+				}, 2000);
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch">Promise.catch method</mdn>
+	</external>
+
+</method>

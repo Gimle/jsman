@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../template/methodWrapper.xsl"?>
+<method name="then" parent="Promise" xmlns="http://www.jsman.net/xsd/manual"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.jsman.net/xsd/manual ../../../../schema/jsman-manual.xsd">
+	<lead>
+		<p>then — A callback for a resolved Promise. Will execute as soon as the promise is resolved. If the promise is already resolved, it will execute instantly.</p>
+	</lead>
+	<description>
+		<p>Promise.then(<params/>)</p>
+	</description>
+	<parameters>
+		<parameter name="result" type="mixed" optional="true">The result from the resolve function in the promise.</parameter>
+
+	</parameters>
+	<changelog>
+		<change version="ES 6">
+			Introduced.
+		</change>
+	</changelog>
+	<examples>
+		<example>
+			<heading>Nested example</heading>
+			<code>
+				new Promise(resolve => {
+					resolve('resolved! :)');
+				}).then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Hook example</heading>
+			<code>
+				let mypromise = new Promise(resolve => {
+					resolve('resolved! :)');
+				});
+
+				mypromise.then(result => {
+					console.log(result);
+				});
+			</code>
+		</example>
+		<example>
+			<heading>Resolve after 1 second.</heading>
+			<code>
+				let mypromise = new Promise(resolve => {
+					setTimeout(() => {
+						resolve('resolved! :)');
+					}, 1000);
+				});
+
+				mypromise.then(result => {
+					console.log(result);
+				});
+
+				console.log('Waiting…');
+			</code>
+		</example>
+		<example>
+			<heading>Bind hook 1 second after the promise has already been resolved</heading>
+			<code>
+				let mypromise = new Promise(resolve => {
+					resolve('resolved! :)');
+				});
+
+				setTimeout(() => {
+					mypromise.then(result => {
+						console.log(result);
+					});
+				}, 1000);
+
+				console.log('Waiting…');
+			</code>
+		</example>
+	</examples>
+	<external>
+		<mdn href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then">Promise.then method</mdn>
+	</external>
+
+</method>
